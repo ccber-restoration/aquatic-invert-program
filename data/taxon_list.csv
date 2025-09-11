@@ -1,0 +1,55 @@
+﻿raw_name,taxonID,parentNameUsageID,acceptedNameUsageID,scientificName,kingdom,Phylum,Class,Order,taxonRank,comments
+Ostracod,,,,Ostracoda,Animalia,,,,Class,
+Copepod,,,,Copepoda,Animalia,,,,Class,copepods (crustaceans)
+Hemiptera: Corixidae (boatman),,,,Corixidae,Animalia,,,,Family,water boatmen
+Cladocera,,,,Diplostraca,Animalia,,,,Superorder,waterfleas (crustaceans)
+Nematode,,,,Nematoda,Animalia,,,,Phylum,nematodes
+Diptera - TOTAL,,,,,,,,,,
+Dipteran sp.,,,,Diptera,Animalia,Arthropoda,Insecta,Diptera,Order,unidentified flies
+Diptera: Chironomid ,,,,Chironomidae,Animalia,Arthropoda,Insecta,Diptera,Family,non-biting midges
+Diptera: Ceratopogonidae,,,,Ceratopogonidae,Animalia,Arthropoda,Insecta,Diptera,Family,sandflies
+Diptera : Ceratopogonidae pupa,,,,Ceratopogonidae,Animalia,Arthropoda,Insecta,Diptera,Family,sandflies
+Diptera: Culicidae,,,,Culicidae,Animalia,Arthropoda,Insecta,Diptera,Family,mosquitoes
+Diptera: Culicidae Larvae ,,,,Culicidae,Animalia,Arthropoda,Insecta,Diptera,Family,mosquitoes
+Diptera : Anthomyiidae,,,,Anthomyiidae,Animalia,Arthropoda,Insecta,Diptera,Family,
+Diptera: Ephydridae,,,,Ephydridae,Animalia,Arthropoda,Insecta,Diptera,Family,shore flies/brine flies
+Diptera: Stratiomyidae,,,,Stratiomyidae,Animalia,Arthropoda,Insecta,Diptera,Family,soldier flies
+Amphipod,,,,Amphipoda,Animalia,Arthropoda,"	Malacostraca",Amphipoda,Order,amphipods
+Lepidoptera-Crambidae,,,,Crambidae,Animalia,Arthropoda,Insecta,Lepidoptera,Family,grass moths
+Hemiptera  TOTAL,,,,,,,,,,
+Hemiptera- Mesoveliidae,,,,Mesoveliidae,Animalia,Arthropoda,Insecta,Hemiptera,Family,
+Hemiptera- Notonectidae,,,,,,,Insecta,,,
+Annelida TOTAL,,,,,,,,,,
+Annelida Sp.,,,,,,,,,,
+Annelida: Oligochaete,,,,,,,,,,
+Annelida: Polychaete,,,,,,,,,,
+Ephemeroptera,,,,,,,,,,
+Odonate,,,,,Animalia,Arthropoda,Insecta,Odonata,Order,
+Coleoptera - TOTAL,,,,,,,,,,
+Coleoptera sp.,,,,Coleoptera,Animalia,Arthropoda,Insecta,Coleoptera,Order,
+Coleoptera: Dytiscidae,,,,,Animalia,Arthropoda,Insecta,Coleoptera,Family,
+Coleoptera: Dytiscidae: Liodessus affinis,,,,,Animalia,Arthropoda,Insecta,Coleoptera,,
+Coleoptera: Dytiscidae: Agabus,,,,,Animalia,Arthropoda,Insecta,Coleoptera,,
+Coleoptera: Dytiscidae: Colymbetinae,,,,,Animalia,Arthropoda,Insecta,Coleoptera,,
+Coleoptera: Curculionidae  (Weavil),,,,,Animalia,Arthropoda,Insecta,Coleoptera,Family,
+Coleoptera - Hydrophilidae,,,,,Animalia,Arthropoda,Insecta,Coleoptera,Family,
+Coleoptera - Tropiscernus,,,,,Animalia,Arthropoda,Insecta,Coleoptera,,
+Coleoperta Hydraenidae,,,,,Animalia,Arthropoda,Insecta,Coleoptera,Family,
+Coleoptera- Gyrindae- Gyrinini,,,,,Animalia,Arthropoda,Insecta,Coleoptera,,
+Ephemeroptera Sp.,,,,,,,,,,
+Tipulidae Larva,,,,,,,,,,
+Plecoptera Sp.,,,,,,,,,,
+Arachnida: Acari  (mite),,,,,,,,,,
+Trichoptera Sp.,,,,,,,,,,
+Collembola (Springtail),,,,,,,,,,
+Gastropod - snail,,,,,,,,,,
+Mollusk,,,,Mollusca,Animalia,Mollusca,NA,NA,Phylum,
+Syrphidae,,,,,,,,,,
+Terrestrials,,,,,,,,,,
+"Isopoda, sphaeroma",,,,,,,,,,
+Clam Shrimp,,,,,,,,,,
+Eristalis tenax larvae,,,,,,,,,,
+Larvae,,,,,,,,,,
+Crawfish,,,,,,,,,,
+Fish ,,,,,,,,,,
+NZ Mudsnail ,,,,Potamopyrgus antipodarum,Animalia,Mollusca,Gastropoda,Littorinimorpha,Species,
