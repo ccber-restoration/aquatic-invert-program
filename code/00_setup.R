@@ -28,14 +28,14 @@ invert_data <- read_excel(path = "data/Aquatic_Sampling_Data_2025-09-11.xlsx",
 
 # explore site codes...                                                        
 #note- there is content in two columns to the right of the Comments column
-unique(invert_data$Site) 
+unique(invert_data$site) 
 
 #29 site codes, plus NAs
 #some codes indicate that a row is a partial sample (e.g. NBP 1/3, NBP 2/3, NBP 3/3)
 #these should be aggretated back to the sample level
 
 #explore sample types 
-unique(invert_data$`Sample Type`)
+unique(invert_data$sample_type)
 #11 sample types plus NA
 #consider consolidating sample sample types by broader category (FB vs. CORE/Core, SW)
 # FB = filtered beaker (planktonic)
@@ -44,6 +44,11 @@ unique(invert_data$`Sample Type`)
 # SAV?
 
 
+#list of people sorting samples
+unique(invert_data$person_that_sorted_the_sample)
+
+#names not standardized, so duplicates
+#also includes combinations of names (multiple students sorting)
 
 # read in data from google sheets
 #invert_data_drive <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1rcYilbrxduQswiJpCK6TopZaIWFJxpK8nklt3INtFVM/edit?gid=0#gid=0")
