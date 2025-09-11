@@ -18,10 +18,7 @@
   - Pier, NPB1, and NPB2.
   - Vernal pools (8) : VOW1, NVP10, VWCB, VCC7, VDSW, VM3, VM7, and VMM
 for that year
--  18 (?) sites throughout Devereaux Slough (7 at COPR)
--  
 -  Shifted from filtered beaker method to dip net (3 ft sweep) 
-
 
 # Data
 - Overall project documentation is in Invertebrate Program Google Drive folder: https://drive.google.com/drive/folders/1JQVLXZTujw3prNdLIqJonT6n9q37h36R
