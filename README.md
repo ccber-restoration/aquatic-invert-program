@@ -2,6 +2,10 @@
 
 - Steven Senesac started the aquatic invertebrate monitoring project in 2017
 - Santa Barbara Audubon Society funds stipends
+- Could potentially be integrated with multiple bird data sets:
+  - eBird hotspots
+  - NCOS bird surveys
+  - COPR bird surveys: https://copr.nrs.ucsb.edu/about/monitoring/bird-monitoring/ 
 
 # Previous documentation and findings
 
