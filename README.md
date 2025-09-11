@@ -11,15 +11,17 @@
     -  Wagner & Rebollar 2025. Macroinvertebrate Responses to Dissolved Oxygen and Salinity in Devereux Slough (https://escholarship.org/content/qt55848339/qt55848339.pdf?t=r5yt62)   
 
 
-# Methods
+# Timeline and sites
 -  2017: pilot program, data not usable due to sorting & identification issues 
 -  2018: 12 sampling sites (4 in COPR and 8 in NCOS)
 -  2019: expanded to include expanded to include:  
     -  Pier, NPB1, and NPB2.
     -   Vernal pools (8) : VOW1, NVP10, VWCB, VCC7, VDSW, VM3, VM7, and VMM
 for that year
+- More recent data have 
 - Samples are collected once per academic quarter (4 times per year)
 
+# Methods
 -  Shifted from filtered beaker method to dip net (3 ft sweep) 
 
 # Data
