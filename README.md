@@ -23,8 +23,16 @@ for that year
 # Data
 - Overall project documentation is in Invertebrate Program Google Drive folder: https://drive.google.com/drive/folders/1JQVLXZTujw3prNdLIqJonT6n9q37h36R
 - Data file is in "Aquatic Invert Lab Student Leaders>Aquatic Sampling Data": https://docs.google.com/spreadsheets/d/1rcYilbrxduQswiJpCK6TopZaIWFJxpK8nklt3INtFVM/edit?gid=1053841964#gid=1053841964  Sheets:
-  -  Sample Tracking Log
-  -  Water Quality
-  -  Aquatic Insects [verts]
+  -  "Sample Tracking Log": used for tracking sample processing
+  -  "Water Quality": records water quality and weather data collected at the same time as sample collection
+  -  Aquatic Insects: primary data sheet. Basically a sample*taxon matrix, with some additional columns:
+    -  Sample metadata:
+      -  Date data entered
+      -  Person entering data
+      -  Date on vial: sample collection date
+      -  Person that sorted sample
+
+           
+    
   -  Old? - 2019 data
   
