@@ -1,0 +1,132 @@
+---
+title: "Aquatic Insects - NZ Mudsnail Data Cleaning"
+author: Jon Seawards, Cheadle Center Aquatic Lab 2025 C All rights Reserved. Do not distribute
+output:
+  html_document: default
+  pdf_document: default
+date: "2025-11-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(knitr)
+library(tidyverse)
+library(readxl)
+library(janitor)
+
+#install.packages(c("tidyverse", "readr"))
+
+library(tidyverse)
+library(readr)
+
+```
+
+```{r}
+# load data
+
+raw_data <- read_excel("/Users/jonseawards/Desktop/Biometry/Aquatic Lab R Files/Aquatic Sampling Data_snapshot_11_25_2025.xlsx",
+sheet = "Aquatic Insects")
+
+#Clean column names for safety (keeps spaces but removes weird characters)
+
+raw_data <- janitor::clean_names(raw_data)
+
+```
+
+```{r}
+# separate metadata and taxa columns 
+
+metadata_cols <- names(raw_data)[1:6]
+taxon_cols    <- names(raw_data)[7:ncol(raw_data)]
+
+metadata_cols
+taxon_cols[1:10]   # preview
+
+# clean taxa data counts (remove NA's)
+cleaned <- raw_data %>%
+  mutate(across(all_of(taxon_cols),
+                ~ as.numeric(as.character(.x)))) %>%
+  mutate(across(all_of(taxon_cols),
+                ~ replace_na(.x, 0)))
+
+# filter events for mudsnail occurance
+mud_col <- "nz_mudsnail"
+
+filtered_data <- cleaned %>%
+  filter(.data[[mud_col]] > 0)
+
+filtered_data
+
+#fix date column
+cleaned$date_on_vial <- as.numeric(cleaned$date_on_vial)
+cleaned$date_on_vial <- as.Date(cleaned$date_on_vial, origin = "1899-12-30")
+
+cleaned$date_on_vial <- as.Date(as.numeric(gsub("\\.0$", "", cleaned$date_on_vial)),
+                                origin = "1899-12-30")
+
+head(cleaned$date_on_vial) # check, it worked, spolier it didn't :(
+
+
+```
+
+```{r}
+# write clean data
+write_csv(filtered_data, "cleaned_mudsnail_data_2.csv")
+
+# take a look 
+preview <- read_csv("cleaned_mudsnail_data_2.csv")
+kable(head(preview, 10))
+```
+
+```{r}
+# NZMS Abundance By Site Plots
+
+df <- read_csv("cleaned_mudsnail_data_2.csv")
+# Sum abundance by site
+site_abundance <- df %>%
+  group_by(site) %>%
+  summarise(total_nzms = sum(nz_mudsnail, na.rm = TRUE)) %>%
+  arrange(desc(total_nzms))
+
+# Plot
+ggplot(site_abundance, aes(x = reorder(site, -total_nzms), y = total_nzms)) +
+  geom_col() +
+  labs(
+    title = "Total NZ Mudsnail Abundance by Site",
+    x = "Site",
+    y = "Total NZ Mudsnail Count"
+  ) +
+  theme_minimal()
+
+```
+
+```{r}
+# plot for NZ Mudsnail vs. Native Snails [Gastropods]
+
+df <- read_csv("cleaned_mudsnail_data_2.csv")
+
+df %>%
+  group_by(site) %>%
+  summarise(
+    native_snails = sum(gastropod_snail),
+    nzms = sum(nz_mudsnail)
+  ) %>%
+  pivot_longer(cols = c(native_snails, nzms)) %>%
+  ggplot(aes(x = site, y = value, fill = name)) +
+  geom_col(position = "dodge") +
+  labs(
+    title = "Native Snails vs NZ Mudsnails by Site",
+    x = "Site",
+    y = "Count",
+    fill = "Taxon"
+  ) +
+  theme_minimal()
+
+
+```
+
+```{r}
+# NZMS Abundance Time Series (will create once sample date column is fixed) 
+```
+
