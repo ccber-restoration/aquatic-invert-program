@@ -1,18 +1,19 @@
-library(dplyr)
+library(tidyverse)
 library(sf)
 library(mapview)
 
-sampling_sites <- st_read("data/sampling_site_shapefile/Aquatic_Invert_Sampling_Sites.shp")
+sampling_sites <- read_csv("data/ncos_aquatic_invertebrate_sampling_locations.csv")
+
+sites_sf <-  st_as_sf(sampling_sites, coords = c("x", "y"), crs = 4326)
 
 #display interactive map
-mapview(sampling_sites)
+mapview(sites_sf)
 
 #extract coordinates from sf object
-coords_matrix <- st_coordinates(sampling_sites)
-
+coords_matrix <- st_coordinates(sites_sf)
 
 #bind columns
-sampling_sites_coordinates <- bind_cols(sampling_sites, lon = coords_matrix[,1], lat = coords_matrix[,2])
+sampling_sites_coordinates <- bind_cols(sites_sf, lon = coords_matrix[,1], lat = coords_matrix[,2])
 
 #not sure what the units are... aren't decimal degrees
 
