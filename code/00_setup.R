@@ -19,15 +19,9 @@ invert_data <- read_excel(path = "data/Aquatic_Sampling_Data_2025-09-11.xlsx",
                           sheet = "Aquatic Insects"
                           ) %>% 
   #clean names
-  clean_names() %>%
-  #create properly formatted date column
-  mutate(date = as.Date(date_on_vial, origin = "1900-01-01"))
-
-#TODO
-# fix dates
+  clean_names()
 
 #need to make sure dates get read in correctly
-
 
 # explore site codes...                                                        
 #note- there is content in two columns to the right of the Comments column
