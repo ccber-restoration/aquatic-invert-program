@@ -12,3 +12,9 @@ nzms <- invert_data %>%
 #Where?
 #What sampling methods?
 #Abundance patterns?
+
+#A few more tips:
+
+#if you put date on the x-axis, use the scale_x_date() argument rather than scale_x_continuous
+
+#https://ggplot2.tidyverse.org/reference/scale_date.html
