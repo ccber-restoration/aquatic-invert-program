@@ -48,6 +48,9 @@ for that year
         -  Sample type:
         -  Taxon columns: include some totals for high-level groupings
   -  "Old? - 2019 data": contains data just from 2019
+
+## Box
+- See Box>CCBER_Data>NCOS>Aquatic Invertebrates. Has data (raw + analysis) from 2018 and 2019 that were used for the two Senesac et al. reports.
  
 ## ArcGIS Online
 
