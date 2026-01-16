@@ -14,6 +14,7 @@
   - Posters:
     -  Grinstead et al. 2022. Aquatic Invertebrate Monitoring at Devereux Slough (https://escholarship.org/uc/item/64f0w6hx)
     -  Huynh et al. 2023. Algae, Macroinvertebrate and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/98b837q4)
+    -  Stiles & Kracha 2023. Assessing Aquatic Invertebrate Establishment in a Restored Wetland Over Time (https://escholarship.org/uc/item/00t2k2t7)
     -  Malone & Estrada-Ramirez 2024. Aquatic Invertebrate Assessment at the North Campus Open Space (https://escholarship.org/uc/item/6n78q34g)
     -  O'Donnell et al. 2024. Analysis of Algae and Aquatic Vegetation Abundance at the Devereux Slough (https://escholarship.org/uc/item/7zw9s3w7)
     -  Sayre & Liu 2024. Algae, Macroinvertebrates, and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/7mj3c7wc) 
