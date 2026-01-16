@@ -10,8 +10,12 @@
 
 # Previous documentation and findings
 
-  - Senesac et al. 2022 Aquatic Invertebrates of the Devereux Slough 2018-19 (https://escholarship.org/content/qt55848339/qt55848339.pdf?t=r5yt62)
-  - Posters:
+Two reports led by Steven Senesac:
+
+  - Senesac et al. 2019. Aquatic Invertebrates of the Devereux Slough - 2018 (https://escholarship.org/uc/item/59c872mm)  
+  - Senesac et al. 2022.  Aquatic Invertebrates of the Devereux Slough 2018-19 (https://escholarship.org/content/qt55848339/qt55848339.pdf?t=r5yt62)
+  
+  - **Student Posters**:
     -  Grinstead et al. 2022. Aquatic Invertebrate Monitoring at Devereux Slough (https://escholarship.org/uc/item/64f0w6hx)
     -  Huynh et al. 2023. Algae, Macroinvertebrate and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/98b837q4)
     -  Stiles & Kracha 2023. Assessing Aquatic Invertebrate Establishment in a Restored Wetland Over Time (https://escholarship.org/uc/item/00t2k2t7)
