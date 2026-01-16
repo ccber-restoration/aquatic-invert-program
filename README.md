@@ -15,6 +15,7 @@
     -  Grinstead et al. 2022. Aquatic Invertebrate Monitoring at Devereux Slough (https://escholarship.org/uc/item/64f0w6hx)
     -  Huynh et al. 2023. Algae, Macroinvertebrate and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/98b837q4)
     -  Malone & Estrada-Ramirez 2024. Aquatic Invertebrate Assessment at the North Campus Open Space (https://escholarship.org/uc/item/6n78q34g)
+    -  Sayre & Liu 2024. Algae, Macroinvertebrates, and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/7mj3c7wc) 
     -  Wagner & Rebollar 2025. Macroinvertebrate Responses to Dissolved Oxygen and Salinity in Devereux Slough (https://escholarship.org/uc/item/3kb120zk)   
 
 
