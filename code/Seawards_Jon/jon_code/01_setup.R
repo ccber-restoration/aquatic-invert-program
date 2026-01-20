@@ -51,8 +51,16 @@ nzm_only_present <- invert_data_clean %>%
 view(nzm_only_present)
 
 
+#Import Water quality data and integreate with filtered datasets
+
+water_quality <-read_excel(path = "data/Aquatic_Sampling_Data_2025-09-11_clean.xlsx", sheet = "Water Quality" )
+view(water_quality)
+
+#FIXME ^^ - start and end times + dates + sites are not consistently formatted, depth measurement should be factored to standard?, lots of N/A.. 
+
 #TODO:
-# 1. Import Water quality data and integreate with filtered datasets
+# 1. Integrate a cleaned and fixed water quality with dates of NZM occurance
+
 
 
 
