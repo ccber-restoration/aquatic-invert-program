@@ -6,7 +6,7 @@
 # Purpose: Explore and anylize NZ mudsnail data
 # ============================================
 
-source("code/01_setup.R")
+source("code/Seawards_Jon/jon_code/01_setup.R")
 
 # Exploratory Questions: (using: nzm_onlypresent)
 
