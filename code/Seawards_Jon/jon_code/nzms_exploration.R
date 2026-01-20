@@ -16,7 +16,7 @@ source("code/01_setup.R")
 
 # What date was NZ mudsnail first detected?
 
-# When NZ Mudsnail invaded, what was the median organismal density within a given sample?  (median number of organisms detected in a single positive sample)
+# When NZ Mudsnail invaded, what was the median organism density within a given sample?  (median number of organisms detected in a single positive sample)
 
 # What is the median NZ mudsnail density at each site with invasion presence? 
 
