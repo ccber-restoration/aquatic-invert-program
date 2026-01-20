@@ -13,29 +13,25 @@ library(janitor) # data cleaning
 #read in static excel file (will become outdated)
 
 # see list of sheets
-excel_sheets("data/Aquatic_Sampling_Data_2025-09-11.xlsx")
+excel_sheets("data/Aquatic_Sampling_Data_2025-09-11_clean.xlsx")
 
-invert_data <- read_excel(path = "data/Aquatic_Sampling_Data_2025-09-11.xlsx",
+invert_data <- read_excel(path = "data/Aquatic_Sampling_Data_2025-09-11_clean.xlsx",
                           sheet = "Aquatic Insects"
                           ) %>% 
   #clean names
-  clean_names() %>%
+  clean_names() #%>%
   #create properly formatted date column
-  mutate(date = as.Date(date_on_vial, origin = "1900-01-01"))
-
-#TODO
-# fix dates
+  #mutate(date = as.Date(date_on_vial, origin = "1900-01-01"))
 
 #need to make sure dates get read in correctly
-
 
 # explore site codes...                                                        
 #note- there is content in two columns to the right of the Comments column
 unique(invert_data$site) 
 
-#29 site codes, plus NAs
-#some codes indicate that a row is a partial sample (e.g. NBP 1/3, NBP 2/3, NBP 3/3)
-#these should be aggretated back to the sample level
+#23 site codes, plus NAs
+
+#Note that information on partial samples was added to new column (half or third samples)
 
 #explore sample types 
 unique(invert_data$sample_type)

@@ -10,11 +10,18 @@
 
 # Previous documentation and findings
 
-  - Senesac et al. 2022 Aquatic Invertebrates of the Devereux Slough 2018-19 (https://escholarship.org/content/qt55848339/qt55848339.pdf?t=r5yt62)
-  - Posters:
+Two reports led by Steven Senesac:
+
+  - Senesac et al. 2019. Aquatic Invertebrates of the Devereux Slough - 2018 (https://escholarship.org/uc/item/59c872mm)  
+  - Senesac et al. 2022.  Aquatic Invertebrates of the Devereux Slough 2018-19 (https://escholarship.org/content/qt55848339/qt55848339.pdf?t=r5yt62)
+  
+  - **Student Posters**:
     -  Grinstead et al. 2022. Aquatic Invertebrate Monitoring at Devereux Slough (https://escholarship.org/uc/item/64f0w6hx)
     -  Huynh et al. 2023. Algae, Macroinvertebrate and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/98b837q4)
+    -  Stiles & Kracha 2023. Assessing Aquatic Invertebrate Establishment in a Restored Wetland Over Time (https://escholarship.org/uc/item/00t2k2t7)
     -  Malone & Estrada-Ramirez 2024. Aquatic Invertebrate Assessment at the North Campus Open Space (https://escholarship.org/uc/item/6n78q34g)
+    -  O'Donnell et al. 2024. Analysis of Algae and Aquatic Vegetation Abundance at the Devereux Slough (https://escholarship.org/uc/item/7zw9s3w7)
+    -  Sayre & Liu 2024. Algae, Macroinvertebrates, and Water Quality Relationships at North Campus Open Space (https://escholarship.org/uc/item/7mj3c7wc) 
     -  Wagner & Rebollar 2025. Macroinvertebrate Responses to Dissolved Oxygen and Salinity in Devereux Slough (https://escholarship.org/uc/item/3kb120zk)   
 
 
@@ -48,6 +55,9 @@ for that year
         -  Sample type:
         -  Taxon columns: include some totals for high-level groupings
   -  "Old? - 2019 data": contains data just from 2019
+
+## Box
+- See Box>CCBER_Data>NCOS>Aquatic Invertebrates. Has data (raw + analysis) from 2018 and 2019 that were used for the two Senesac et al. reports.
  
 ## ArcGIS Online
 
