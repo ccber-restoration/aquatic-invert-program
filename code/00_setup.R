@@ -2,7 +2,7 @@
 # load packages ----
 library(tidyverse)
 library(readxl) #read excel files
-library(googlesheets4) # read in data from Google Sheets
+#library(googlesheets4) # read in data from Google Sheets
 library(janitor) # data cleaning
 
 #read in data ----
