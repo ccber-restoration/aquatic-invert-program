@@ -64,7 +64,7 @@ Two feature layers for sampling locations:
 
 - Aquatic invertebrate monitoring locations (https://ucsb.maps.arcgis.com/home/item.html?id=a1f8ae4b45044c56a7654bec210e702b). Last updated 2023-08-08
   -  16 rows, but 3 are blank (nzms1-3)   
-- NCOS Aquatic invertebrate smapling locations (https://ucsb.maps.arcgis.com/home/item.html?id=9b77f1ec95704c10a67b6003f4645ccd). Last udated 2024-04-09
+- NCOS Aquatic invertebrate smapling locations [sic] (https://ucsb.maps.arcgis.com/home/item.html?id=9b77f1ec95704c10a67b6003f4645ccd). Last updated 2024-04-09
   -  14 locations 
 
   
