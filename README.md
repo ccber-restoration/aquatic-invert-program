@@ -32,8 +32,7 @@ Two reports led by Steven Senesac:
     -  Pier, NPB1, and NPB2.
     -   Vernal pools (8) : VOW1, NVP10, VWCB, VCC7, VDSW, VM3, VM7, and VMM
 for that year
-- More recent data have 
-- Samples are collected once per academic quarter (4 times per year)
+- Samples are collected once per academic quarter (4 times per year), roughly equivalent to "season," depending on the timing of sampling within the quarter
 
 # Methods
 -  Shifted from filtered beaker method to dip net (3 ft sweep) 
