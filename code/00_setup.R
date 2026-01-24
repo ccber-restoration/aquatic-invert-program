@@ -32,7 +32,9 @@ invert_data <- read_excel(path = data_path,
   select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number, x65))
  
 # explore site codes...                                                        
-unique(invert_data$site) 
+unique_sites <- unique(invert_data$site) 
+
+
 
 #23 site codes, plus NAs
 
@@ -74,7 +76,7 @@ water_quality <- read_excel(path = data_path,
 
 #list site codes:
                                                     
-unique(water_quality$site)
+unique_sites_wq <- unique(water_quality$site)
 
 #known issues:
 
