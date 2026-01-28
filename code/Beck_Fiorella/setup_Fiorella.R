@@ -1,4 +1,17 @@
-#basic script to import data
+# =============================================================================
+# Name:           setup_Fiorella.R
+# Description:    
+# Author(s):      
+
+# Inputs:         
+#                 
+# Outputs:        
+# 
+# Notes:          
+#                 
+# =============================================================================
+
+
 
 #run the general setup script
 source("code/00_setup.R")
