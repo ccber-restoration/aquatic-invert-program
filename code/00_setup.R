@@ -34,7 +34,7 @@ invert_data <- read_excel(path = data_path,
 # explore site codes...                                                        
 unique_sites <- unique(invert_data$site) 
 
-
+unique_sites
 
 #23 site codes, plus NAs
 
@@ -75,9 +75,9 @@ water_quality <- read_excel(path = data_path,
   
 
 #list site codes:
-                                                    
 unique_sites_wq <- unique(water_quality$site)
 
+unique_sites_wq
 #known issues:
 
 #FIXME: 
