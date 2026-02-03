@@ -17,7 +17,7 @@ library(hms) # for working with times (time of day)
 #read in static excel file (will become outdated)
 
 #set to current version of Excel file
-data_path <- "data/Aquatic_Sampling_Data_2026-01-21.xlsx"
+data_path <- "data/Aquatic Sampling Data-2026-02-03.xlsx"
 
 # see list of sheets
 excel_sheets(data_path)
@@ -29,7 +29,7 @@ invert_data <- read_excel(path = data_path,
   #clean names
   clean_names() %>% 
   #remove columns, including columns that are (incomplete) summaries rather than raw data
-  select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number, x65))
+  select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number))
  
 # explore site codes...                                                        
 unique_sites <- unique(invert_data$site) 
