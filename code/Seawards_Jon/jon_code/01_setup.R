@@ -20,7 +20,7 @@ invert_data_nzm <- invert_data_clean %>%
 invert_data_nzm_separate <- invert_data_nzm %>%
   select(date_on_vial, site, sample_type, nz_mudsnail)
 
-#FIXME ^^ - start and end times + dates + sites are not consistently formatted, depth measurement should be factored to standard?, lots of N/A.. 
+#FIXME ^^ - sites are not consistently formatted, depth measurement should be factored to standard?, lots of N/A.. 
 
 # a few notes from FHJ: use lubridate and hms packages to work with dates and times
 # use read_excel arguments to specify column types and na values
@@ -30,6 +30,27 @@ invert_data_nzm_separate <- invert_data_nzm %>%
 # 1. Integrate a cleaned and fixed water quality with dates of NZM occurance
 
 
+#Next steps: 
+
+# because there are two distinct sets of wq measurements for a single invert sample, take the mean
+#my approach would be group_by(site, date), then pipe to summarize() and overwrite the wq variables by taking the mean
+
+#TODO- make water quality variables numeric first...
+
+#can use something like this:
+
+# df <- df %>%
+#   mutate(across(c(col1, col2, col3), as.numeric))
+
+#create data frame with NZMS occurrences and corresponding water quality
+data_nzm_wq <- invert_data_nzm_separate %>% 
+  left_join(y = water_quality, join_by("site" == "site","date_on_vial" == "date")) %>% 
+  group_by(site, date_on_vial) %>% 
+  summarize(p_h = mean(p_h))
+
+
+  
+  
 
 
 
