@@ -4,6 +4,7 @@ library(tidyverse) # general use
 library(readxl) # read excel files
 library(janitor) # data cleaning
 library(hms) # for working with times (time of day)
+library(cowplot)
 
 #library(googlesheets4) # read in data from Google Sheets
 
@@ -62,6 +63,9 @@ unique(invert_data$person_that_sorted_the_sample)
 #taxon name (post janitor)
 #taxon name for display
 #More taxonomic information (e.g. higher-level groupings)
+
+#read in overall list of taxa
+taxa <- read_csv(file = "data/taxon_list.csv")
 
 ## 1.2 water quality data ----
 water_quality <- read_excel(path = data_path,
