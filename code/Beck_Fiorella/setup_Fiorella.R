@@ -57,10 +57,36 @@ fig_phelps_DO <- ggplot(data = water_quality_NPB, aes(x = date, y = dissolved_ox
   ylab("Dissolved Oxygen (mg/L)") +
   theme_cowplot() +
   facet_wrap(vars(site), nrow = 3)+
-  ggtitle("DO levels (mg/L) of Phelps Creek by Site") +
+  ggtitle("DO levels (mg/L) of Phelps Creek by Site")
   
 
 fig_phelps_DO
+
+fig_phelps_pH <- ggplot(data = water_quality_NPB, aes(x = date, y = p_h, group = site, color = site)) +
+  geom_point() +
+  geom_line() +
+  xlab("Date") +
+  ylab("pH") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3)+
+  ggtitle("pH levels of Phelps Creek by Site") 
+
+fig_phelps_pH
+
+fig_phelps_cond <- ggplot(data = water_quality_NPB, aes(x = date, y = conductivity_specific_m_s_cm, group = site, color = site)) +
+  geom_point() +
+  geom_line() +
+  xlab("Date") +
+  ylab("Specific Conductivity (mS/cm)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3)+
+  ggtitle("Specific Conductivity (mS/cm) levels of Phelps Creek by Site") +
+  theme(axis.text.y = element_text(size = 5))
+
+fig_phelps_cond
+
+
+
   
 
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.pdf",
