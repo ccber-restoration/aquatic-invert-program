@@ -44,14 +44,29 @@ fig_phelps_temp <- ggplot(data = water_quality_NPB, aes(x = date, y = temperatur
   xlab("Date") +
   ylab("Temperature (C)") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3)
+  facet_wrap(vars(site), nrow = 3) +
+  ggtitle("Temperature (C) of Phelps Creek by Site")
   
 fig_phelps_temp
 
 
+fig_phelps_DO <- ggplot(data = water_quality_NPB, aes(x = date, y = dissolved_oxygen_mg_l, group = site, color = site)) +
+  geom_point() +
+  geom_line() +
+  xlab("Date") +
+  ylab("Dissolved Oxygen (mg/L)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3)+
+  ggtitle("DO levels (mg/L) of Phelps Creek by Site") +
+  
+
+fig_phelps_DO
+  
+
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.pdf",
        plot= fig_phelps_temp,
        bg = "white")
+
 
 
 
