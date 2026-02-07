@@ -38,6 +38,7 @@ invert_data_NPB<-invert_data%>%
 #Filter taxa to bioassement categories, pivot_longer(),format list of indicator taxa
 
 # demo figure for temperature
+
 fig_phelps_temp <- ggplot(data = water_quality_NPB, aes(x = date, y = temperature_c, group = site, color = site)) +
   geom_point() +
   geom_line() +
@@ -48,6 +49,10 @@ fig_phelps_temp <- ggplot(data = water_quality_NPB, aes(x = date, y = temperatur
   ggtitle("Temperature (C) of Phelps Creek by Site")
   
 fig_phelps_temp
+
+
+
+water_quality_NPB$dissolved_oxygen_mg_l<- as.numeric(as.character(water_quality_NPB$dissolved_oxygen_mg_l))
 
 
 fig_phelps_DO <- ggplot(data = water_quality_NPB, aes(x = date, y = dissolved_oxygen_mg_l, group = site, color = site)) +
@@ -73,18 +78,33 @@ fig_phelps_pH <- ggplot(data = water_quality_NPB, aes(x = date, y = p_h, group =
 
 fig_phelps_pH
 
+water_quality_NPB$conductivity_specific_m_s_cm<- as.numeric(as.character(water_quality_NPB$conductivity_specific_m_s_cm))
+
 fig_phelps_cond <- ggplot(data = water_quality_NPB, aes(x = date, y = conductivity_specific_m_s_cm, group = site, color = site)) +
   geom_point() +
   geom_line() +
   xlab("Date") +
   ylab("Specific Conductivity (mS/cm)") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3)+
+  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
   ggtitle("Specific Conductivity (mS/cm) levels of Phelps Creek by Site") +
   theme(axis.text.y = element_text(size = 5))
 
 fig_phelps_cond
 
+water_quality_NPB$salinity_ppt<- as.numeric(as.character(water_quality_NPB$salinity_ppt))
+
+fig_phelps_salt <- ggplot(data = water_quality_NPB, aes(x = date, y = salinity_ppt, group = site, color = site)) +
+  geom_point() +
+  geom_line() +
+  xlab("Date") +
+  ylab("Salinity (ppt)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Salinity (ppt) levels of Phelps Creek by Site") +
+  theme(axis.text.y = element_text(size = 5))
+
+fig_phelps_salt
 
 
   
