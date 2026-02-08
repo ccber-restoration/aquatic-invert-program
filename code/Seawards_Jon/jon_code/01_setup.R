@@ -3,7 +3,7 @@
 # File: 01_setup.R
 # Author: Jon Seawards
 # Date: 2026-01-20
-# Purpose: Clean and filter invertebrate data for NZ mudsnail alaysis
+# Purpose: Clean and filter invertebrate data for NZMS analysis
 # ============================================
 
 source("code/00_setup.R")
@@ -22,36 +22,43 @@ invert_data_nzm_separate <- invert_data_nzm %>%
 
 #FIXME ^^ - sites are not consistently formatted, depth measurement should be factored to standard?, lots of N/A.. 
 
-# a few notes from FHJ: use lubridate and hms packages to work with dates and times
-# use read_excel arguments to specify column types and na values
 # can use mutate with case_when to standardize factor (or character) level values (e.g. sample depths)
 
-#TODO:
-# 1. Integrate a cleaned and fixed water quality with dates of NZM occurance
 
-
-#Next steps: 
-
-# because there are two distinct sets of wq measurements for a single invert sample, take the mean
-#my approach would be group_by(site, date), then pipe to summarize() and overwrite the wq variables by taking the mean
-
-#TODO- make water quality variables numeric first...
-
-#can use something like this:
-
-# df <- df %>%
-#   mutate(across(c(col1, col2, col3), as.numeric))
+#clean water_quality data, format as numeric
+water_quality_clean <- water_quality %>%
+  mutate(across(c(p_h, 
+                  dissolved_oxygen_mg_l,
+                  dissolved_oxygen_percent,
+                  conductivity_specific_m_s_cm,
+                  conductivity_specific_u_s_cm,
+                  conductivity_specific_ppt,
+                  salinity_m_s_cm,
+                  salinity_ppt,
+                  temperature_c,
+                  barometric_pressure_mm_hg), as.numeric))
 
 #create data frame with NZMS occurrences and corresponding water quality
 data_nzm_wq <- invert_data_nzm_separate %>% 
-  left_join(y = water_quality, join_by("site" == "site","date_on_vial" == "date")) %>% 
+  left_join(y = water_quality_clean, join_by("site" == "site","date_on_vial" == "date")) %>% 
   group_by(site, date_on_vial) %>% 
-  summarize(p_h = mean(p_h))
+  summarize( sample_type = first(sample_type),
+             nz_mudsnail = first(nz_mudsnail),   # keep original columns from nzm_seperate
+    
+    across(
+    c(p_h,
+        dissolved_oxygen_mg_l,
+        dissolved_oxygen_percent,
+        conductivity_specific_m_s_cm,
+        conductivity_specific_u_s_cm,
+        conductivity_specific_ppt,
+        salinity_m_s_cm,
+        salinity_ppt,
+        temperature_c,
+        barometric_pressure_mm_hg),
+      ~ mean(.x, na.rm = TRUE)), .groups = "drop")
 
-
-  
-  
-
-
-
+# small cleanup of NA value 
+data_nzm_wq <- data_nzm_wq %>%
+  mutate(across(where(is.numeric), ~ ifelse(is.nan(.x), NA, .x)))
 
