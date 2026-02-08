@@ -8,19 +8,38 @@
 
 source("code/Seawards_Jon/jon_code/01_setup.R")
 
-# Exploratory Questions: (using: nzm_onlypresent)
+# Exploratory Questions: (using: invert_data_nzm_separate)
 
-# What sites has NZ Mudsnail been present? 
+# At what sites in NCOS has NZMS been detected and when? 
+invert_data_nzm_separate %>%
+  distinct(site)
+# NPB2, NPB1, MO1, NVB, NPB, NDC  
 
 # What sites has NZ Mudsnail been present in abundance >1? 
 
 # What date was NZ mudsnail first detected?
+invert_data_nzm_separate %>%
+  filter(nz_mudsnail > 1) %>%
+  distinct(site)
+# 1 NPB2, NPB1, NPB  #
 
-# When NZ Mudsnail invaded, what was the median organism density within a given sample?  (median number of organisms detected in a single positive sample)
+# When NZ Mudsnail invaded, what was their median organism density within a given sample?  (median number of organisms detected in a single positive sample)
+invert_data_nzm_separate %>%
+  summarize(median_density = median(nz_mudsnail, na.rm = TRUE)) %>%
+  pull(median_density)
+# 29.5 
 
 # What is the median NZ mudsnail density at each site with invasion presence? 
 
+invert_data_nzm_separate %>%
+  group_by(site) %>%
+  summarize(median_density = median(nz_mudsnail), .groups = "drop")
 
+invert_data_nzm_separate %>%
+  group_by(site) %>%
+  summarize(median_density = median(nz_mudsnail), .groups = "drop") %>%
+  ggplot(aes(x = site, y = median_density)) +
+  geom_col()
 
 # Exploratory Questions: (using: invert_data_nzm)
 
