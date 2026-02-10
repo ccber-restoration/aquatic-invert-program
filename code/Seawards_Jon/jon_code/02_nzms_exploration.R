@@ -6,6 +6,8 @@
 # Purpose: Explore and anylize NZ mudsnail data
 # ============================================
 
+library(plotly)
+
 source("code/Seawards_Jon/jon_code/01_setup.R")
 
 # Exploratory Questions: (using: invert_data_nzm_separate)
@@ -54,7 +56,19 @@ invert_data_nzm_separate %>%
   ggplot(aes(x = site, y = median_density)) +
   geom_col() 
 
-# Exploratory Questions: (using: invert_data_nzm)
+
+# FHJ notes ggplot demo, assigning to variable (object) ----
+fig_temp_scatterplot <- ggplot(data = data_nzm_wq, aes(x = temperature_c, y = nz_mudsnail)) +
+  geom_point()
+
+fig_temp_scatterplot
+
+ggplotly(fig_temp_scatterplot)
+
+#check ranges of water quality variables...
+range(data_nzm_wq$temperature_c, na.rm = TRUE)
+
+# Exploratory Questions: (using: invert_data_nzm) ----
 
 # What year had the largest proportion of NZ Mudsnail invasion? (highest instances of invaded samples >1/total samples)
 
