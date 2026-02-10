@@ -8,6 +8,14 @@
 
 source("code/00_setup.R")
 
+#filter taxa to just nzms
+
+nzms_taxonomic_info <- taxa %>% 
+  filter(verbatim_name == "NZ Mudsnail")
+
+#declutter environment
+rm(taxa)
+
 # clean taxa data counts (remove NA's)
 invert_data_clean <- invert_data %>%
   mutate(across(where(is.numeric), ~ replace_na(.x, 0)))
