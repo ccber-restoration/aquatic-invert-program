@@ -24,14 +24,24 @@ sample_SW<- c("SW250","SW500")
 
 #filter water quality data to just phelps sites
 water_quality_NPB<-water_quality %>%
-  filter(site %in% phelps_site)
+  filter(site %in% phelps_site) %>%
+  mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l),
+         conductivity_specific_m_s_cm = as.numeric(conductivity_specific_m_s_cm),
+         salinity_ppt = as.numeric(salinity_ppt)) %>%
+  mutate(month=month(date),
+         season=case_when(
+           month %in% c(1,2,3) ~ "Winter",
+           month %in% c(4,5,6) ~ "Spring",
+           month %in% c(7,8,9) ~ "Summer",
+           month %in% c(10,11,12) ~ "Fall")) %>%
+   relocate(month:season,.after = date)
 
 #filter invert data to just Phelps sites and dipnet samples
 invert_data_NPB<-invert_data%>%
   filter(site %in% phelps_site)%>%
-  filter(sample_type %in% sample_SW) %>% 
-  mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l),
-         conductivity_specific_m_s_cm = as.numeric(conductivity_specific_m_s_cm))
+  filter(sample_type %in% sample_SW)
+  
+
   
 
 # plot water quality over time by site ----
@@ -107,6 +117,7 @@ fig_phelps_salt <- ggplot(data = water_quality_NPB, aes(x = date, y = salinity_p
   ggtitle("Salinity (ppt) levels of Phelps Creek by Site") 
 
 fig_phelps_salt
+
 
 
   
