@@ -7,7 +7,7 @@ sampling_sites <- read_csv("data/ncos_aquatic_invertebrate_sampling_locations.cs
 sites_sf <-  st_as_sf(sampling_sites, coords = c("x", "y"), crs = 4326)
 
 #display interactive map
-mapview(sites_sf)
+mapview(sites_sf, map.types = "Esri.WorldImagery")
 
 #extract coordinates from sf object
 coords_matrix <- st_coordinates(sites_sf)
