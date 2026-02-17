@@ -73,9 +73,20 @@ water_quality <- read_excel(path = data_path,
                             na = c("", "n/a", "N/A")) %>%
   #make column names more user-friendly
   clean_names() %>%
+  #change m_s_cm conductivity column to numeric
+  mutate(conductivity_specific_m_s_cm = as.numeric(conductivity_specific_m_s_cm)) %>% 
   #times are being read as date-times, change to time in hms format (24 hr time)
   mutate(start_time = as_hms(start_time),
-         end_time = as_hms(end_time))
+         end_time = as_hms(end_time),
+         new_conductivity_u_s_cm = case_when(
+           #if micro column is blank, use milli
+           is.na(conductivity_specific_u_s_cm) ~ conductivity_specific_m_s_cm*1000,
+           .default = conductivity_specific_u_s_cm
+         )
+  ) %>% 
+  #move new column
+  relocate(new_conductivity_u_s_cm, .before = conductivity_specific_ppt)
+         
   
 
 #list site codes:
