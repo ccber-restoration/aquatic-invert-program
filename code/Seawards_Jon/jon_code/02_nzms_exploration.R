@@ -10,7 +10,7 @@ library(plotly)
 
 source("code/Seawards_Jon/jon_code/01_setup.R")
 
-# Exploratory Questions: (using: invert_data_nzm_separate)
+# Basic Stats ----
 
 # At what sites in NCOS has NZMS been detected and when? 
 invert_data_nzm_separate %>%
@@ -26,9 +26,11 @@ invert_data_nzm_separate %>%
 invert_data_nzm_separate %>%
   filter(nz_mudsnail > 1) %>%
   distinct(site)
-# 1 NPB2, NPB1, NPB  #
+# 1 NPB2, NPB1, NPB 
 
-#TODO What date was NZ mudsnail first detected?
+#What was the first obervation of NZ mudsnail in NCOS?
+invert_data_nzm_separate[which.min(invert_data_nzm_separate$date_on_vial), ]
+# date: 2022-08-08 , site: NPB2, Type: FB250 , Count: 43
 
 # When NZ Mudsnail invaded, what was their median organism density within a given sample?  (median number of organisms detected in a single positive sample)
 invert_data_nzm_separate %>%
@@ -36,8 +38,35 @@ invert_data_nzm_separate %>%
   pull(median_density)
 # 29.5 
 
-#TODO- consider plotting as a histogram (using ggplot)
+# Plots ----
+# What is the distribution of NZ Mudsnail abundance across all positive samples taken at NCOS?
 
+hist_nzm <- ggplot(data = invert_data_nzm_separate, aes(x = nz_mudsnail)) +
+  geom_histogram(binwidth = 80, color = "beige", fill = "steelblue") + 
+                   labs(
+                     title = "New Zealand Mudsnail Distribution Per Sample",
+                     x = "NZ Mudsnail Count",
+                     y = "Number of Samples")
+
+# data is very right skewed, normal for invasive species data but will log transform to attempt to improve normality
+
+hist_log_nzm <- ggplot(data = invert_data_nzm_separate, aes(x = log10(nz_mudsnail))) +
+  geom_histogram(binwidth = 0.35, color = "beige", fill = "steelblue") + 
+  labs(
+    title = "New Zealand Mudsnail Distribution Per Sample (Log Transformed)",
+    x = "NZ Mudsnail Count Log Scale",
+    y = "Number of Samples")
+
+#skew is still present but less pronounced
+
+#Dotplot visual of same trend
+dot_nzm <- ggplot(invert_data_nzm_separate,
+             aes(x = log10(nz_mudsnail))) +
+  geom_dotplot(binwidth = 0.15, dotsize = 1, stackratio = 1, fill = "steelblue") +
+  labs(
+    title = "NZ Mudsnail Counts per Sample",
+    x = "NZ Mudsnail count (log scale)",
+    y = "Number of samples")
 
 # What is the median NZ mudsnail density at each site with invasion presence? 
 invert_data_nzm_separate %>%
@@ -45,28 +74,67 @@ invert_data_nzm_separate %>%
   summarize(median_density = median(nz_mudsnail),
             n_samples = n())
 
-
+# sort by median density, descending. 
 invert_data_nzm_separate %>%
   group_by(site) %>%
   summarize(median_density = median(nz_mudsnail)) %>%
-  #sort by median density, descending
+  
+#plot of median NZ Mudsnail density by site
   arrange(-median_density) %>% 
   #overwrite site code, sorting by median density rather than alphabetical
   mutate(site = factor(site, levels = site)) %>% 
-  ggplot(aes(x = site, y = median_density)) +
-  geom_col() 
+  
+  #plot
+  dist_nzm <- ggplot(aes(x = site, y = median_density)) +
+  geom_col(color = "beige", fill = "steelblue") + 
+  labs(
+    title = "New Zealand Mudsnail Site Density",
+    x = "Site",
+    y = "Median Density") 
 
 
-# FHJ notes ggplot demo, assigning to variable (object) ----
-fig_temp_scatterplot <- ggplot(data = data_nzm_wq, aes(x = temperature_c, y = nz_mudsnail)) +
-  geom_point()
-
-fig_temp_scatterplot
-
-ggplotly(fig_temp_scatterplot)
-
+# Abundance vs Variables ----
+#temp
+temp_nzm <- ggplot(data = data_nzm_wq, aes(x = temperature_c, y = nz_mudsnail)) +
+  geom_point(color = "steelblue", fill = "steelblue") + 
+  labs(
+    title = "NZ Mudsnail Abundance vs Temperature",
+    x = "Temperature (celcius)",
+    y = "NZ Mudsnail")
+#ggplotly(temp_nzm)
 #check ranges of water quality variables...
 range(data_nzm_wq$temperature_c, na.rm = TRUE)
+#  9.2 24.9
+# 9.2, quite cold compared to other samples, was @ site NPB 
+
+#salinity
+sal_nzm <- ggplot(data = data_nzm_wq, aes(x = salinity_ppt, y = nz_mudsnail)) +
+  geom_point(color = "steelblue", fill = "steelblue") + 
+  labs(
+    title = "NZ Mudsnail Abundance vs Salinity",
+    x = "Salinity (ppt)",
+    y = "NZ Mudsnail")
+#ggplotly(sal_nzm)
+#check ranges of water quality variables...
+range(data_nzm_wq$salinity_ppt, na.rm = TRUE)
+# 1.4 39.2 WIDE RANGE, most obs between 0 and 5
+#ggplotly(sal_nzm)
+# two outliers were from MO1 (mouth) and NVB (vennoco bridge), both abundance and freqnency of 1
+
+#pH
+ph_nzm <- ggplot(data = data_nzm_wq, aes(x = p_h, y = nz_mudsnail)) +
+  geom_point(color = "steelblue", fill = "steelblue") + 
+  labs(
+    title = "NZ Mudsnail Abundance vs pH",
+    x = "pH",
+    y = "NZ Mudsnail")
+#ggplotly(ph_nzm)
+#check ranges of water quality variables...
+range(data_nzm_wq$p_h, na.rm = TRUE)
+# 7.08 9.56
+# two high obs @ 9.1 and 9.5 are the same obs as salinity outliers at MO1 and NVB
+# most are between 7.4 and 8.1
+
 
 # Exploratory Questions: (using: invert_data_nzm) ----
 
@@ -90,12 +158,6 @@ range(data_nzm_wq$temperature_c, na.rm = TRUE)
 # What is the ecological risk assessment of this invaison?
 
 # Areas for continued exploration? Unanswered questions and partially supported theories..
-
-
-
-#TODO:
-# 1. Use 'unique' fxn to answer exploratory questions
-# 3. Create exploratory figures
 
 #A few more tips:
 
