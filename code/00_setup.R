@@ -30,7 +30,10 @@ invert_data <- read_excel(path = data_path,
   #clean names
   clean_names() %>% 
   #remove columns, including columns that are (incomplete) summaries rather than raw data
-  select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number))
+  select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number)) %>% 
+  mutate(year = year(date_on_vial),
+         month = month(date_on_vial)) %>% 
+  relocate(year:month, .after = date_on_vial)
  
 # explore site codes...                                                        
 unique_sites <- unique(invert_data$site) 
@@ -76,7 +79,9 @@ water_quality <- read_excel(path = data_path,
   #change m_s_cm conductivity column to numeric
   mutate(conductivity_specific_m_s_cm = as.numeric(conductivity_specific_m_s_cm)) %>% 
   #times are being read as date-times, change to time in hms format (24 hr time)
-  mutate(start_time = as_hms(start_time),
+  mutate(year = year(date),
+         month = month(date),
+         start_time = as_hms(start_time),
          end_time = as_hms(end_time),
          new_conductivity_u_s_cm = case_when(
            #if micro column is blank, use milli
@@ -85,7 +90,8 @@ water_quality <- read_excel(path = data_path,
          )
   ) %>% 
   #move new column
-  relocate(new_conductivity_u_s_cm, .before = conductivity_specific_ppt)
+  relocate(new_conductivity_u_s_cm, .before = conductivity_specific_ppt) %>% 
+  relocate(year:month, .after = date)
          
   
 
