@@ -28,20 +28,17 @@ water_quality_NPB<-water_quality %>%
   mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l),
          conductivity_specific_m_s_cm = as.numeric(conductivity_specific_m_s_cm),
          salinity_ppt = as.numeric(salinity_ppt)) %>%
-  mutate(month=month(date),
-         season=case_when(
+  mutate(season=case_when(
            month %in% c(1,2,3) ~ "Winter",
            month %in% c(4,5,6) ~ "Spring",
            month %in% c(7,8,9) ~ "Summer",
            month %in% c(10,11,12) ~ "Fall")) %>%
-   relocate(month:season,.after = date)
+   relocate(season,.after = date)
 
 #filter invert data to just Phelps sites and dipnet samples
 invert_data_NPB<-invert_data%>%
   filter(site %in% phelps_site)%>%
   filter(sample_type %in% sample_SW)
-  
-
   
 
 # plot water quality over time by site ----
@@ -63,6 +60,8 @@ fig_phelps_temp <- ggplot(data = water_quality_NPB, aes(x = date, y = temperatur
   scale_x_datetime(date_breaks = "1 year", date_labels = "%Y")
   
 fig_phelps_temp
+
+ggplotly(fig_phelps_temp)
 
 ## DO -----
 
@@ -94,16 +93,19 @@ fig_phelps_pH
 ## conductivity ----
 
 #TODO- make conductivity units microSiemens/cm, not milliSiemens
-fig_phelps_cond <- ggplot(data = water_quality_NPB, aes(x = date, y = conductivity_specific_m_s_cm, group = site, color = site)) +
+# can just switch to new_conductivity column
+fig_phelps_cond <- ggplot(data = water_quality_NPB, aes(x = date, y = new_conductivity_u_s_cm, group = site, color = site)) +
   geom_point() +
   geom_line() +
   xlab("Date") +
-  ylab("Specific Conductivity (mS/cm)") +
+  ylab("Specific Conductivity (uS/cm)") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
-  ggtitle("Specific Conductivity (mS/cm) levels of Phelps Creek by Site")
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Specific Conductivity (uS/cm) levels of Phelps Creek by Site")
 
 fig_phelps_cond
+
+ggplotly(fig_phelps_cond)
 
 ## salinity ----
 
@@ -125,6 +127,23 @@ water_quality_NPB_winter <- water_quality_NPB %>%
 
 ## temp by season ----
 
+# what was the hottest temperature at each site, in each year?
+
+phelps_temp_extremes <- water_quality_NPB %>%
+  
+  group_by(site, year(date)) %>% 
+  summarize(max_temp = max(temperature_c, na.rm = TRUE),
+            min_temp = min(temperature_c, na.rm = TRUE),
+            n = n())
+
+#mean temperature by site and month (across years, note some small sample sizes)
+phelps_monthly_temp <- water_quality_NPB %>% 
+  group_by(site, month) %>% 
+  summarize(mean_temp = mean(temperature_c, na.rm = TRUE),
+            n = n())
+
+
+
 fig_phelps_temp_winter <- ggplot(data = water_quality_NPB_winter, aes(x = month, y = temperature_c, group = site, color = site)) +
   geom_point() +
   xlab("Month") +
@@ -132,7 +151,8 @@ fig_phelps_temp_winter <- ggplot(data = water_quality_NPB_winter, aes(x = month,
   theme_cowplot() +
   facet_wrap(vars(site), nrow = 3, scales = "free_y")+
   ggtitle("Temperature (C) levels of Phelps Creek by Site During Winter") +
-  scale_x_date(date_breaks="1 month")
+  scale_x_continuous(breaks = c(1,2,3))
+  #scale_x_date(date_breaks="1 month")
 
 fig_phelps_temp_winter
 
