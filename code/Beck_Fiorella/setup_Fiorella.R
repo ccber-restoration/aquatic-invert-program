@@ -118,13 +118,60 @@ fig_phelps_salt <- ggplot(data = water_quality_NPB, aes(x = date, y = salinity_p
 
 fig_phelps_salt
 
+# Plots by season ----
 
+water_quality_NPB_winter <- water_quality_NPB %>%
+  filter(season=="Winter")
+
+## temp by season ----
+
+fig_phelps_temp_winter <- ggplot(data = water_quality_NPB_winter, aes(x = month, y = temperature_c, group = site, color = site)) +
+  geom_point() +
+  xlab("Month") +
+  ylab("Temperature (C)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Temperature (C) levels of Phelps Creek by Site During Winter") +
+  scale_x_date(date_breaks="1 month")
+
+fig_phelps_temp_winter
+
+## DO by season ----
+
+fig_phelps_DO_winter <- ggplot(data = water_quality_NPB_winter, aes(x = month, y = dissolved_oxygen_mg_l, group = site, color = site)) +
+  geom_point() +
+  xlab("Month") +
+  ylab("Dissolved Oxygen (mg/L)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Dissolved Oxygen (mg/L) levels of Phelps Creek by Site During Winter") +
+  scale_x_date(date_breaks="1 month")
+
+fig_phelps_DO_winter
+
+fig_phelps_salinity_winter <- ggplot(data = water_quality_NPB_winter, aes(x = month, y = salinity_m_s_cm, group = site, color = site)) +
+  geom_point() +
+  xlab("Month") +
+  ylab("Dissolved Oxygen (mg/L)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Dissolved Oxygen (mg/L) levels of Phelps Creek by Site During Winter") +
+  scale_x_date(date_breaks="1 month")
+
+fig_phelps_salinity_winter
 
   
-# example code for writing to file as pdf
-#ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.pdf",
-       #plot= fig_phelps_temp,
-       #bg = "white")
+
+
+
+# example code for _writing to file as pdf
+ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
+       plot= fig_phelps_temp,
+
+       bg = "white")
+
+ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_DO_DRAFT.png", plot= fig_phelps_DO, bg = "white")
+
 
 
 
