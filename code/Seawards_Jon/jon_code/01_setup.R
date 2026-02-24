@@ -28,10 +28,6 @@ invert_data_nzm <- invert_data_clean %>%
 invert_data_nzm_separate <- invert_data_nzm %>%
   select(date_on_vial, site, sample_type, nz_mudsnail)
 
-#FIXME ^^ - sites are not consistently formatted, depth measurement should be factored to standard?, lots of N/A.. 
-
-# can use mutate with case_when to standardize factor (or character) level values (e.g. sample depths)
-
 
 #clean water_quality data, format as numeric
 water_quality_clean <- water_quality %>%
@@ -45,6 +41,8 @@ water_quality_clean <- water_quality %>%
                   salinity_ppt,
                   temperature_c,
                   barometric_pressure_mm_hg), as.numeric))
+
+#FIXME ^^ can use mutate with case_when to standardize factor (or character) level values (e.g. sample depths)
 
 #create data frame with NZMS occurrences and corresponding water quality
 data_nzm_wq <- invert_data_nzm_separate %>% 

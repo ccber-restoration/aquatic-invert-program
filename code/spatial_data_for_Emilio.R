@@ -12,6 +12,6 @@ spatial_invert_data <- invert_data %>%
 #write to file
 write_csv(x = spatial_invert_data, file = "data/for_Emilio/invert_data_spatial.csv")
 
-
+#Comment
 
 
