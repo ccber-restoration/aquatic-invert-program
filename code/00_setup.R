@@ -5,7 +5,7 @@ library(readxl) # read excel files
 library(janitor) # data cleaning
 library(hms) # for working with times (time of day)
 library(cowplot)
-library(ggplotly) #interactive graphs
+library(plotly) #interactive graphs
 
 #library(googlesheets4) # read in data from Google Sheets
 
