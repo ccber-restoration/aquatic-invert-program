@@ -11,8 +11,6 @@
 #                 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
 # run the general setup script ----
 source("code/00_setup.R")
 
@@ -61,7 +59,7 @@ fig_phelps_temp <- ggplot(data = water_quality_NPB, aes(x = date, y = temperatur
   
 fig_phelps_temp
 
-ggplotly(fig_phelps_temp)
+#ggplotly(fig_phelps_temp)
 
 ## DO -----
 
@@ -71,7 +69,7 @@ fig_phelps_DO <- ggplot(data = water_quality_NPB, aes(x = date, y = dissolved_ox
   xlab("Date") +
   ylab("Dissolved Oxygen (mg/L)") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3)+
+  #facet_wrap(vars(site), nrow = 3)+
   ggtitle("DO levels (mg/L) of Phelps Creek by Site")
   
 
@@ -85,7 +83,7 @@ fig_phelps_pH <- ggplot(data = water_quality_NPB, aes(x = date, y = p_h, group =
   xlab("Date") +
   ylab("pH") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3)+
+  #facet_wrap(vars(site), nrow = 3)+
   ggtitle("pH levels of Phelps Creek by Site") 
 
 fig_phelps_pH
@@ -105,7 +103,7 @@ fig_phelps_cond <- ggplot(data = water_quality_NPB, aes(x = date, y = new_conduc
 
 fig_phelps_cond
 
-ggplotly(fig_phelps_cond)
+#ggplotly(fig_phelps_cond)
 
 ## salinity ----
 
@@ -115,7 +113,7 @@ fig_phelps_salt <- ggplot(data = water_quality_NPB, aes(x = date, y = salinity_p
   xlab("Date") +
   ylab("Salinity (ppt)") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
   ggtitle("Salinity (ppt) levels of Phelps Creek by Site") 
 
 fig_phelps_salt
@@ -149,7 +147,7 @@ fig_phelps_temp_winter <- ggplot(data = water_quality_NPB_winter, aes(x = month,
   xlab("Month") +
   ylab("Temperature (C)") +
   theme_cowplot() +
-  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
   ggtitle("Temperature (C) levels of Phelps Creek by Site During Winter") +
   scale_x_continuous(breaks = c(1,2,3))
   #scale_x_date(date_breaks="1 month")
@@ -189,7 +187,6 @@ ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
        plot= fig_phelps_temp,
 
        bg = "white")
-
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_DO_DRAFT.png", plot= fig_phelps_DO, bg = "white")
 
 
