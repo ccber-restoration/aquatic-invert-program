@@ -122,7 +122,7 @@ fig_phelps_salt
 # Inverts ----
 ## Chironomid ----
 fig_phelps_chironomid <- ggplot(data = invert_data_NPB, aes(x = site, y = diptera_chironomid, group = site, color = site)) +
-  geom_boxplot() +
+  geom_boxplot()+
   xlab("Site") +
   ylab("Chironomid Abundance (count)") +
   theme_cowplot() +
@@ -169,6 +169,31 @@ fig_phelps_gastropod <- ggplot(data = invert_data_NPB, aes(x = site, y = gastrop
 
 fig_phelps_gastropod
 
+
+## Amphipod----
+
+fig_phelps_ampipod <- ggplot(data = invert_data_NPB, aes(x = site, y = amphipod, group = site, color = site)) +
+  geom_boxplot() +
+  xlab("Site") +
+  ylab("Amphipod Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Amphipod Abundance (count) by Site") 
+
+fig_phelps_ampipod
+
+
+## NZ mudsnail ------
+
+fig_phelps_nz_mudsnail <- ggplot(data = invert_data_NPB, aes(x = site, y = nz_mudsnail, group = site, color = site)) +
+  geom_boxplot() +
+  xlab("Site") +
+  ylab("New Zealand Mudsnail Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("New Zealand Mudsnail Abundance (count) by Site") 
+
+fig_phelps_nz_mudsnail
 
 # Plots by season ----
 
