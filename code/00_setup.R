@@ -34,7 +34,10 @@ invert_data <- read_excel(path = data_path,
   select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number)) %>% 
   mutate(year = year(date_on_vial),
          month = month(date_on_vial)) %>% 
-  relocate(year:month, .after = date_on_vial)
+  relocate(year:month, .after = date_on_vial) %>% 
+  #FIXME- replace NAs with 0s for ALL taxon abundance columns
+  mutate(ostracod = replace_na(ostracod, 0))
+  
  
 # explore site codes...                                                        
 unique_sites <- unique(invert_data$site) 
