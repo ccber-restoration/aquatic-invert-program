@@ -118,6 +118,58 @@ fig_phelps_salt <- ggplot(data = water_quality_NPB, aes(x = date, y = salinity_p
 
 fig_phelps_salt
 
+
+# Inverts ----
+## Chironomid ----
+fig_phelps_chironomid <- ggplot(data = invert_data_NPB, aes(x = site, y = diptera_chironomid, group = site, color = site)) +
+  geom_boxplot() +
+  xlab("Site") +
+  ylab("Chironomid Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Chironomid Abundance (count) by Site") 
+
+fig_phelps_chironomid
+
+## Copepod ----
+
+fig_phelps_copepod <- ggplot(data = invert_data_NPB, aes(x = site, y = copepod, group = site, color = site)) +
+  geom_boxplot() +
+  xlab("Site") +
+  ylab("Copepod Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Copepod Abundance (count) by Site") 
+
+fig_phelps_copepod
+
+## Ostracod ----
+
+
+fig_phelps_ostracod <- ggplot(data = invert_data_NPB, aes(x = site, y = ostracod, group = site, color = site)) +
+  geom_boxplot() +
+  xlab("Site") +
+  ylab("Ostracod Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Ostracod Abundance (count) by Site") 
+
+fig_phelps_ostracod
+
+## Gastropod ----
+
+
+fig_phelps_gastropod <- ggplot(data = invert_data_NPB, aes(x = site, y = gastropod_snail, group = site, color = site)) +
+  geom_boxplot() +
+  xlab("Site") +
+  ylab("Gastropod Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Gastropod Abundance (count) by Site") 
+
+fig_phelps_gastropod
+
+
 # Plots by season ----
 
 water_quality_NPB_winter <- water_quality_NPB %>%
