@@ -19,7 +19,7 @@ library(plotly) #interactive graphs
 #read in static excel file (will become outdated)
 
 #set to current version of Excel file
-data_path <- "data/Aquatic Sampling Data-2026-02-03.xlsx"
+data_path <- "data/Aquatic Sampling Data-2026-03-10.xlsx"
 
 # see list of sheets
 excel_sheets(data_path)
@@ -35,9 +35,9 @@ invert_data <- read_excel(path = data_path,
   mutate(year = year(date_on_vial),
          month = month(date_on_vial)) %>% 
   relocate(year:month, .after = date_on_vial) %>% 
-  #FIXME- replace NAs with 0s for ALL taxon abundance columns
-  mutate(ostracod = replace_na(ostracod, 0))
-  
+  #make taxon abundance columns numeric
+  mutate(across(c(coleoptera_sp, mollusk, larvae, crawfish), as.numeric)) %>% 
+  mutate(across(c(ostracod:unknown), ~ replace_na(.x, 0)))
  
 # explore site codes...                                                        
 unique_sites <- unique(invert_data$site) 
@@ -98,7 +98,6 @@ water_quality <- read_excel(path = data_path,
   relocate(year:month, .after = date)
          
   
-
 #list site codes:
 unique_sites_wq <- unique(water_quality$site)
 
