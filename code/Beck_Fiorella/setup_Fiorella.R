@@ -84,10 +84,18 @@ fig_phelps_temp <- ggplot(data = water_quality_NPB1, aes(x = date, y = temperatu
   theme_cowplot() +
   #facet_wrap(vars(site), nrow = 3) +
   ggtitle("Temperature (C) of Phelps Creek by Site") +
-  scale_x_datetime(date_breaks = "6 months", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) +
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) +
   scale_y_continuous(limits = c(9,21))
   
 fig_phelps_temp
+
+# example code for _writing to file as pdf
+ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_2026-03-11.pdf",
+       plot= fig_phelps_temp,
+       width = 6,
+       height = 4,
+       units = "in",
+       bg = "white")
 
 #ggplotly(fig_phelps_temp)
 
@@ -294,6 +302,7 @@ ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
        plot= fig_phelps_temp,
 
        bg = "white")
+
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_DO_DRAFT.png", plot= fig_phelps_DO, bg = "white")
 
 
