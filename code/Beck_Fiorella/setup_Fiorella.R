@@ -14,6 +14,20 @@
 # run the general setup script ----
 source("code/00_setup.R")
 
+#read in bioassessment data
+
+npb1_bioassessment_chemical <- read_csv("data/Fiorella_bioassessment_data/Bioassessment_Chemical_Data.csv") %>% 
+  clean_names()
+
+#we want to compare your measurements for temp, ph, DO, and salinity (and/or conductivity)
+
+#TODO- finish writing this to calculate means by sample point (Riffles 1, 2, 3)
+npb1_chemical_means <- npb1_bioassessment_chemical %>% 
+  group_by(sample_point) %>% 
+  summarize( mean_depth = mean(depth_m),
+             mean_temperature = mean(temperature_c))
+
+
 #list of Phelps Creek sampling sites
 phelps_site <-c("NPB","NPB1","NPB2")
 
@@ -21,7 +35,7 @@ phelps_site <-c("NPB","NPB1","NPB2")
 sample_SW<- c("SW250","SW500")
 
 #filter water quality data to just phelps sites
-water_quality_NPB<-water_quality %>%
+water_quality_NPB <- water_quality %>%
   filter(site %in% phelps_site) %>%
   mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l),
          conductivity_specific_m_s_cm = as.numeric(conductivity_specific_m_s_cm),
@@ -38,6 +52,18 @@ invert_data_NPB<-invert_data%>%
   filter(site %in% phelps_site)%>%
   filter(sample_type %in% sample_SW) 
   
+#filter from three Phelps sites to just NPB1
+water_quality_NPB1  <- water_quality_NPB %>% 
+  filter(site == "NPB1")
+
+#find mean winter quarter temp value
+
+winter_temp_mean <- water_quality_NPB1 %>% 
+  filter(season == "Winter") %>% 
+  summarize(mean_temp = mean(temperature_c),
+            median_temp = median(temperature_c))
+
+
 
 # plot water quality over time by site ----
 
@@ -47,17 +73,29 @@ invert_data_NPB<-invert_data%>%
 
 ## temp -----
 
-fig_phelps_temp <- ggplot(data = water_quality_NPB, aes(x = date, y = temperature_c, group = site, color = site)) +
+fig_phelps_temp <- ggplot(data = water_quality_NPB1, aes(x = date, y = temperature_c, group = site, color = site)) +
   geom_point() +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, color = site), shape = 17, size = 3) +
   geom_line() +
+  geom_hline(yintercept = winter_temp_mean$mean_temp, linetype = "dashed") +
+  geom_hline(yintercept = winter_temp_mean$median_temp) +
   xlab("Date") +
   ylab("Temperature (C)") +
   theme_cowplot() +
   #facet_wrap(vars(site), nrow = 3) +
   ggtitle("Temperature (C) of Phelps Creek by Site") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y")
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) +
+  scale_y_continuous(limits = c(9,21))
   
 fig_phelps_temp
+
+# example code for _writing to file as pdf
+ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_2026-03-11.pdf",
+       plot= fig_phelps_temp,
+       width = 6,
+       height = 4,
+       units = "in",
+       bg = "white")
 
 #ggplotly(fig_phelps_temp)
 
@@ -294,6 +332,7 @@ ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
        plot= fig_phelps_temp,
 
        bg = "white")
+
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_DO_DRAFT.png", plot= fig_phelps_DO, bg = "white")
 
 
