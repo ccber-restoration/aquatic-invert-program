@@ -36,7 +36,7 @@ water_quality_NPB<-water_quality %>%
 #filter invert data to just Phelps sites and dipnet samples
 invert_data_NPB<-invert_data%>%
   filter(site %in% phelps_site)%>%
-  filter(sample_type %in% sample_SW)
+  filter(sample_type %in% sample_SW) 
   
 
 # plot water quality over time by site ----
@@ -194,6 +194,36 @@ fig_phelps_nz_mudsnail <- ggplot(data = invert_data_NPB, aes(x = site, y = nz_mu
   ggtitle("New Zealand Mudsnail Abundance (count) by Site") 
 
 fig_phelps_nz_mudsnail
+
+#inverts over time
+
+## Copepod ----
+
+fig_phelps_copepod_time <- ggplot(data = invert_data_NPB, aes(x = year, y = copepod, group = site, color = site)) +
+  geom_point() +
+  #geom_line() +
+  xlab("Year") +
+  ylab("Copepod Abundance (count)") +
+  theme_cowplot() +
+  #facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Copepod Abundance (count) by Site") 
+
+fig_phelps_copepod_time
+
+## Chironomid ----
+fig_phelps_chironomid_time <- ggplot(data = invert_data_NPB, aes(x = year, y = diptera_chironomid, group = site, color = site)) +
+  geom_point() +
+  #geom_line() +
+  xlab("Site") +
+  ylab("Chironomid Abundance (count)") +
+  theme_cowplot() +
+  facet_wrap(vars(site), nrow = 3, scales = "free_y")+
+  ggtitle("Chironomid Abundance (count) by Site") 
+
+fig_phelps_chironomid_time
+
+
+
 
 # Plots by season ----
 
