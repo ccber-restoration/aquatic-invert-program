@@ -7,6 +7,7 @@
 # ============================================
 
 library(plotly)
+library(cowplot)
 
 source("code/Seawards_Jon/jon_code/01_setup.R")
 
@@ -109,17 +110,19 @@ invert_data_nzm_separate %>%
 # Abundance vs Variables ----
 #temp
 temp_nzm <- ggplot(data = data_nzm_wq, aes(x = temperature_c, y = nz_mudsnail, color = site)) +
-  geom_point() +
+  geom_point(size = 3) +
   #geom_point(color = "steelblue", fill = "steelblue") + 
   labs(
     title = "NZ Mudsnail Abundance vs Temperature",
     x = "Temperature (C)",
-    y = "NZ Mudsnail")
+    y = "Count") + theme_cowplot()
 
 #view
 ggplotly(temp_nzm)
-
 temp_nzm
+
+#save to file
+ggsave(filename = "figures/Seawards_Jon/temp_nzm.pdf", temp_nzm, width = 6, height = 4, units = "in")
 
 
 #check ranges of water quality variables...
