@@ -17,7 +17,8 @@ source("code/00_setup.R")
 #read in bioassessment data
 
 npb1_bioassessment_chemical <- read_csv("data/Fiorella_bioassessment_data/Bioassessment_Chemical_Data.csv") %>% 
-  clean_names()
+  clean_names() %>% 
+  mutate(label = "2026 Bioassessment")
 
 #we want to compare your measurements for temp, ph, DO, and salinity (and/or conductivity)
 
@@ -45,7 +46,8 @@ water_quality_NPB <- water_quality %>%
            month %in% c(4,5,6) ~ "Spring",
            month %in% c(7,8,9) ~ "Summer",
            month %in% c(10,11,12) ~ "Fall")) %>%
-   relocate(season,.after = date)
+   relocate(season,.after = date) %>% 
+  mutate(label = "Quarterly monitoring")
 
 #filter invert data to just Phelps sites and dipnet samples
 invert_data_NPB<-invert_data%>%
@@ -91,21 +93,24 @@ winter_cond_mean <- water_quality_NPB1 %>%
 
 ## temp -----
 
-fig_phelps_temp_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = temperature_c, group = site, color = site)) +
-  geom_point() +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, color = site), shape = 17, size = 3) +
-  geom_line() +
+fig_phelps_temp_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = temperature_c, shape = label)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, shape = label), size = 3, color = "royalblue3") +
+  # geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, color = site), shape = 17, size = 3) +
+  geom_line(color = "royalblue3") +
   geom_hline(yintercept = winter_temp_mean$mean_temp, linetype = "dashed") +
   geom_hline(yintercept = winter_temp_mean$median_temp) +
   xlab("Date") +
   ylab("Temperature (C)") +
   theme_cowplot() +
   #facet_wrap(vars(site), nrow = 3) +
-  ggtitle("Temperature (C) of Phelps Creek") +
+  ggtitle("Temperature (C) of Phelps Creek (NPB1)") +
   scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) +
   scale_y_continuous(limits = c(9,21))
 
 fig_phelps_temp_NPB1
+
+# ggsave call
 
 ## DO -----
 
@@ -141,6 +146,8 @@ fig_phelps_pH_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = p_h, g
 
 fig_phelps_pH_NPB1
 
+ggplotly(fig_phelps_pH_NPB1)
+
 ##conductivity ----
 
 fig_phelps_cond_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = new_conductivity_u_s_cm, group = site, color = site)) +
@@ -150,9 +157,9 @@ fig_phelps_cond_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = new_
   #geom_hline(yintercept = winter_temp_mean$mean_temp, linetype = "dashed") +
   #geom_hline(yintercept = winter_temp_mean$median_temp) +
   xlab("Date") +
-  ylab("Conductivity (us/cm)") +
+  ylab("Conductivity (uS/cm)") +
   theme_cowplot() +
-  ggtitle("Conductivity (us/cm) of Phelps Creek Over Time") +
+  ggtitle("Conductivity (uS/cm) of Phelps Creek Over Time") +
   scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") 
 #scale_y_continuous(limits = c(4,8))
 
