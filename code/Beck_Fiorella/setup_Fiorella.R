@@ -18,7 +18,7 @@ source("code/00_setup.R")
 
 npb1_bioassessment_chemical <- read_csv("data/Fiorella_bioassessment_data/Bioassessment_Chemical_Data.csv") %>% 
   clean_names() %>% 
-  mutate(label = "2026 Bioassessment")
+  mutate(label = "Bioassessment")
 
 #we want to compare your measurements for temp, ph, DO, and salinity (and/or conductivity)
 
@@ -47,7 +47,7 @@ water_quality_NPB <- water_quality %>%
            month %in% c(7,8,9) ~ "Summer",
            month %in% c(10,11,12) ~ "Fall")) %>%
    relocate(season,.after = date) %>% 
-  mutate(label = "Quarterly monitoring")
+  mutate(label = "Quarterly \nmonitoring")
 
 #filter invert data to just Phelps sites and dipnet samples
 invert_data_NPB<-invert_data%>%
@@ -111,6 +111,12 @@ fig_phelps_temp_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = temp
 fig_phelps_temp_NPB1
 
 # ggsave call
+ggsave(filename = "figures/Beck_Fiorella/NPB1_temp.pdf",
+       plot = fig_phelps_temp_NPB1,
+       width = 6,
+       height = 4,
+       units = "in")
+
 
 ## DO -----
 
