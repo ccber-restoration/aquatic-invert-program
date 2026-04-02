@@ -70,10 +70,16 @@ winter_DO_mean <- water_quality_NPB1 %>%
   summarize(mean_DO = mean(dissolved_oxygen_mg_l),
             median_DO = median(dissolved_oxygen_mg_l))
 
+
 winter_pH_mean <- water_quality_NPB1 %>% 
   filter(season == "Winter") %>% 
   summarize(mean_pH = mean(p_h),
             median_pH = median(p_h))
+
+winter_cond_mean <- water_quality_NPB1 %>% 
+  filter(season == "Winter") %>% 
+  summarize(mean_cond = mean(new_conductivity_u_s_cm),
+            median_cond = median(new_conductivity_u_s_cm))
 
 
 winter_sal_mean <- water_quality_NPB1 %>% 
@@ -81,10 +87,6 @@ winter_sal_mean <- water_quality_NPB1 %>%
   summarize(mean_sal = mean(salinity_ppt),
             median_sal = median(salinity_ppt))
 
-winter_cond_mean <- water_quality_NPB1 %>% 
-  filter(season == "Winter") %>% 
-  summarize(mean_cond = mean(new_conductivity_u_s_cm),
-            median_sal = median(new_conductivity_u_s_cm))
 
 #find mean winter quarter temp value
 
@@ -95,7 +97,7 @@ winter_cond_mean <- water_quality_NPB1 %>%
 
 fig_phelps_temp_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = temperature_c, shape = label)) +
   geom_point(color = "royalblue3") +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, shape = label), size = 3, color = "royalblue3") +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, shape = label), size = 2, color = "royalblue3") +
   # geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = temperature_c, color = site), shape = 17, size = 3) +
   geom_line(color = "royalblue3") +
   geom_hline(yintercept = winter_temp_mean$mean_temp, linetype = "dashed") +
@@ -120,93 +122,74 @@ ggsave(filename = "figures/Beck_Fiorella/NPB1_temp.pdf",
 
 ## DO -----
 
-fig_phelps_DO_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = dissolved_oxygen_mg_l, group = site, color = site)) +
-  geom_point() +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = do_mg_l, color = site), shape = 17, size = 3) +
-  geom_line() +
+fig_phelps_DO_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = dissolved_oxygen_mg_l, shape = label)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = do_mg_l, shape = label), size = 2, color = "royalblue3") +
+  geom_line(color = "royalblue3") +
   geom_hline(yintercept = winter_DO_mean$mean_DO, linetype = "dashed") +
-  geom_hline(yintercept = winter_temp_mean$median_temp) +
+  geom_hline(yintercept = winter_DO_mean$median_DO) +
   xlab("Date") +
   ylab("Dissolved Oxygen (mg/l)") +
   theme_cowplot() +
   ggtitle("Dissolved Oxygen (mg/l) of Phelps Creek") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") +
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) +
   scale_y_continuous(limits = c(0,12))
 
 fig_phelps_DO_NPB1
 
 ## pH -----
 
-fig_phelps_pH_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = p_h, group = site, color = site)) +
-  geom_point() +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = p_h, color = site), shape = 17, size = 3) +
-  geom_line() +
+fig_phelps_pH_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = p_h, shape = label)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = p_h, shape = label), size = 2, color = "royalblue3") +
+  geom_line(color = "royalblue3") +
   geom_hline(yintercept = winter_pH_mean$mean_pH, linetype = "dashed") +
   geom_hline(yintercept = winter_pH_mean$median_pH) +
   xlab("Date") +
   ylab("pH") +
   theme_cowplot() +
   ggtitle("pH of Phelps Creek Over Time") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") 
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
   #scale_y_continuous(limits = c(4,8))
 
 fig_phelps_pH_NPB1
 
-ggplotly(fig_phelps_pH_NPB1)
+#ggplotly(fig_phelps_pH_NPB1)
 
 ##conductivity ----
 
-fig_phelps_cond_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = new_conductivity_u_s_cm, group = site, color = site)) +
-  geom_point() +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = conductivity_u_s_cm, color = site), shape = 17, size = 3) +
-  geom_line() +
-  #geom_hline(yintercept = winter_temp_mean$mean_temp, linetype = "dashed") +
-  #geom_hline(yintercept = winter_temp_mean$median_temp) +
+fig_phelps_cond_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = new_conductivity_u_s_cm, shape = label)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = conductivity_u_s_cm, shape = label), size = 2, color = "royalblue3") +
+  geom_line(color = "royalblue3") +
+  geom_hline(yintercept = winter_cond_mean$mean_cond, linetype = "dashed") +
+  geom_hline(yintercept = winter_cond_mean$median_cond) +
   xlab("Date") +
   ylab("Conductivity (uS/cm)") +
   theme_cowplot() +
   ggtitle("Conductivity (uS/cm) of Phelps Creek Over Time") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") 
-#scale_y_continuous(limits = c(4,8))
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") +
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
+
 
 fig_phelps_cond_NPB1
 
 
 ## salinity ----
 
-fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = salinity_ppt, group = site, color = site)) +
-  geom_point() +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = salinity_ppt, color = site), shape = 17, size = 3) +
-  geom_line() +
+fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = salinity_ppt, shape = label)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = salinity_ppt, shape = label), size = 2, color = "royalblue3") +
+  geom_line(color = "royalblue3") +
   geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
   geom_hline(yintercept = winter_sal_mean$median_sal) +
   xlab("Date") +
   ylab("Salinity (ppt)") +
   theme_cowplot() +
   ggtitle("Salinity (ppt) of Phelps Creek Over Time") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") 
-#scale_y_continuous(limits = c(4,8))
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
 
 fig_phelps_salinity_NPB1
-
-
-## conductivity ----
-
-fig_phelps_conductivity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = salinity_ppt, group = site, color = site)) +
-  geom_point() +
-  geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = conductivity_u_s_cm, color = site), shape = 17, size = 3) +
-  geom_line() +
-  geom_hline(yintercept = winter_cond_mean$mean_cond, linetype = "dashed") +
-  geom_hline(yintercept = winter_cond_mean$median_cond) +
-  xlab("Date") +
-  ylab("Conductivity (us/cm)") +
-  theme_cowplot() +
-  ggtitle("Conductivity (us/cm) of Phelps Creek Over Time") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") 
-#scale_y_continuous(limits = c(4,8))
-
-fig_phelps_conductivity_NPB1
-
 
 
 # plot water quality over time by site ----
