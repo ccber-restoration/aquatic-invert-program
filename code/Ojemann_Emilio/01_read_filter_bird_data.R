@@ -36,4 +36,14 @@ vp_bird_summary <- vp_birds %>%
   group_by(species) %>% 
   summarize(total_count = sum(count))
 
+# East and West branches, with incoming southern branch
+
+st_crs(E_W_Main_Zones)
+e_w_s_zones_sf <- E_W_Main_Zones |> 
+  st_transform(crs = 4326)
+
+ews_birds <- ncos_aquatic_birds_sf[e_w_s_zones_sf,]
+mapview(ews_birds, map.type = "Esri.WorldImagery")
+
+# TODO summarize counts
 
