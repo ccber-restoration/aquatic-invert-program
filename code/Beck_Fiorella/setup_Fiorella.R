@@ -211,12 +211,12 @@ fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = 
   #geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
   #geom_hline(yintercept = winter_sal_mean$median_sal) +
   geom_hline(yintercept = 0.5) +
-  #annotate("text", x=2025, y=0.6, label="High end ideal") +
+  annotate("text", x=as.POSIXct("2024-01-01"), y=0.65, label="upper range of freshwater") +
   xlab("Date") +
   ylab("Salinity (ppt)") +
-  theme_cowplot()
+  theme_cowplot() +
   #ggtitle("Salinity (ppt) of Phelps Creek Over Time") 
-  #scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
 
 fig_phelps_salinity_NPB1
 
