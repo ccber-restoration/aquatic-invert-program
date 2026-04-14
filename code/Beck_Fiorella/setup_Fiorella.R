@@ -237,12 +237,18 @@ npb1_invert_abundance <- npb1_invert_abundance %>%
 npb1_invert_abundance_long <- npb1_invert_abundance %>%
   pivot_longer(cols = -riffle_number,
                names_to = "species",
-               values_to = "abundance")
+               values_to = "abundance") %>% 
+  mutate(species = fct_reorder(species, abundance, .desc = TRUE))
 
-boxplot_inverte_type<-ggplot(npb1_invert_abundance_long, aes(x = fct_reorder(species, abundance, .desc = TRUE), y = abundance, fill = riffle_number, group = riffle_number)) +
+levels(npb1_invert_abundance_long$species)
+
+
+boxplot_inverte_type <- ggplot(npb1_invert_abundance_long, aes(x = species, y = abundance, fill = riffle_number, group = riffle_number)) +
   geom_bar(stat = "identity", color = "black") +
-  labs(x = "Invertebrate Type", y = "Abundance (count)") +
-  theme_cowplot()
+  labs(x = "Invertebrate Type", y = "Abundance (count)", fill = "Riffle number") +
+  
+  #facet_wrap(vars(riffle_number)) +
+  theme_cowplot() 
 
 boxplot_inverte_type
 
