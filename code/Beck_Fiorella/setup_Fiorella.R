@@ -205,26 +205,31 @@ ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_cond.pdf",
 ## salinity ----
 
 fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = salinity_ppt, shape = label)) +
-  geom_point(color = "royalblue3") +
+  geom_hline(yintercept = 0.5, linetype = "dashed") +
+   geom_point(color = "royalblue3") +
   geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = salinity_ppt, shape = label), size = 2, color = "royalblue3") +
   geom_line(color = "royalblue3") +
   #geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
   #geom_hline(yintercept = winter_sal_mean$median_sal) +
-  geom_hline(yintercept = 0.5) +
-  #annotate("text", x=2025, y=0.6, label="High end ideal") +
+ 
+  annotate("text", x=as.POSIXct("2024-01-01"), y=0.65, label="upper range of freshwater") +
   xlab("Date") +
   ylab("Salinity (ppt)") +
-  theme_cowplot()
+  labs(shape = "Data source") +
+  theme_cowplot() +
   #ggtitle("Salinity (ppt) of Phelps Creek Over Time") 
-  #scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) 
+  # demo font customization: 
+  # theme(text = element_text(family = "Avenir"))
 
 fig_phelps_salinity_NPB1
 
-
-ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_sal.pdf",
+# when saving as png, add the bg argument (for background), default is transparent (alpha)
+ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_sal_URCA.png",
        plot = fig_phelps_salinity_NPB1,
        width = 6,
        height = 4,
+       bg = "white",
        units = "in")
 
 # Bar Graph of invertebrate abundance  ----
@@ -237,12 +242,18 @@ npb1_invert_abundance <- npb1_invert_abundance %>%
 npb1_invert_abundance_long <- npb1_invert_abundance %>%
   pivot_longer(cols = -riffle_number,
                names_to = "species",
-               values_to = "abundance")
+               values_to = "abundance") %>% 
+  mutate(species = fct_reorder(species, abundance, .desc = TRUE))
 
-boxplot_inverte_type<-ggplot(npb1_invert_abundance_long, aes(x = fct_reorder(species, abundance, .desc = TRUE), y = abundance, fill = riffle_number, group = riffle_number)) +
+levels(npb1_invert_abundance_long$species)
+
+
+boxplot_inverte_type <- ggplot(npb1_invert_abundance_long, aes(x = species, y = abundance, fill = riffle_number, group = riffle_number)) +
   geom_bar(stat = "identity", color = "black") +
-  labs(x = "Invertebrate Type", y = "Abundance (count)") +
-  theme_cowplot()
+  labs(x = "Invertebrate Type", y = "Abundance (count)", fill = "Riffle number") +
+  
+  #facet_wrap(vars(riffle_number)) +
+  theme_cowplot() 
 
 boxplot_inverte_type
 
