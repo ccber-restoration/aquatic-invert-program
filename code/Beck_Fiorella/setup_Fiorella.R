@@ -218,7 +218,9 @@ fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = 
   labs(shape = "Data source") +
   theme_cowplot() +
   #ggtitle("Salinity (ppt) of Phelps Creek Over Time") 
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
+  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) 
+  # demo font customization: 
+  # theme(text = element_text(family = "Avenir"))
 
 fig_phelps_salinity_NPB1
 
