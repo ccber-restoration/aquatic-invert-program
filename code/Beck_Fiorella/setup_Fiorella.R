@@ -205,12 +205,13 @@ ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_cond.pdf",
 ## salinity ----
 
 fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = salinity_ppt, shape = label)) +
-  geom_point(color = "royalblue3") +
+  geom_hline(yintercept = 0.5, linetype = "dashed") +
+   geom_point(color = "royalblue3") +
   geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = salinity_ppt, shape = label), size = 2, color = "royalblue3") +
   geom_line(color = "royalblue3") +
   #geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
   #geom_hline(yintercept = winter_sal_mean$median_sal) +
-  geom_hline(yintercept = 0.5) +
+ 
   annotate("text", x=as.POSIXct("2024-01-01"), y=0.65, label="upper range of freshwater") +
   xlab("Date") +
   ylab("Salinity (ppt)") +
@@ -221,11 +222,12 @@ fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = 
 
 fig_phelps_salinity_NPB1
 
-
-ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_sal.pdf",
+# when saving as png, add the bg argument (for background), default is transparent (alpha)
+ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_sal_URCA.png",
        plot = fig_phelps_salinity_NPB1,
        width = 6,
        height = 4,
+       bg = "white",
        units = "in")
 
 # Bar Graph of invertebrate abundance  ----
