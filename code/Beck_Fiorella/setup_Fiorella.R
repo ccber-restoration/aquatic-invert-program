@@ -29,6 +29,11 @@ npb1_chemical_means <- npb1_bioassessment_chemical %>%
              mean_temperature = mean(temperature_c))
 
 
+npb1_invert_abundance <- read_csv("data/Fiorella_bioassessment_data/Invertebrate_abundance.csv") %>%
+  clean_names()
+  
+
+
 #list of Phelps Creek sampling sites
 phelps_site <-c("NPB","NPB1","NPB2")
 
@@ -84,8 +89,12 @@ winter_cond_mean <- water_quality_NPB1 %>%
 
 winter_sal_mean <- water_quality_NPB1 %>% 
   filter(season == "Winter") %>% 
+  drop_na(salinity_ppt) %>%
   summarize(mean_sal = mean(salinity_ppt),
             median_sal = median(salinity_ppt))
+
+
+  
 
 
 #find mean winter quarter temp value
@@ -106,7 +115,7 @@ fig_phelps_temp_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = temp
   ylab("Temperature (C)") +
   theme_cowplot() +
   #facet_wrap(vars(site), nrow = 3) +
-  ggtitle("Temperature (C) of Phelps Creek (NPB1)") +
+  #ggtitle("Temperature (C) of Phelps Creek (NPB1)") +
   scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01"))) +
   scale_y_continuous(limits = c(9,21))
 
@@ -137,6 +146,12 @@ fig_phelps_DO_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = dissol
 
 fig_phelps_DO_NPB1
 
+ggsave(filename = "figures/Beck_Fiorella/NPB1_DO.pdf",
+       plot = fig_phelps_DO_NPB1,
+       width = 6,
+       height = 4,
+       units = "in")
+
 ## pH -----
 
 fig_phelps_pH_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = p_h, shape = label)) +
@@ -154,6 +169,12 @@ fig_phelps_pH_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = p_h, s
 
 fig_phelps_pH_NPB1
 
+ggsave(filename = "figures/Beck_Fiorella/NPB1_pH.pdf",
+       plot = fig_phelps_pH_NPB1,
+       width = 6,
+       height = 4,
+       units = "in")
+
 #ggplotly(fig_phelps_pH_NPB1)
 
 ##conductivity ----
@@ -168,12 +189,18 @@ fig_phelps_cond_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = new_
   ylab("Conductivity (uS/cm)") +
   theme_cowplot() +
   ggtitle("Conductivity (uS/cm) of Phelps Creek Over Time") +
+  guides( shape=guide_legend(title = "Data source")) +
   scale_x_datetime(date_breaks = "1 year", date_labels = "%Y") +
   scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
 
 
 fig_phelps_cond_NPB1
 
+ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_cond.pdf",
+       plot = fig_phelps_cond_NPB1,
+       width = 6,
+       height = 4,
+       units = "in")
 
 ## salinity ----
 
@@ -181,16 +208,64 @@ fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = 
   geom_point(color = "royalblue3") +
   geom_point(data = npb1_bioassessment_chemical, aes(x = date, y = salinity_ppt, shape = label), size = 2, color = "royalblue3") +
   geom_line(color = "royalblue3") +
-  geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
-  geom_hline(yintercept = winter_sal_mean$median_sal) +
+  #geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
+  #geom_hline(yintercept = winter_sal_mean$median_sal) +
+  geom_hline(yintercept = 0.5) +
+  #annotate("text", x=2025, y=0.6, label="High end ideal") +
   xlab("Date") +
   ylab("Salinity (ppt)") +
-  theme_cowplot() +
-  ggtitle("Salinity (ppt) of Phelps Creek Over Time") +
-  scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
+  theme_cowplot()
+  #ggtitle("Salinity (ppt) of Phelps Creek Over Time") 
+  #scale_x_datetime(date_breaks = "1 year", date_labels = "%Y", limits = c(as.POSIXct("2022-01-01"), as.POSIXct("2027-01-01")))
 
 fig_phelps_salinity_NPB1
 
+
+ggplot2::ggsave(filename = "figures/Beck_Fiorella/NPB1_sal.pdf",
+       plot = fig_phelps_salinity_NPB1,
+       width = 6,
+       height = 4,
+       units = "in")
+
+# Bar Graph of invertebrate abundance  ----
+
+npb1_invert_abundance <- npb1_invert_abundance %>%
+  mutate(other = beetle + unknown) %>%
+  select(-beetle, -unknown) 
+  
+
+npb1_invert_abundance_long <- npb1_invert_abundance %>%
+  pivot_longer(cols = -riffle_number,
+               names_to = "species",
+               values_to = "abundance")
+
+boxplot_inverte_type<-ggplot(npb1_invert_abundance_long, aes(x = fct_reorder(species, abundance, .desc = TRUE), y = abundance, fill = riffle_number, group = riffle_number)) +
+  geom_bar(stat = "identity", color = "black") +
+  labs(x = "Invertebrate Type", y = "Abundance (count)") +
+  theme_cowplot()
+
+boxplot_inverte_type
+
+ggplot2::ggsave(filename = "figures/Beck_Fiorella/boxplot.pdf",
+       plot =boxplot_inverte_type,
+       width = 6,
+       height = 4,
+       units = "in")
+
+
+# plot of invert abundance  ----
+
+## chironomids  ---- 
+
+fig_npb1_chironomid <- ggplot(data = invert_data_NPB, aes(x = site, y = diptera_chironomid, group = site, color = site)) +
+  geom_boxplot() +
+  geom_boxplot(data = npb1_invert_abundance, aes(x = site, y = diptera_chironomid, group = site, color = site)) +
+  xlab("Site") +
+  ylab("Chironomid Abundance (count)") +
+  theme_cowplot() +
+  ggtitle("Chironomid Abundance (count) by Site") 
+  
+fig_npb1_chironomid 
 
 # plot water quality over time by site ----
 
