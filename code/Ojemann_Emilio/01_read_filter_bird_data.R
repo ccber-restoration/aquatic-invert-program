@@ -19,6 +19,7 @@ mapview(ncos_aquatic_birds_sf,
         col.regions = "red"
 )
 
+
 # Vernal Pools ----
 
 #check coordinate reference system of VernalPools polygon
@@ -124,3 +125,12 @@ e_w_branches_bird_summary <- e_w_branches_birds |>
   summarize(total_count = sum(count))
 
 ncos_aquatic_birds_sf
+
+# Combine all zone geometries into one:
+
+zone_union <- st_union(VernalPools, Phelps) %>% 
+  st_union(Ponds) %>% 
+  st_union(whole_slough)
+  
+
+mapview(zone_union)
