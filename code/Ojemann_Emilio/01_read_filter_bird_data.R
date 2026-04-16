@@ -19,6 +19,43 @@ mapview(ncos_aquatic_birds_sf,
         col.regions = "red"
 )
 
+# filter bird observations to those from any aquatic sampling zone
+
+st_crs(zone_union)
+
+# All Zones ----
+# filter birds to ALL aquatic zones 
+
+# Combine all zone geometries into one and filter corresponding bird data ---
+
+zone_union <- st_union(VernalPools, Phelps) %>% 
+  st_union(Ponds) %>% 
+  st_union(whole_slough)
+
+#map zones
+mapview(zone_union)
+
+# check coordinate system of zones
+st_crs(zone_union)
+
+# create new object with reprojected zones
+zone_union_sf <- zone_union %>% 
+  st_transform(crs = 4326)
+
+# filter bird data spatially (i.e. only keep observations (rows) within the aquatic sampling zones)
+aquatic_zone_birds <- ncos_aquatic_birds_sf[zone_union_sf,]
+
+# view
+mapview(aquatic_zone_birds)
+
+sp_all <- unique(aquatic_zone_birds$species)
+
+
+#now summarize the total count for each bird species
+all_zones_bird_summary <- aquatic_zone_birds %>% 
+  group_by(species) %>% 
+  summarize(total_count = sum(count))
+
 
 # Vernal Pools ----
 
@@ -126,11 +163,4 @@ e_w_branches_bird_summary <- e_w_branches_birds |>
 
 ncos_aquatic_birds_sf
 
-# Combine all zone geometries into one:
 
-zone_union <- st_union(VernalPools, Phelps) %>% 
-  st_union(Ponds) %>% 
-  st_union(whole_slough)
-  
-
-mapview(zone_union)
