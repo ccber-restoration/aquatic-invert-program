@@ -1,8 +1,11 @@
 #note: this script relies on objects loaded by get_zones_FJ.R
 
+# Load data ----
+source("code/Ojemann_Emilio/get_zones_FJ.R")
+
 # GOAL: read in bird data from csv, then filter based on zone polygons
 
-#read in ncos bird data for 2023-2025
+#read in ncos bird data for 2023-2025 
 ncos_aquatic_birds_sf <- read_csv(file = "data/for_Emilio/aquatic_bird_observations_2023_2025.csv") %>% 
   st_as_sf(coords = c("x", "y")) %>% 
   #assign WGS84 (not projected)
@@ -74,7 +77,6 @@ phelps_bird_summary <- phelps_birds |>
   summarize(total_count = sum(count))
 
 # Lower Dev. Slough ---- 
-
 st_crs(Lower_Slough)
 lower_slough_sf <- Lower_Slough |> 
   st_transform(crs = 4326)
