@@ -1,7 +1,7 @@
 #note: this script relies on objects loaded by get_zones_FJ.R
 
 # Load data ----
-source("code/Ojemann_Emilio/get_zones_FJ.R")
+source("code/Ojemann_Emilio/00_get_zones_FJ.R")
 
 # GOAL: read in bird data from csv, then filter based on zone polygons
 
@@ -20,8 +20,6 @@ mapview(ncos_aquatic_birds_sf,
 )
 
 # filter bird observations to those from any aquatic sampling zone
-
-st_crs(zone_union)
 
 # All Zones ----
 # filter birds to ALL aquatic zones 
@@ -81,6 +79,9 @@ mapview(vp_birds, map.type = "Esri.WorldImagery")
 vp_bird_summary <- vp_birds %>% 
   group_by(species) %>% 
   summarize(total_count = sum(count))
+
+vp_bird_vector <- vp_bird_summary %>% 
+  pull(species)
 
 # Entire Slough: East and West branches, with incoming Southern branch ----
 
