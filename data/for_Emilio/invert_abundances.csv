@@ -1,0 +1,37 @@
+taxon,invert_taxon,zone,n_samples,mean_count,median_count,max_count,ln_count
+annelida_oligochaete,Oligochaeta,NPB,25,1.32,0,10,0.8415671856782188
+annelida_oligochaete,Oligochaeta,main slough,15,2.67,0,34,1.3001916620664788
+annelida_oligochaete,Oligochaeta,pond,5,0,0,0,0
+annelida_oligochaete,Oligochaeta,vernal pool,2,4.5,4.5,9,1.7047480922384253
+cladocera,Cladocera,NPB,25,12.68,0,114,2.615934912194404
+cladocera,Cladocera,main slough,15,1.93,0,29,1.0750024230289759
+cladocera,Cladocera,pond,5,29.4,0,105,3.414442608412176
+cladocera,Cladocera,vernal pool,2,444.5,444.5,889,6.099197246910864
+copepod,Copepoda,NPB,25,135.28,29,1606,4.914711592792766
+copepod,Copepoda,main slough,15,5,0,52,1.791759469228055
+copepod,Copepoda,pond,5,42.6,40,95,3.775057150354989
+copepod,Copepoda,vernal pool,2,75.5,75.5,86,4.33729074083249
+diptera_ceratopogonidae,Ceratopogonidae,NPB,25,1.08,0,12,0.7323678937132266
+diptera_ceratopogonidae,Ceratopogonidae,main slough,15,4.8,0,66,1.7578579175523736
+diptera_ceratopogonidae,Ceratopogonidae,pond,5,3,0,15,1.3862943611198906
+diptera_ceratopogonidae,Ceratopogonidae,vernal pool,2,1.5,1.5,2,0.9162907318741551
+diptera_chironomid,Chironimidae,NPB,25,7.12,3,43,2.0943301541735866
+diptera_chironomid,Chironimidae,main slough,15,2.67,1,23,1.3001916620664788
+diptera_chironomid,Chironimidae,pond,5,10.2,11,23,2.4159137783010487
+diptera_chironomid,Chironimidae,vernal pool,2,73,73,116,4.30406509320417
+diptera_ephydridae,Ephydridae,NPB,25,0.08,0,1,0.0769610411361284
+diptera_ephydridae,Ephydridae,main slough,15,0,0,0,0
+diptera_ephydridae,Ephydridae,pond,5,0,0,0,0
+diptera_ephydridae,Ephydridae,vernal pool,2,0,0,0,0
+hemiptera_corixidae_boatman,Corixidae,NPB,25,0.48,0,10,0.3920420877760237
+hemiptera_corixidae_boatman,Corixidae,main slough,15,38.33,4,305,3.671987586443718
+hemiptera_corixidae_boatman,Corixidae,pond,5,10,5,25,2.3978952727983707
+hemiptera_corixidae_boatman,Corixidae,vernal pool,2,0.5,0.5,1,0.4054651081081644
+nematode,Nematoda,NPB,25,5.68,0,101,1.8991179875485542
+nematode,Nematoda,main slough,15,0.27,0,2,0.23901690047049992
+nematode,Nematoda,pond,5,0,0,0,0
+nematode,Nematoda,vernal pool,2,1,1,2,0.6931471805599453
+ostracod,Ostracoda,NPB,25,68.56,49,235,4.242189689486082
+ostracod,Ostracoda,main slough,15,24.8,0,125,3.250374491927572
+ostracod,Ostracoda,pond,5,140,112,262,4.948759890378168
+ostracod,Ostracoda,vernal pool,2,538,538,912,6.289715570908998
