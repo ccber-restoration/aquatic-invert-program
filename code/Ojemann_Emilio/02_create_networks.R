@@ -35,8 +35,6 @@ trophic_links <- read_xlsx(path = links_path, sheet = "trophic links") |>
 birds <- unique(trophic_links$bird_species)
 inverts <- unique(trophic_links$invert_taxon)
 
-#TODO- finish creating vectors of bird species lists 
-# then filter those to ones that in the trophic link data
 
 # for vernal pool birds
 vp_birds_invertivorous <- vp_bird_summary %>% 
@@ -65,7 +63,7 @@ tl_matrix <- trophic_links %>%
   as.matrix()
 
 # convert the 2-column matrix to igraph network graph
-# undirected graph
+# undirected graph for representing overlap of diets
 trophic_network <- graph_from_edgelist(tl_matrix, directed = FALSE)
 
 # convert object to adjacency matrix
@@ -112,11 +110,11 @@ plotweb(web = matrix_subset_ponds, text_size =0.8, horizontal = TRUE)
 dev.off()
 
 
-### matrix subset for overall Dev. Slough  ----
+### matrix subset for EWS (overall Dev. Slough)  ----
 
 matrix_subset_ews <- adj_matrix[ews_birds_invertivorous$species, inverts]
 
-# open png graphics
+# open png graphics 
 png(file = "figures/Ojemann_Emilio/invert_network_ews.png", width = 600, height = 900, units = "px", res = 100)
 
 # plot
@@ -125,6 +123,24 @@ plotweb(web = matrix_subset_ews, text_size =0.8, horizontal = TRUE)
 # close png
 dev.off()
 
+
+#TODO- filter invertebrate nodes to taxa actually present at sampling sites
 #continue filling out trophic links data
-#create draft network viz based on existing data
+#create draft network viz based on existing data 
+#
+# Abundance data needed to create a weighted matrix
+# link width = size of interaction
+# Utilize plotweb() to get weight
+# 
+# Looking at:
+# Habitats supporting the most involved networks
+# Vernal pools vs. ponds vs. slough
+# What taxa are seen everywhere, what taxa are not?
+# 
+# Bigger next steps:
+### Seasonal breakdown
+### Revisit time period availability
+### What new data do we have to add?
+### Can we do any prediction/simulation with the data?
+### Poster/visualizing -- story map? interactive map? what figures best display the results we have
 
