@@ -69,22 +69,94 @@ trophic_network <- graph_from_edgelist(tl_matrix, directed = FALSE)
 # convert object to adjacency matrix
 adj_matrix <- as_adjacency_matrix(trophic_network, sparse=FALSE)
 
-### matrix_subset for vernal pools ----
+# ~~~~~~~~~~~~~~~~~~~~~~~ ----
+
+# Visualize Networks ----
+
+# See the documentation, in particular adding independent abundances and coloring links:
+
+# https://cran.r-project.org/web/packages/bipartite/vignettes/PlottingWithBipartite.html
+
+# Essentially you need a vector of abundances for each subset of taxa (inverts & birds)
+
+# invert abundances are calculated in the "focal_taxa_abundances_by_habitat.R" script and saved to file as invert_abundances.csv
+
+# load in intert abundances ----
+
+invert_abundances <- read_csv("data/for_Emilio/invert_abundances.csv")
+
+invert_abun_vp <- invert_abundances %>% 
+  filter(zone == "vernal pool") %>% 
+  filter(ln_count > 0)
+
+# TODO- subset the abundances similarly for other zones
+
+
+### vernal pools ----
 
 matrix_subset_vp <- adj_matrix[vp_birds_invertivorous$species, inverts]
 
+# color matrix for vernal pools
+link_colors_vp <- matrix("gray80",
+                       nrow = nrow(matrix_subset_vp),
+                       ncol = ncol(matrix_subset_vp))
+
+# assign colors for remaining prey taxa
+# then overwrite each value with a different color for each column (prey taxon)
+
+# Ostracoda
+link_colors_vp[, colnames(matrix_subset_vp) == "Ostracoda"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Ostracoda"] > 0] <- "#264653"
+
+# Corixidae
+link_colors_vp[, colnames(matrix_subset_vp) == "Corixidae"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Corixidae"] > 0] <- "#287271"
+
+# Chironomidae
+link_colors_vp[, colnames(matrix_subset_vp) == "Chironomidae"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Chironomidae"] > 0] <- "#2a9d8f"
+
+# Oligochaeta
+link_colors_vp[, colnames(matrix_subset_vp) == "Oligochaeta"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Oligochaeta"] > 0] <- "#8ab17d"
+
+# Copepoda
+link_colors_vp[, colnames(matrix_subset_vp) == "Copepoda"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Copepoda"] > 0] <- "#babb74"
+
+# Ephydridae
+link_colors_vp[, colnames(matrix_subset_vp) == "Ephydridae"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Ephydridae"] > 0] <- "#e9c46a"
+
+# Cladocera
+link_colors_vp[, colnames(matrix_subset_vp) == "Cladocera"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Cladocera"] > 0] <- "#f4a261"
+
+# Nematoda
+link_colors_vp[, colnames(matrix_subset_vp) == "Nematoda"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Nematoda"] > 0] <- "#ee8959"
+
+# Ceratopogonidae
+link_colors_vp[, colnames(matrix_subset_vp) == "Ceratopogonidae"][
+  matrix_subset_vp[, colnames(matrix_subset_vp) == "Ceratopogonidae"] > 0] <- "#e76f51"
+
+
+
+# # add arguments for abundances and colors: link_color = link_colors1, 
+# higher_abundances = invert_abundances_vector, lower_abundances = bird_invert_abundances_vector, 
+
 # open png graphics
-png(file = "figures/Ojemann_Emilio/invert_network_vp.png", width = 600, height = 900, units = "px", res = 100)
+png(file = "figures/Ojemann_Emilio/invert_network_vp_color.png", width = 600, height = 900, units = "px", res = 100)
+
 
 # plotting command
-plotweb(web = matrix_subset_vp, text_size =0.8, horizontal = TRUE)
+plotweb(web = matrix_subset_vp, text_size =0.8, horizontal = TRUE, link_color = link_colors_vp)
 
 # close png
 dev.off()
 
 
-### matrix subset for phelps junction ----
-
+###  phelps junction ----
 matrix_subset_phelps <- adj_matrix[phelps_birds_invertivorous$species, inverts]
 
 # open png graphics
@@ -96,7 +168,7 @@ plotweb(web = matrix_subset_phelps, text_size =0.8, horizontal = TRUE)
 # close png
 dev.off()
 
-### matrix subset for NCOS ponds ----
+###  NCOS ponds ----
 
 matrix_subset_ponds <- adj_matrix[ponds_birds_invertivorous$species, inverts]
 
@@ -110,7 +182,7 @@ plotweb(web = matrix_subset_ponds, text_size =0.8, horizontal = TRUE)
 dev.off()
 
 
-### matrix subset for EWS (overall Dev. Slough)  ----
+### EWS (overall Dev. Slough)  ----
 
 matrix_subset_ews <- adj_matrix[ews_birds_invertivorous$species, inverts]
 
@@ -143,4 +215,52 @@ dev.off()
 ### What new data do we have to add?
 ### Can we do any prediction/simulation with the data?
 ### Poster/visualizing -- story map? interactive map? what figures best display the results we have
+
+
+# COLORS ----
+# Assign colors by prey type
+
+
+#create matrix for all links and assign them gray, to start out
+link_colors1 <- matrix("gray80",
+                       nrow = nrow(matrix_subset),
+                       ncol = ncol(matrix_subset))
+
+# then overwrite each value with a different color for each column (prey taxon)
+
+# Ostracoda
+link_colors1[, colnames(matrix_subset) == "Ostracoda"][
+  matrix_subset[, colnames(matrix_subset) == "Ostracoda"] > 0] <- "#264653"
+
+# Corixidae
+link_colors1[, colnames(matrix_subset) == "Corixidae"][
+  matrix_subset[, colnames(matrix_subset) == "Corixidae"] > 0] <- "#287271"
+
+# Chironomidae
+link_colors1[, colnames(matrix_subset) == "Chironomidae"][
+  matrix_subset[, colnames(matrix_subset) == "Chironomidae"] > 0] <- "#2a9d8f"
+
+# Oligochaeta
+link_colors1[, colnames(matrix_subset) == "Oligochaeta"][
+  matrix_subset[, colnames(matrix_subset) == "Oligochaeta"] > 0] <- "#8ab17d"
+
+# Copepoda
+link_colors1[, colnames(matrix_subset) == "Copepoda"][
+  matrix_subset[, colnames(matrix_subset) == "Copepoda"] > 0] <- "#babb74"
+
+# Ephydridae
+link_colors1[, colnames(matrix_subset) == "Ephydridae"][
+  matrix_subset[, colnames(matrix_subset) == "Ephydridae"] > 0] <- "#e9c46a"
+
+# Cladocera
+link_colors1[, colnames(matrix_subset) == "Cladocera"][
+  matrix_subset[, colnames(matrix_subset) == "Cladocera"] > 0] <- "#f4a261"
+
+# Nematoda
+link_colors1[, colnames(matrix_subset) == "Nematoda"][
+  matrix_subset[, colnames(matrix_subset) == "Nematoda"] > 0] <- "#ee8959"
+
+# Ceratopogonidae
+link_colors1[, colnames(matrix_subset) == "Ceratopogonidae"][
+  matrix_subset[, colnames(matrix_subset) == "Ceratopogonidae"] > 0] <- "#e76f51"
 
