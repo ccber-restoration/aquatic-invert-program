@@ -6,6 +6,8 @@
 # Purpose: Clean and filter invertebrate data for NZMS analysis
 # ============================================
 
+library(dplyr)
+
 source("code/00_setup.R")
 
 #filter taxa to just nzms
@@ -64,3 +66,37 @@ data_nzm_wq <- invert_data_nzm_separate %>%
 data_nzm_wq <- data_nzm_wq %>%
   mutate(across(where(is.numeric), ~ ifelse(is.nan(.x), NA, .x)))
 
+-------------------------------------------------------------------------------
+
+# Merging NZM Counts with Water Quality Data
+
+# find earliest date where NZMS was actually present
+first_nzm_date <- data_nzm_wq %>%
+  filter(nz_mudsnail > 0) %>%
+  summarise(first_date = min(date_on_vial, na.rm = TRUE)) %>%
+  pull(first_date)
+
+# make a smaller NZMS table with only the join columns + count
+nzm_counts <- data_nzm_wq %>%
+  select(site, date_on_vial, nz_mudsnail)
+
+# join onto water quality data, replace missing counts with 0,
+# then keep only observations on/after first NZMS occurrence
+water_quality_nzm <- water_quality_clean %>%
+  left_join(nzm_counts, by = c("site" = "site", "date" = "date_on_vial")) %>%
+  mutate(nz_mudsnail = if_else(is.na(nz_mudsnail), 0, nz_mudsnail)) %>%
+  filter(date >= first_nzm_date)
+
+# create binary presence column
+water_quality_nzm <- water_quality_nzm %>%
+  mutate(nzm_presence = if_else(nz_mudsnail > 0, 1, 0))
+
+#create object for site frequency
+site_freq <- water_quality_nzm %>%
+group_by(site) %>%
+  summarise(
+    detection_rate = mean(nz_mudsnail > 0, na.rm = TRUE),
+    n_samples = n(),
+    .groups = "drop"
+  ) %>%
+  filter(detection_rate > 0)
