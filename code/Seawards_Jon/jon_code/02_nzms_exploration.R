@@ -3,7 +3,7 @@
 # File: nzms_exploration.R
 # Author: Jon Seawards
 # Date: 2026-01-20
-# Purpose: Explore and anylize NZ mudsnail data
+# Purpose: Explore and analyze NZ mudsnail data
 # ============================================
 
 library(plotly)
@@ -52,7 +52,6 @@ hist_nzm <- ggplot(data = invert_data_nzm_separate, aes(x = nz_mudsnail)) +
                      title = "New Zealand Mudsnail Distribution Per Sample",
                      x = "NZ Mudsnail Count",
                      y = "Number of Samples") 
-  
 
 # data is very right skewed, normal for invasive species data but will log transform to attempt to improve normality
 hist_nzm
@@ -109,18 +108,54 @@ invert_data_nzm_separate %>%
 
 # Abundance vs Variables ----
 #temp
-temp_nzm <- ggplot(data = data_nzm_wq, aes(x = temperature_c, y = nz_mudsnail, color = site)) +
+
+temp_box <- ggplot(water_quality_nzm, aes(x = factor(nzm_presence, 
+            labels = c("Absent", "Present")), y = temperature_c)) +
+  geom_boxplot() +
+  labs(x = "NZMS Occurrence", y = "Water Temperature (°C)",
+    title = "Temperature Distribution by NZMS Presence") +
+  theme_minimal()
+
+temp_bin_curve <- ggplot(water_quality_nzm, aes(x = temperature_c, y = nzm_presence)) +
+  geom_jitter(height = 0.05, width = 0, alpha = 0.6) +
+  geom_smooth(method = "glm", method.args = list(family = "binomial"), se = TRUE) +
+  labs(
+    x = "Water Temperature (°C)",
+    y = "Probability of NZMS Presence",
+    title = "NZMS Occurrence Across Water Temperature"
+  ) +
+  theme_minimal()
+
+temp_bin_1 <- ggplot(water_quality_nzm, aes(x = temperature_c, y = nzm_presence)) +
+  geom_jitter(height = 0.05)
+
+temp_bin_2 <- ggplot(water_quality_nzm, aes(x = temperature_c, y = nzm_presence)) +
+  geom_point() +
+  geom_smooth(method = "glm", 
+              method.args = list(family = "binomial"), 
+              se = TRUE)
+
+`temp_nzm <- ggplot(data = data_nzm_wq, aes(x = temperature_c, y = nz_mudsnail, color = site)) +
   geom_point(size = 3) +
   #geom_point(color = "steelblue", fill = "steelblue") + 
   labs(
     title = "NZ Mudsnail Abundance vs Temperature",
     x = "Temperature (C)",
-    y = "Count") + theme_cowplot()
+    y = "Count") + theme_cowplot()`
+
+temperature_abunance <- ggplot(water_quality_nzm, aes(x = temperature_c, y = log10(nz_mudsnail + 1))) +
+  geom_point(size = 2) +
+  labs(
+    x = "Water Temperature °C",
+    y = "Log10 (Count + 1)",
+    title = "Water Temperature vs. NZMS Abundance"
+  ) +
+  theme_minimal()
 
 #view
-ggplotly(temp_nzm)
+ggplotly(temperature_abunance)
 temp_nzm
-
+temperature_abunance
 #save to file
 ggsave(filename = "figures/Seawards_Jon/temp_nzm.pdf", temp_nzm, width = 6, height = 4, units = "in")
 
@@ -168,7 +203,81 @@ range(data_nzm_wq$p_h, na.rm = TRUE)
 
 # What year had the largest proportion of NZ Mudsnail invasion? (highest instances of invaded samples >1/total samples)
 
-# What is the probability you will find NZ Mudsnail in abundance >1 in a given sample?
+
+
+nzm_timeline <- ggplot(data_nzm_wq, aes(
+    x = date_on_vial,
+    y = nz_mudsnail,
+    color = site)) +
+  geom_point(size = 3) +
+  scale_color_manual(values = c(
+    "NPB" = "orange",
+    "NPB1" = "orange",
+    "NPB2" = "orange",
+    "MO1" = "lightblue",
+    "NDC" = "lightblue",
+    "NVB" = "lightblue"),
+    na.value = "lightblue") +
+  labs(
+    x = "Date",
+    y = "NZMS Abundance",
+    title = "Timeline of NZMS Positive Detections") +
+  theme_minimal() +
+  theme(plot.title = element_text(face = "bold", size = 14))
+
+# What is the probability you will find NZ Mudsnail in a given sample?
+
+site_freq <- water_quality_nzm %>%
+  group_by(site) %>%
+  summarise(
+    detection_rate = mean(nz_mudsnail > 0, na.rm = TRUE),
+    n_samples = n(),
+    .groups = "drop"
+  ) %>%
+  filter(detection_rate > 0)
+
+freq_plot <- ggplot(site_freq, 
+                    aes(x = reorder(site, detection_rate), 
+                        y = detection_rate)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  labs(
+    x = "Site",
+    y = "NZMS Detection Rate",
+    title = "NZMS Detection Frequency by Site"
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+freq_plot_2 <- ggplot(site_freq, 
+                    aes(x = reorder(site, detection_rate), 
+                        y = detection_rate)) +
+  geom_col(fill = "steelblue") +
+  labs(
+    x = "Site",
+    y = "NZMS Detection Rate",
+    title = "NZMS Detection Frequency by Site"
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+nzm_abundance_site <- ggplot(
+  water_quality_nzm %>%
+    group_by(site) %>%
+    summarise(mean_abundance = mean(nz_mudsnail, na.rm = TRUE),
+      .groups = "drop") %>%
+    filter(mean_abundance > 0),
+  
+  aes(x = reorder(site, mean_abundance), 
+      y = mean_abundance)) +
+  geom_col(fill = "steelblue") +
+  labs(
+    x = "Site",
+    y = "Mean NZMS Abundance",
+    title = "NZMS Abundance by Site") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
 
 # Are there variables that skew this probability with statistical relevance? (p< 0.05)
 #eg. sp conductivity, temperature, Chl-a, pH, spatial location in estuary/hotspots, other organism correlations 
