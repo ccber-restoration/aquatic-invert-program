@@ -159,11 +159,59 @@ dev.off()
 ###  phelps junction ----
 matrix_subset_phelps <- adj_matrix[phelps_birds_invertivorous$species, inverts]
 
+# color matrix for phelps
+link_colors_phelps <- matrix("gray80",
+                         nrow = nrow(matrix_subset_phelps),
+                         ncol = ncol(matrix_subset_phelps))
+
+# assign colors for remaining prey taxa
+# then overwrite each value with a different color for each column (prey taxon)
+
+# Ostracoda
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Ostracoda"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Ostracoda"] > 0] <- "#264653"
+
+# Corixidae
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Corixidae"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Corixidae"] > 0] <- "#287271"
+
+# Chironomidae
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Chironomidae"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Chironomidae"] > 0] <- "#2a9d8f"
+
+# Oligochaeta
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Oligochaeta"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Oligochaeta"] > 0] <- "#8ab17d"
+
+# Copepoda
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Copepoda"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Copepoda"] > 0] <- "#babb74"
+
+# Ephydridae
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Ephydridae"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Ephydridae"] > 0] <- "#e9c46a"
+
+# Cladocera
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Cladocera"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Cladocera"] > 0] <- "#f4a261"
+
+# Nematoda
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Nematoda"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Nematoda"] > 0] <- "#ee8959"
+
+# Ceratopogonidae
+link_colors_phelps[, colnames(matrix_subset_phelps) == "Ceratopogonidae"][
+  matrix_subset_phelps[, colnames(matrix_subset_phelps) == "Ceratopogonidae"] > 0] <- "#e76f51"
+
+
+# # add arguments for abundances and colors: link_color = link_colors1, 
+# higher_abundances = invert_abundances_vector, lower_abundances = bird_invert_abundances_vector, 
+
 # open png graphics
-png(file = "figures/Ojemann_Emilio/invert_network_phelps.png", width = 600, height = 900, units = "px", res = 100)
+png(file = "figures/Ojemann_Emilio/invert_network_phelps_color.png", width = 6, height = 8, units = "in", res = 200)
 
 # plot
-plotweb(web = matrix_subset_phelps, text_size =0.8, horizontal = TRUE)
+plotweb(web = matrix_subset_phelps, text_size =1, horizontal = TRUE, link_color = link_colors_phelps)
 
 # close png
 dev.off()
@@ -172,11 +220,59 @@ dev.off()
 
 matrix_subset_ponds <- adj_matrix[ponds_birds_invertivorous$species, inverts]
 
+# color matrix for phelps
+link_colors_ponds <- matrix("gray80",
+                             nrow = nrow(matrix_subset_ponds),
+                             ncol = ncol(matrix_subset_ponds))
+
+# assign colors for remaining prey taxa
+# then overwrite each value with a different color for each column (prey taxon)
+
+# Ostracoda
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Ostracoda"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Ostracoda"] > 0] <- "#264653"
+
+# Corixidae
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Corixidae"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Corixidae"] > 0] <- "#287271"
+
+# Chironomidae
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Chironomidae"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Chironomidae"] > 0] <- "#2a9d8f"
+
+# Oligochaeta
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Oligochaeta"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Oligochaeta"] > 0] <- "#8ab17d"
+
+# Copepoda
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Copepoda"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Copepoda"] > 0] <- "#babb74"
+
+# Ephydridae
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Ephydridae"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Ephydridae"] > 0] <- "#e9c46a"
+
+# Cladocera
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Cladocera"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Cladocera"] > 0] <- "#f4a261"
+
+# Nematoda
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Nematoda"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Nematoda"] > 0] <- "#ee8959"
+
+# Ceratopogonidae
+link_colors_ponds[, colnames(matrix_subset_ponds) == "Ceratopogonidae"][
+  matrix_subset_ponds[, colnames(matrix_subset_ponds) == "Ceratopogonidae"] > 0] <- "#e76f51"
+
+
+# # add arguments for abundances and colors: link_color = link_colors1, 
+# higher_abundances = invert_abundances_vector, lower_abundances = bird_invert_abundances_vector, 
+
 # open png graphics
-png(file = "figures/Ojemann_Emilio/invert_network_ponds.png", width = 600, height = 900, units = "px", res = 100)
+png(file = "figures/Ojemann_Emilio/invert_network_ponds_color.png", width = 6, height = 8, units = "in", res = 200)
 
 # plot
-plotweb(web = matrix_subset_ponds, text_size =0.8, horizontal = TRUE)
+plotweb(web = matrix_subset_ponds, text_size =1, horizontal = TRUE, link_color = link_colors_ponds)
 
 # close png
 dev.off()
@@ -184,13 +280,74 @@ dev.off()
 
 ### EWS (overall Dev. Slough)  ----
 
-matrix_subset_ews <- adj_matrix[ews_birds_invertivorous$species, inverts]
+matrix_subset_ews <- adj_matrix[ews_birds_invertivorous$species, inverts] 
 
-# open png graphics 
-png(file = "figures/Ojemann_Emilio/invert_network_ews.png", width = 600, height = 900, units = "px", res = 100)
+# filtering abundance data to ews
+
+invert_abun_ews <- invert_abundances |>  
+  filter(zone == "main slough") |>  
+  filter(ln_count > 0)
+
+invert_abun_ews_vector <- invert_abun_ews
+
+
+
+
+# color matrix for phelps
+link_colors_ews <- matrix("gray80",
+                            nrow = nrow(matrix_subset_ews),
+                            ncol = ncol(matrix_subset_ews))
+
+# assign colors for remaining prey taxa
+# then overwrite each value with a different color for each column (prey taxon)
+
+# Ostracoda
+link_colors_ews[, colnames(matrix_subset_ews) == "Ostracoda"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Ostracoda"] > 0] <- "#264653"
+
+# Corixidae
+link_colors_ews[, colnames(matrix_subset_ews) == "Corixidae"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Corixidae"] > 0] <- "#287271"
+
+# Chironomidae
+link_colors_ews[, colnames(matrix_subset_ews) == "Chironomidae"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Chironomidae"] > 0] <- "#2a9d8f"
+
+# Oligochaeta
+link_colors_ews[, colnames(matrix_subset_ews) == "Oligochaeta"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Oligochaeta"] > 0] <- "#8ab17d"
+
+# Copepoda
+link_colors_ews[, colnames(matrix_subset_ews) == "Copepoda"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Copepoda"] > 0] <- "#babb74"
+
+# Ephydridae
+link_colors_ews[, colnames(matrix_subset_ews) == "Ephydridae"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Ephydridae"] > 0] <- "#e9c46a"
+
+# Cladocera
+link_colors_ews[, colnames(matrix_subset_ews) == "Cladocera"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Cladocera"] > 0] <- "#f4a261"
+
+# Nematoda
+link_colors_ews[, colnames(matrix_subset_ews) == "Nematoda"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Nematoda"] > 0] <- "#ee8959"
+
+# Ceratopogonidae
+link_colors_ews[, colnames(matrix_subset_ews) == "Ceratopogonidae"][
+  matrix_subset_ews[, colnames(matrix_subset_ews) == "Ceratopogonidae"] > 0] <- "#e76f51"
+
+
+# # add arguments for abundances and colors: link_color = link_colors1, 
+# higher_abundances = invert_abundances_vector, lower_abundances = bird_invert_abundances_vector, 
+
+glimpse(invert_abundances)
+
+# open png graphics
+png(file = "figures/Ojemann_Emilio/invert_network_ews_color.png", width = 6, height = 8, units = "in", res = 200)
 
 # plot
-plotweb(web = matrix_subset_ews, text_size =0.8, horizontal = TRUE)
+plotweb(web = matrix_subset_ews, text_size =1, horizontal = TRUE, link_color = link_colors_ews)
 
 # close png
 dev.off()
@@ -220,47 +377,13 @@ dev.off()
 # COLORS ----
 # Assign colors by prey type
 
+inverts
 
-#create matrix for all links and assign them gray, to start out
-link_colors1 <- matrix("gray80",
-                       nrow = nrow(matrix_subset),
-                       ncol = ncol(matrix_subset))
+unique(invert_abundances$invert_taxon)
 
-# then overwrite each value with a different color for each column (prey taxon)
+# obtaining invert abundances
+# filter to actual existing taxa
 
-# Ostracoda
-link_colors1[, colnames(matrix_subset) == "Ostracoda"][
-  matrix_subset[, colnames(matrix_subset) == "Ostracoda"] > 0] <- "#264653"
 
-# Corixidae
-link_colors1[, colnames(matrix_subset) == "Corixidae"][
-  matrix_subset[, colnames(matrix_subset) == "Corixidae"] > 0] <- "#287271"
 
-# Chironomidae
-link_colors1[, colnames(matrix_subset) == "Chironomidae"][
-  matrix_subset[, colnames(matrix_subset) == "Chironomidae"] > 0] <- "#2a9d8f"
-
-# Oligochaeta
-link_colors1[, colnames(matrix_subset) == "Oligochaeta"][
-  matrix_subset[, colnames(matrix_subset) == "Oligochaeta"] > 0] <- "#8ab17d"
-
-# Copepoda
-link_colors1[, colnames(matrix_subset) == "Copepoda"][
-  matrix_subset[, colnames(matrix_subset) == "Copepoda"] > 0] <- "#babb74"
-
-# Ephydridae
-link_colors1[, colnames(matrix_subset) == "Ephydridae"][
-  matrix_subset[, colnames(matrix_subset) == "Ephydridae"] > 0] <- "#e9c46a"
-
-# Cladocera
-link_colors1[, colnames(matrix_subset) == "Cladocera"][
-  matrix_subset[, colnames(matrix_subset) == "Cladocera"] > 0] <- "#f4a261"
-
-# Nematoda
-link_colors1[, colnames(matrix_subset) == "Nematoda"][
-  matrix_subset[, colnames(matrix_subset) == "Nematoda"] > 0] <- "#ee8959"
-
-# Ceratopogonidae
-link_colors1[, colnames(matrix_subset) == "Ceratopogonidae"][
-  matrix_subset[, colnames(matrix_subset) == "Ceratopogonidae"] > 0] <- "#e76f51"
 
