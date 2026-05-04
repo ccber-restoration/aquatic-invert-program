@@ -13,6 +13,8 @@ library(igraph)
 #package for adding icons to networks
 library(rphylopic)
 
+library(VennDiagram)
+
 # read in data ----
 
 # trophic links ---
@@ -443,6 +445,24 @@ plotweb(web = matrix_subset_ponds, text_size = 1.1, horizontal = TRUE, curved_li
 dev.off()
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ----
+
+# VENN Diagram ----
+
+# see tutorial here: https://r-graph-gallery.com/14-venn-diagramm
+
+# Generate 3 sets of 200 words
+set1 <- phelps_bird_summary$species
+set2 <- ews_bird_summary$species
+set3 <- vp_bird_summary$species
+set4 <- ponds_bird_summary$species
+
+# Chart
+venn.diagram(
+  x = list(set1, set2, set3, set4),
+  category.names = c("Phelps Creek" , "Slough", "Vernal Pools", "Western Pond"),
+  filename = "figures/Ojemann_Emilio/Venn_Diagram.png",
+  output=TRUE
+)
 
 
 #   ---- TO-DO ---- 
