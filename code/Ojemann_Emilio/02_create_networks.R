@@ -411,7 +411,7 @@ bird_abun_ponds_vector   <- bird_abun_ponds_vector[rownames(matrix_subset_ponds)
 
 ##### ---- ews ----
 png(file = "figures/Ojemann_Emilio/invert_network_ews_final_color.png", width = 6, height = 8, units = "in", res = 200)
-plotweb(web = matrix_subset_ews, text_size = 0.8, horizontal = TRUE, curved_links = TRUE,
+plotweb(web = matrix_subset_ews, text_size = 1.1, horizontal = TRUE, curved_links = TRUE,
         link_color = link_colors_ews,
         higher_abundances = invert_abun_ews_vector,
         lower_abundances = bird_abun_ews_vector)
@@ -420,7 +420,7 @@ dev.off()
 
 ##### ---- vernal pools -----
 png(file = "figures/Ojemann_Emilio/invert_network_vp_final_color.png", width = 6, height = 8, units = "in", res = 200)
-plotweb(web = matrix_subset_vp, text_size = 0.6, horizontal = TRUE, curved_links = TRUE,
+plotweb(web = matrix_subset_vp, text_size = 1.1, horizontal = TRUE, curved_links = TRUE,
         link_color = link_colors_vp,
         higher_abundances = invert_abun_vp_vector,
         lower_abundances = bird_abun_vp_vector)
@@ -428,7 +428,7 @@ dev.off()
 
 #### ---- phelps ----
 png(file = "figures/Ojemann_Emilio/invert_network_phelps_final_color.png", width = 6, height = 8, units = "in", res = 200)
-plotweb(web = matrix_subset_phelps, text_size = 0.6, horizontal = TRUE, curved_links = TRUE,
+plotweb(web = matrix_subset_phelps, text_size = 1.1, horizontal = TRUE, curved_links = TRUE,
         link_color = link_colors_phelps,
         higher_abundances = invert_abun_phelps_vector,
         lower_abundances = bird_abun_phelps_vector)
@@ -436,7 +436,7 @@ dev.off()
 
 #### ---- ponds----
 png(file = "figures/Ojemann_Emilio/invert_network_ponds_final_color.png", width = 6, height = 8, units = "in", res = 200)
-plotweb(web = matrix_subset_ponds, text_size = 0.6, horizontal = TRUE, curved_links = TRUE,
+plotweb(web = matrix_subset_ponds, text_size = 1.1, horizontal = TRUE, curved_links = TRUE,
         link_color = link_colors_ponds,
         higher_abundances = invert_abun_ponds_vector,
         lower_abundances = bird_abun_ponds_vector)
