@@ -39,6 +39,9 @@ for that year
 
 # Data
 
+- As of May 2026, we started using a reformatted Excel Spreadsheet on Box for entering new data, rather than the Google Sheet on Drive:
+    -  Box>CCBER_Projects>Aquatic Invertebrate Lab>Aquatic Sampling Data.xlsx 
+
 ## Google Drive
 - Overall project documentation is in Invertebrate Program Google Drive folder: https://drive.google.com/drive/folders/1JQVLXZTujw3prNdLIqJonT6n9q37h36R
 - Data file is in "Aquatic Invert Lab Student Leaders>Aquatic Sampling Data": https://docs.google.com/spreadsheets/d/1rcYilbrxduQswiJpCK6TopZaIWFJxpK8nklt3INtFVM/edit?gid=1053841964#gid=1053841964  Sheets:
