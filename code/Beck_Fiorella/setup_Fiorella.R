@@ -212,7 +212,7 @@ fig_phelps_salinity_NPB1 <- ggplot(data = water_quality_NPB1, aes(x = date, y = 
   #geom_hline(yintercept = winter_sal_mean$mean_sal, linetype = "dashed") +
   #geom_hline(yintercept = winter_sal_mean$median_sal) +
  
-  annotate("text", x=as.POSIXct("2024-01-01"), y=0.65, label="upper range of freshwater") +
+  annotate("text", x=as.POSIXct("2024-01-01"), y=0.65, label="upper range of freshwater (0.5)") +
   xlab("Date") +
   ylab("Salinity (ppt)") +
   labs(shape = "Data source") +
@@ -248,14 +248,14 @@ npb1_invert_abundance_long <- npb1_invert_abundance %>%
 levels(npb1_invert_abundance_long$species)
 
 
-boxplot_inverte_type <- ggplot(npb1_invert_abundance_long, aes(x = species, y = abundance, fill = riffle_number, group = riffle_number)) +
+barplot_inverte_type <- ggplot(npb1_invert_abundance_long, aes(x = species, y = abundance, fill = riffle_number, group = riffle_number)) +
   geom_bar(stat = "identity", color = "black") +
   labs(x = "Invertebrate Type", y = "Abundance (count)", fill = "Riffle number") +
   
   #facet_wrap(vars(riffle_number)) +
   theme_cowplot() 
 
-boxplot_inverte_type
+barplot_inverte_type
 
 ggplot2::ggsave(filename = "figures/Beck_Fiorella/boxplot.pdf",
        plot =boxplot_inverte_type,
@@ -537,9 +537,38 @@ fig_phelps_salinity_winter <- ggplot(data = water_quality_NPB_winter, aes(x = mo
 fig_phelps_salinity_winter
 
   
+# Benchmark data----
+
+benchmark_data<-Benchmark_data %>%
+  clean_names() %>%
+  mutate(sampledate = mdy_hms(sampledate, tz = "UTC"))  # or your timezone
 
 
+## E. coli data----
+e.coli<-benchmark_data %>%
+  filter(analyte == "E. coli") %>%
+  filter(result =! )
+  
+str(e.coli)
 
+E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = e.coli, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  scale_y_continuous(limits = c(0,24192.0)) +
+  geom_hline(yintercept = 410, linetype = "dashed") 
+  
+  
+E.coli_fig
+
+E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = e.coli, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  scale_y_continuous(limits = c(0,5000)) +
+  geom_hline(yintercept = 410, linetype = "dashed") 
+  
+
+E.coli_fig_2
+  
 # example code for _writing to file as pdf
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
        plot= fig_phelps_temp,
