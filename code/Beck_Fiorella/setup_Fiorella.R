@@ -546,8 +546,7 @@ benchmark_data<-Benchmark_data %>%
 
 ## E. coli data----
 e.coli<-benchmark_data %>%
-  filter(analyte == "E. coli") %>%
-  filter(result =! )
+  filter(analyte == "E. coli")
   
 str(e.coli)
 
@@ -564,10 +563,29 @@ E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = e.coli, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   scale_y_continuous(limits = c(0,5000)) +
-  geom_hline(yintercept = 410, linetype = "dashed") 
+  geom_hline(yintercept = 410, linetype = "dashed")
   
 
-E.coli_fig_2
+E.coli_fig_2 #shorted range to see closer what is beyond recommended level
+
+
+e.coli_above_rec_level<-benchmark_data %>%
+  filter(analyte == "E. coli") %>%
+  filter(result > 410) # 43.87 percent of the data was over the limit (410)
+
+
+## Nitrogen ----
+nitrogen<-benchmark_data %>%
+  filter(analyte == "Nitrate as N, Dissolved")
+
+
+nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = nitrogen, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_hline(yintercept = 4, linetype = "dashed")# +
+  # geom_line(color = "royalblue3") 
+
+nitrogen_fig
   
 # example code for _writing to file as pdf
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
