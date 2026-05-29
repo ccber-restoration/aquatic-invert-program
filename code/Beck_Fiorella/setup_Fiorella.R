@@ -257,7 +257,7 @@ barplot_inverte_type <- ggplot(npb1_invert_abundance_long, aes(x = species, y = 
 
 barplot_inverte_type
 
-ggplot2::ggsave(filename = "figures/Beck_Fiorella/boxplot.pdf",
+#ggplot2::ggsave(filename = "figures/Beck_Fiorella/boxplot.pdf",
        plot =boxplot_inverte_type,
        width = 6,
        height = 4,
@@ -538,23 +538,28 @@ fig_phelps_salinity_winter
 
   
 # Benchmark data----
+Benchmark_data <- read_csv("code/Beck_Fiorella/Benchmark_data.csv")
 
 benchmark_data<-Benchmark_data %>%
   clean_names() %>%
   mutate(sampledate = mdy_hms(sampledate, tz = "UTC"))  # or your timezone
 
 
+
+
 ## E. coli data----
 e.coli<-benchmark_data %>%
   filter(analyte == "E. coli")
   
-str(e.coli)
+
 
 E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = e.coli, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   scale_y_continuous(limits = c(0,24192.0)) +
-  geom_hline(yintercept = 410, linetype = "dashed") 
+  geom_hline(yintercept = 410, linetype = "dashed") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  ggtitle("E.coli levels (MPN/100 mL) overtime")
   
   
 E.coli_fig
@@ -563,7 +568,9 @@ E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = e.coli, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   scale_y_continuous(limits = c(0,5000)) +
-  geom_hline(yintercept = 410, linetype = "dashed")
+  geom_hline(yintercept = 410, linetype = "dashed") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  ggtitle("E.coli levels (MPN/100 mL) overtime")
   
 
 E.coli_fig_2 #shorted range to see closer what is beyond recommended level
@@ -571,7 +578,7 @@ E.coli_fig_2 #shorted range to see closer what is beyond recommended level
 
 e.coli_above_rec_level<-benchmark_data %>%
   filter(analyte == "E. coli") %>%
-  filter(result > 410) # 43.87 percent of the data was over the limit (410)
+  filter(result > 410) # of the total 465 samples 204 were above the recommended 410 (43.87%)
 
 
 ## Nitrogen ----
@@ -582,10 +589,53 @@ nitrogen<-benchmark_data %>%
 nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = nitrogen, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
-  geom_hline(yintercept = 4, linetype = "dashed")# +
-  # geom_line(color = "royalblue3") 
+  geom_hline(yintercept = 4, linetype = "dashed") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  ggtitle("Nitrogen levels (mg/L) overtime")
 
 nitrogen_fig
+
+## Coliform ----
+
+coliform<-benchmark_data %>%
+  filter(analyte == "Coliform, Total")
+
+coliform_fig <- ggplot(data = coliform, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = coliform, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_hline(yintercept = 10000, linetype = "dashed") +
+  scale_y_continuous(limits = c(0,250000)) +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  ggtitle("Coliform levels (MPN/100 mL) overtime")
+
+coliform_fig
+
+coliform_above_rec_level<-benchmark_data %>%
+  filter(analyte == "Coliform, Total") %>%
+  filter(result > 10000) # Of the total 459 samples 314 were over the recommended 
+                         #limit of 10000 (68.4%)
+
+## Enterococcus ----
+
+enterococcus <-benchmark_data %>%
+  filter(analyte == "Enterococcus") 
+
+enterococcus_fig <- ggplot(data = enterococcus, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = enterococcus, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_hline(yintercept = 235, linetype = "dashed") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  ggtitle("Enterococuss levels (MPN/100 mL) overtime")
+
+enterococcus_fig
+
+
+enterococcus_above_rec_level<-enterococcus %>%
+  filter(result > 235) # of the total 72 samples 35 were above the recommended 235 (48.61%)
+
+mean(enterococcus$result) #mean is at level typical for agricultural runoff
+
+
   
 # example code for _writing to file as pdf
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
