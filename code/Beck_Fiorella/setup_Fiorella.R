@@ -1,6 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Name:           setup_Fiorella.R
-# Description:    Filter code to subset of needed data
+# Description:    Analyze biotic and abiotic conditions of Phelps creek 
 # Author(s):      Fiorella Beck
 
 # Inputs:         
@@ -635,8 +635,84 @@ enterococcus_above_rec_level<-enterococcus %>%
 
 mean(enterococcus$result) #mean is at level typical for agricultural runoff
 
-
+## Temperature ----
   
+temperature <-benchmark_data %>%
+  filter(analyte == "Temperature") 
+
+temperature_fig <- ggplot(data = temperature, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = temperature, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  ggtitle("Temperature (C) overtime")
+
+temperature_fig
+
+## Turbidity ----
+
+turbidity <-benchmark_data %>%
+  filter(analyte == "Turbidity, Total") 
+
+turbidity_fig <- ggplot(data = turbidity, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = turbidity, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  geom_hline(yintercept = 50, linetype = "dashed") +
+  ggtitle("Turbidity (NTU) overtime")
+
+turbidity_fig
+
+turbidity_above_rec_level<-benchmark_data %>%
+  filter(analyte == "Turbidity, Total") %>%
+  filter(result > 50) #less than 1% of the time (0.076%) the water had levels are above recommended turbitidy levels 
+
+## pH ----
+
+pH <-benchmark_data %>%
+  filter(analyte == "pH") 
+
+pH_fig <- ggplot(data = pH, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = pH, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  #geom_hline(yintercept = 50, linetype = "dashed") +
+  ggtitle("pH overtime")
+
+pH_fig
+
+## Conductivity ----
+
+conductivity <-benchmark_data %>%
+  filter(analyte == "SpecificConductivity, Total") 
+
+conductivity_fig <- ggplot(data = conductivity, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = conductivity, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  geom_hline(yintercept = 2000, linetype = "dashed") +
+  ggtitle("Conductivity (uS/cm) overtime")
+
+conductivity_fig
+
+conductivity_above_rec_level<-benchmark_data %>%
+  filter(analyte == "SpecificConductivity, Total") %>%
+  filter(result > 2000) # 424 of the 439 samples were over normal levels (92.54%)
+
+## DO ----
+
+DO <-benchmark_data %>%
+  filter(analyte == "Oxygen, Dissolved, Total") 
+
+DO_fig <- ggplot(data = DO, aes(x = sampledate, y = result)) +
+  geom_point(color = "royalblue3") +
+  geom_point(data = DO, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  #geom_hline(yintercept = 2000, linetype = "dashed") +
+  ggtitle("Disolved Oxygen (mg/L) overtime")
+
+DO_fig
+
+
 # example code for _writing to file as pdf
 ggsave(filename = "figures/Beck_Fiorella/Phelps_Creek_temp_DRAFT.png",
        plot= fig_phelps_temp,
