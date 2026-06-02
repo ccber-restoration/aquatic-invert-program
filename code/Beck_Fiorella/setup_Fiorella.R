@@ -14,6 +14,11 @@
 # run the general setup script ----
 source("code/00_setup.R")
 
+# load a couple more packages
+
+library(mapview) # interactive maps
+library(plotly) # interactive ggplot figures
+
 #read in bioassessment data
 
 npb1_bioassessment_chemical <- read_csv("data/Fiorella_bioassessment_data/Bioassessment_Chemical_Data.csv") %>% 
@@ -545,7 +550,14 @@ benchmark_data<-Benchmark_data %>%
   mutate(sampledate = mdy_hms(sampledate, tz = "UTC"))  # or your timezone
 
 
+# check unique names 
+unique(benchmark_data$stationname)
 
+# make benchmark data into a spatial object (sf object)
+benchmark_data_sf <- st_as_sf(benchmark_data, coords = c("targetlongitude", "targetlatitude"), crs = 4326) 
+
+# view interactive map
+mapview(benchmark_data_sf)
 
 ## E. coli data----
 e.coli<-benchmark_data %>%
@@ -559,7 +571,9 @@ E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   scale_y_continuous(limits = c(0,24192.0)) +
   geom_hline(yintercept = 410, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("E.coli levels (MPN/100 mL) overtime")
+  ggtitle("E.coli levels (MPN/100 mL) overtime") +
+  # facet by station
+  facet_wrap(vars(stationname))
   
   
 E.coli_fig
@@ -591,7 +605,9 @@ nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
   geom_point(data = nitrogen, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_hline(yintercept = 4, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Nitrogen levels (mg/L) overtime")
+  xlab("Sample date") +
+  ylab("N (mg/L)") +
+  ggtitle("Nitrogen levels (mg/L) over time")
 
 nitrogen_fig
 
@@ -625,8 +641,8 @@ enterococcus_fig <- ggplot(data = enterococcus, aes(x = sampledate, y = result))
   geom_point(data = enterococcus, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_hline(yintercept = 235, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Enterococuss levels (MPN/100 mL) overtime")
-
+  ggtitle("Enterococcus levels (MPN/100 mL) over time")
+ 
 enterococcus_fig
 
 
@@ -644,9 +660,11 @@ temperature_fig <- ggplot(data = temperature, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = temperature, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Temperature (C) overtime")
+  ggtitle("Temperature (C) over time")
 
 temperature_fig
+
+ggplotly(temperature_fig)
 
 ## Turbidity ----
 
@@ -658,7 +676,8 @@ turbidity_fig <- ggplot(data = turbidity, aes(x = sampledate, y = result)) +
   geom_point(data = turbidity, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   geom_hline(yintercept = 50, linetype = "dashed") +
-  ggtitle("Turbidity (NTU) overtime")
+  ggtitle("Turbidity (NTU) overtime") +
+  facet_wrap(vars(stationname))
 
 turbidity_fig
 
@@ -676,7 +695,8 @@ pH_fig <- ggplot(data = pH, aes(x = sampledate, y = result)) +
   geom_point(data = pH, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   #geom_hline(yintercept = 50, linetype = "dashed") +
-  ggtitle("pH overtime")
+  ggtitle("pH overtime") +
+  facet_wrap(vars(stationname))
 
 pH_fig
 
@@ -690,7 +710,8 @@ conductivity_fig <- ggplot(data = conductivity, aes(x = sampledate, y = result))
   geom_point(data = conductivity, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   geom_hline(yintercept = 2000, linetype = "dashed") +
-  ggtitle("Conductivity (uS/cm) overtime")
+  ggtitle("Conductivity (uS/cm) overtime") +
+  facet_wrap(vars(stationname))
 
 conductivity_fig
 
@@ -708,7 +729,8 @@ DO_fig <- ggplot(data = DO, aes(x = sampledate, y = result)) +
   geom_point(data = DO, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   #geom_hline(yintercept = 2000, linetype = "dashed") +
-  ggtitle("Disolved Oxygen (mg/L) overtime")
+  ggtitle("Disolved Oxygen (mg/L) overtime") +
+  facet_wrap(vars(stationname))
 
 DO_fig
 
