@@ -1,9 +1,20 @@
 # Phelps creek biotic and abiotic monitoring data
 
-# Abiotic Conditions:
+
+## Abiotic Conditions:
 
 
 ## Script description
+
+- Purpose:
+ - Identify overall changes in abiotic conditions
+ - Identify overall changes in biotic metrics
+ - Identify problems and overall health of system
+ 
+- Phelps Creek: 
+ - Quarterly monitoring data: 
+  - Abiotic: Temperature, DO, pH, Conductivity, Salinity
+  - Biotic:  Abundance  
 
 - the only script is setup_Fiorella.R (feel free to rename)
 - Describe:
