@@ -6,6 +6,7 @@ library(janitor) # data cleaning
 library(hms) # for working with times (time of day)
 library(cowplot)
 library(plotly) #interactive graphs
+library(sf)
 
 #library(googlesheets4) # read in data from Google Sheets
 
