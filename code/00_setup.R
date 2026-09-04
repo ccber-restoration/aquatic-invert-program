@@ -8,19 +8,19 @@ library(cowplot)
 library(plotly) #interactive graphs
 library(sf)
 
-#library(googlesheets4) # read in data from Google Sheets
+# library(googlesheets4) # read in data from Google Sheets
 
 # 1. read in data ----
 
 
-#Currently not used:
+# Currently not used:
 # read in data directly from google sheets
-#invert_data_drive <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1rcYilbrxduQswiJpCK6TopZaIWFJxpK8nklt3INtFVM/edit?gid=0#gid=0")
+# invert_data_drive <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1rcYilbrxduQswiJpCK6TopZaIWFJxpK8nklt3INtFVM/edit?gid=0#gid=0")
 
-#read in static excel file (will become outdated)
+# read in static excel file (will become outdated)
 
 #set to current version of Excel file
-data_path <- "data/Aquatic Sampling Data-2026-03-10.xlsx"
+data_path <- "data/Aquatic_Sampling_Data_2026-09-04.xlsx"
 
 # see list of sheets
 excel_sheets(data_path)
@@ -29,14 +29,14 @@ excel_sheets(data_path)
 invert_data <- read_excel(path = data_path,
                           sheet = "Aquatic Insects"
                           ) %>% 
-  #clean names
+  # clean names
   clean_names() %>% 
-  #remove columns, including columns that are (incomplete) summaries rather than raw data
+  # remove columns, including columns that are (incomplete) summaries rather than raw data
   select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number)) %>% 
   mutate(year = year(date_on_vial),
          month = month(date_on_vial)) %>% 
   relocate(year:month, .after = date_on_vial) %>% 
-  #make taxon abundance columns numeric
+  # make taxon abundance columns numeric
   mutate(across(c(coleoptera_sp, mollusk, larvae, crawfish), as.numeric)) %>% 
   mutate(across(c(ostracod:unknown), ~ replace_na(.x, 0)))
  
@@ -45,32 +45,32 @@ unique_sites <- unique(invert_data$site)
 
 unique_sites
 
-#23 site codes, plus NAs
+# 23 site codes, plus NAs
 
-#Note we moved information on partial samples (half or third samples) that was previously within in the site name column 
-#to new column ("partial_sample_note")
+# Note we moved information on partial samples (half or third samples) that was previously within in the site name column 
+# to new column ("partial_sample_note")
 
-#explore sample types 
+# explore sample types 
 unique(invert_data$sample_type)
-#11 sample types plus NA
-#consider consolidating sample sample types by broader category (FB vs. CORE/Core, SW)
+# 11 sample types plus NA
+# consider consolidating sample sample types by broader category (FB vs. CORE/Core, SW)
 # FB = filtered beaker (planktonic)
 # CORE = benthic
-#SW = sweep?
+# SW = sweep?
 # SAV?
 
-#list of people sorting samples
+# list of people sorting samples
 unique(invert_data$person_that_sorted_the_sample)
 
-#names not standardized, so duplicates
-#also includes combinations of names (multiple students sorting)
+# names not standardized, so duplicates
+# also includes combinations of names (multiple students sorting)
 
 # TODO- clean taxon column names
-#create separate data frame with:
-#taxon names (as in Google Sheet)
-#taxon name (post janitor)
-#taxon name for display
-#More taxonomic information (e.g. higher-level groupings)
+# create separate data frame with:
+# taxon names (as in Google Sheet)
+# taxon name (post janitor)
+# taxon name for display
+# More taxonomic information (e.g. higher-level groupings)
 
 #read in overall list of taxa
 taxa <- read_csv(file = "data/taxon_list.csv")
@@ -94,16 +94,16 @@ water_quality <- read_excel(path = data_path,
            .default = conductivity_specific_u_s_cm
          )
   ) %>% 
-  #move new column
+  # move new column
   relocate(new_conductivity_u_s_cm, .before = conductivity_specific_ppt) %>% 
   relocate(year:month, .after = date)
          
   
-#list site codes:
+# list site codes:
 unique_sites_wq <- unique(water_quality$site)
 
 unique_sites_wq
-#known issues:
+# known issues:
 
 #FIXME: 
 
