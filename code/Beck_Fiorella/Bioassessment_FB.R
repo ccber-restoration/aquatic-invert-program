@@ -1,5 +1,5 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Name:           setup_Fiorella.R
+# Name:           Bioassessment.R
 # Description:    Analyze biotic and abiotic conditions of Phelps creek 
 # Author(s):      Fiorella Beck
 
@@ -15,7 +15,7 @@
 source("code/00_setup.R")
 
 # load a couple more packages
-
+library(sf)
 library(mapview) # interactive maps
 library(plotly) # interactive ggplot figures
 
@@ -479,8 +479,6 @@ fig_phelps_chironomid_time <- ggplot(data = invert_data_NPB, aes(x = year, y = d
 fig_phelps_chironomid_time
 
 
-
-
 # Plots by season ----
 
 water_quality_NPB_winter <- water_quality_NPB %>%
@@ -551,7 +549,7 @@ benchmark_data<-Benchmark_data %>%
 
 
 # check unique names 
-unique(benchmark_data$stationname)
+#unique(benchmark_data$stationname)
 
 # make benchmark data into a spatial object (sf object)
 benchmark_data_sf <- st_as_sf(benchmark_data, coords = c("targetlongitude", "targetlatitude"), crs = 4326) 
@@ -559,6 +557,7 @@ benchmark_data_sf <- st_as_sf(benchmark_data, coords = c("targetlongitude", "tar
 # view interactive map
 mapview(benchmark_data_sf)
 
+view(benchmark_data_sf)
 ## E. coli data----
 e.coli<-benchmark_data %>%
   filter(analyte == "E. coli")
