@@ -69,7 +69,6 @@ water_quality_NPB1  <- water_quality_NPB %>%
   filter(site == "NPB1")
 
 #find mean winter quarter for all value
-
 winter_temp_mean <- water_quality_NPB1 %>% 
   filter(season == "Winter") %>% 
   summarize(mean_temp = mean(temperature_c),
@@ -97,12 +96,6 @@ winter_sal_mean <- water_quality_NPB1 %>%
   drop_na(salinity_ppt) %>%
   summarize(mean_sal = mean(salinity_ppt),
             median_sal = median(salinity_ppt))
-
-
-  
-
-
-#find mean winter quarter temp value
 
 
 # plot water quality over time by NBP1 in Winter ----
@@ -546,7 +539,7 @@ Benchmark_data <- read_csv("code/Beck_Fiorella/Benchmark_data.csv")
 benchmark_data<-Benchmark_data %>%
   clean_names() %>%
   mutate(sampledate = mdy_hms(sampledate, tz = "UTC"))  # or your timezone
-
+view(benchmark_data)
 
 # check unique names 
 #unique(benchmark_data$stationname)
@@ -559,9 +552,14 @@ mapview(benchmark_data_sf)
 
 view(benchmark_data_sf)
 ## E. coli data----
+
+#determine downstream order
+location_order <- c(34.43743,34.43641,34.42469,34.42238,34.41765)
+
+#create data set with only e.coli as analyte
+
 e.coli<-benchmark_data %>%
   filter(analyte == "E. coli")
-  
 
 
 E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
@@ -571,11 +569,13 @@ E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_hline(yintercept = 410, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   ggtitle("E.coli levels (MPN/100 mL) overtime") +
-  # facet by station
-  facet_wrap(vars(stationname))
-  
-  
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
+
+
 E.coli_fig
+  
+
 
 E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
@@ -597,6 +597,7 @@ e.coli_above_rec_level<-benchmark_data %>%
 ## Nitrogen ----
 nitrogen<-benchmark_data %>%
   filter(analyte == "Nitrate as N, Dissolved")
+view(nitrogen)
 
 
 nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
@@ -606,7 +607,9 @@ nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   xlab("Sample date") +
   ylab("N (mg/L)") +
-  ggtitle("Nitrogen levels (mg/L) over time")
+  ggtitle("Nitrogen levels (mg/L) over time")+
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
 
 nitrogen_fig
 
@@ -621,7 +624,9 @@ coliform_fig <- ggplot(data = coliform, aes(x = sampledate, y = result)) +
   geom_hline(yintercept = 10000, linetype = "dashed") +
   scale_y_continuous(limits = c(0,250000)) +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Coliform levels (MPN/100 mL) overtime")
+  ggtitle("Coliform levels (MPN/100 mL) overtime") +
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
 
 coliform_fig
 
@@ -640,7 +645,10 @@ enterococcus_fig <- ggplot(data = enterococcus, aes(x = sampledate, y = result))
   geom_point(data = enterococcus, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_hline(yintercept = 235, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Enterococcus levels (MPN/100 mL) over time")
+  ggtitle("Enterococcus levels (MPN/100 mL) over time") +
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
+
  
 enterococcus_fig
 
@@ -659,7 +667,10 @@ temperature_fig <- ggplot(data = temperature, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = temperature, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Temperature (C) over time")
+  ggtitle("Temperature (C) over time") +
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
+
 
 temperature_fig
 
@@ -685,7 +696,7 @@ turbidity_above_rec_level<-benchmark_data %>%
   filter(result > 50) #less than 1% of the time (0.076%) the water had levels are above recommended turbitidy levels 
 
 ## pH ----
-
+view(pH)
 pH <-benchmark_data %>%
   filter(analyte == "pH") 
 
