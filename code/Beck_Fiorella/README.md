@@ -19,7 +19,7 @@
   - Total overtime Abiotic conditions: E.coli, Nitrogen, Coliform, Enterococcus, Temperature, Turbidity, pH, Conductivity, DO 
    
 
-- the only script is setup_Fiorella.R (feel free to rename)
+- the only script is Bioassessment_FB.R 
 - Describe:
   - Can described based on headers of outline: 
   - What are the inputs?

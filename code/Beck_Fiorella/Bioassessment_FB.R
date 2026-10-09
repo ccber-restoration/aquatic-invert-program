@@ -560,6 +560,9 @@ location_order <- c(34.43743,34.43641,34.42469,34.42238,34.41765)
 
 e.coli<-benchmark_data %>%
   filter(analyte == "E. coli")
+view(e.coli)
+
+
 
 
 E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
@@ -575,7 +578,10 @@ E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
 
 E.coli_fig
   
+#find the slope of analyte levels over time
+e.coli_lm<-lm(result~sampledate, data=e.coli)
 
+coefficients(e.coli_lm)#very small slope 4.810970e-06
 
 E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
@@ -588,18 +594,32 @@ E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
 
 E.coli_fig_2 #shorted range to see closer what is beyond recommended level
 
+#create data frame with only encanto river and e.coli as analyte
+benchmark_encanto<-benchmark_data  %>%
+  filter(stationname=="El Encanto Creek (Phelps Ditch) at Phelps Rd.") %>%
+  filter(analyte == "E. coli") 
 
+#test proportion of total data that is above recommend e.coli levels
 e.coli_above_rec_level<-benchmark_data %>%
   filter(analyte == "E. coli") %>%
   filter(result > 410) # of the total 465 samples 204 were above the recommended 410 (43.87%)
 
+#test the proportion of data from target creek that is above recommended e.coli levels
+e.coli_encanto_above_rec_level<-benchmark_encanto %>%
+  filter(analyte == "E. coli") %>%
+  filter(result > 410) # of total 142 samples 84 of them are above recommended level (57.7%)
+
+view(e.coli_encanto_above_rec_level)
+
+
 
 ## Nitrogen ----
+#create dataframe with only nitrate as the analyte
 nitrogen<-benchmark_data %>%
   filter(analyte == "Nitrate as N, Dissolved")
 view(nitrogen)
 
-
+#facet wrap nitrogen levels for total river length
 nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = nitrogen, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
@@ -615,9 +635,16 @@ nitrogen_fig
 
 ## Coliform ----
 
+#create data frame of with only coliform as the analye
 coliform<-benchmark_data %>%
   filter(analyte == "Coliform, Total")
 
+#create dataframe with only the specific stream location and coliform as analyte
+benchmark_encanto_coliform<-benchmark_data  %>%
+  filter(stationname=="El Encanto Creek (Phelps Ditch) at Phelps Rd.") %>%
+  filter(analyte == "Coliform, Total") 
+
+#facet wrap total length of river with all data locations around levels of coliform
 coliform_fig <- ggplot(data = coliform, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = coliform, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
@@ -630,14 +657,24 @@ coliform_fig <- ggplot(data = coliform, aes(x = sampledate, y = result)) +
 
 coliform_fig
 
+#test proportion of all river locations over recommended levels of coliform
 coliform_above_rec_level<-benchmark_data %>%
   filter(analyte == "Coliform, Total") %>%
   filter(result > 10000) # Of the total 459 samples 314 were over the recommended 
                          #limit of 10000 (68.4%)
 
+#test proportion of encanto river location over recommened coliform levels
+coliform_encanto_above_rec_level<-benchmark_encanto_coliform %>%
+  filter(analyte == "Coliform, Total") %>%
+  filter(result > 10000) # out of total 141 samples 101 were about recommended levels of coliform (71.6%)
+
 ## Enterococcus ----
 
 enterococcus <-benchmark_data %>%
+  filter(analyte == "Enterococcus") 
+
+benchmark_encanto_enterococcus<-benchmark_data  %>%
+  filter(stationname=="El Encanto Creek (Phelps Ditch) at Phelps Rd.") %>%
   filter(analyte == "Enterococcus") 
 
 enterococcus_fig <- ggplot(data = enterococcus, aes(x = sampledate, y = result)) +
@@ -657,6 +694,11 @@ enterococcus_above_rec_level<-enterococcus %>%
   filter(result > 235) # of the total 72 samples 35 were above the recommended 235 (48.61%)
 
 mean(enterococcus$result) #mean is at level typical for agricultural runoff
+
+#test proportion of target site over recommended level of enteroccus
+enterococcus_encanto_above_rec_level<-benchmark_encanto_enterococcus %>%
+  filter(analyte == "Enterococcus") %>%
+  filter(result > 235) #out of total 22 samples 17 were over recommended level (77.3%)
 
 ## Temperature ----
   
@@ -699,6 +741,7 @@ turbidity_above_rec_level<-benchmark_data %>%
 view(pH)
 pH <-benchmark_data %>%
   filter(analyte == "pH") 
+
 
 pH_fig <- ggplot(data = pH, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
