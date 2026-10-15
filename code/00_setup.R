@@ -1,3 +1,5 @@
+# The purpose of this script was to read in the Google Sheet data (downloaded as an Excel)
+# and do some cleaning to make it easier to work with
 
 # 0.  load packages ----
 library(tidyverse) # general use
@@ -33,6 +35,7 @@ invert_data <- read_excel(path = data_path,
   clean_names() %>% 
   # remove columns, including columns that are (incomplete) summaries rather than raw data
   select(-c(diptera_total, hemiptera_total, annelida_total, coleoptera_total, total_number)) %>% 
+  # create columns for year and month
   mutate(year = year(date_on_vial),
          month = month(date_on_vial)) %>% 
   relocate(year:month, .after = date_on_vial) %>% 
