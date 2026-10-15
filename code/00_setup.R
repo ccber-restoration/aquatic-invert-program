@@ -39,8 +39,10 @@ invert_data <- read_excel(path = data_path,
   mutate(year = year(date_on_vial),
          month = month(date_on_vial)) %>% 
   relocate(year:month, .after = date_on_vial) %>% 
+  # larvae column has some two notes (character values)
+  # but these can be replaced with NAs/zeroes
   # make taxon abundance columns numeric
-  mutate(across(c(coleoptera_sp, mollusk, larvae, crawfish), as.numeric)) %>% 
+  mutate(across(c(larvae), as.numeric)) %>% 
   mutate(across(c(ostracod:unknown), ~ replace_na(.x, 0)))
  
 # explore site codes...                                                        
