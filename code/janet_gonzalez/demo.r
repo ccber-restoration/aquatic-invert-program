@@ -10,7 +10,7 @@ library(plotly)
 figure_timeline <- ggplot(data = invert_data, mapping = aes(x = date_on_vial, y = 1, color = sample_type)) +
   geom_jitter(height = 0.1) +
   scale_y_continuous(limits = c(0,2)) +
-  facet_wrap(vars(sample_type))
+  facet_wrap(vars(site))
 
 figure_timeline
 
