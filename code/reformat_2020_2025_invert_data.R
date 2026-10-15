@@ -3,6 +3,8 @@
 # run setup script
 source("code/00_setup.R")
 
+library(writexl)
+
 taxa_names <- colnames(invert_data) %>% 
   as.data.frame()
 
@@ -68,4 +70,20 @@ invert_data_long <- invert_data %>%
               "unknown" ~ "unknown"
               )
          
-         )
+         ) |> 
+  # clean sample types
+  # THIS NEEDS TO BE CONSISTENT ACROSS DATAFRAMES
+  mutate(sample_type = case_when(
+    sample_type == "FB 250" ~ "FB250",
+    sample_type == "FB 18L" ~ "FB18L",
+    .default = sample_type
+  )) |> 
+  # make date character
+  mutate(date_on_vial = as.Date(date_on_vial))
+  
+# list unique sample types
+unique(invert_data_long$sample_type)
+
+# write to file
+writexl::write_xlsx(invert_data_long, "data/migration/invert_data_migration_to_new_excel.xlsx")
+
