@@ -13,12 +13,14 @@
  
 - Phelps Creek: 
  - Quarterly monitoring data: 
-  - Abiotic: Temperature, DO, pH, Conductivity, Salinity
-  - Biotic:  Abundance  
+  - Winter Abiotic conditions: Temperature, DO, pH, Conductivity, Salinity
+  - Biotic: Invertebrate Abundance 
+  - Seasonal abiotic changes: Temperature, DO
+  - Total overtime Abiotic conditions: E.coli, Nitrogen, Coliform, Enterococcus, Temperature, Turbidity, pH, Conductivity, DO 
+   
 
-- the only script is setup_Fiorella.R (feel free to rename)
+- the only script is Bioassessment_FB.R 
 - Describe:
-  - what is the purpose of the script? In other words, what does it do?
   - Can described based on headers of outline: 
   - What are the inputs?
   - What are the ouputs?

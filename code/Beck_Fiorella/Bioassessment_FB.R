@@ -1,5 +1,5 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Name:           setup_Fiorella.R
+# Name:           Bioassessment.R
 # Description:    Analyze biotic and abiotic conditions of Phelps creek 
 # Author(s):      Fiorella Beck
 
@@ -15,7 +15,7 @@
 source("code/00_setup.R")
 
 # load a couple more packages
-
+library(sf)
 library(mapview) # interactive maps
 library(plotly) # interactive ggplot figures
 
@@ -69,7 +69,6 @@ water_quality_NPB1  <- water_quality_NPB %>%
   filter(site == "NPB1")
 
 #find mean winter quarter for all value
-
 winter_temp_mean <- water_quality_NPB1 %>% 
   filter(season == "Winter") %>% 
   summarize(mean_temp = mean(temperature_c),
@@ -97,12 +96,6 @@ winter_sal_mean <- water_quality_NPB1 %>%
   drop_na(salinity_ppt) %>%
   summarize(mean_sal = mean(salinity_ppt),
             median_sal = median(salinity_ppt))
-
-
-  
-
-
-#find mean winter quarter temp value
 
 
 # plot water quality over time by NBP1 in Winter ----
@@ -451,7 +444,7 @@ fig_phelps_nz_mudsnail <- ggplot(data = invert_data_NPB, aes(x = site, y = nz_mu
 
 fig_phelps_nz_mudsnail
 
-#inverts over time
+# Inverts over time ----
 
 ## Copepod ----
 
@@ -477,8 +470,6 @@ fig_phelps_chironomid_time <- ggplot(data = invert_data_NPB, aes(x = year, y = d
   ggtitle("Chironomid Abundance (count) by Site") 
 
 fig_phelps_chironomid_time
-
-
 
 
 # Plots by season ----
@@ -548,10 +539,10 @@ Benchmark_data <- read_csv("code/Beck_Fiorella/Benchmark_data.csv")
 benchmark_data<-Benchmark_data %>%
   clean_names() %>%
   mutate(sampledate = mdy_hms(sampledate, tz = "UTC"))  # or your timezone
-
+view(benchmark_data)
 
 # check unique names 
-unique(benchmark_data$stationname)
+#unique(benchmark_data$stationname)
 
 # make benchmark data into a spatial object (sf object)
 benchmark_data_sf <- st_as_sf(benchmark_data, coords = c("targetlongitude", "targetlatitude"), crs = 4326) 
@@ -559,10 +550,19 @@ benchmark_data_sf <- st_as_sf(benchmark_data, coords = c("targetlongitude", "tar
 # view interactive map
 mapview(benchmark_data_sf)
 
+view(benchmark_data_sf)
 ## E. coli data----
+
+#determine downstream order
+location_order <- c(34.43743,34.43641,34.42469,34.42238,34.41765)
+
+#create data set with only e.coli as analyte
+
 e.coli<-benchmark_data %>%
   filter(analyte == "E. coli")
-  
+view(e.coli)
+
+
 
 
 E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
@@ -572,11 +572,16 @@ E.coli_fig <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_hline(yintercept = 410, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   ggtitle("E.coli levels (MPN/100 mL) overtime") +
-  # facet by station
-  facet_wrap(vars(stationname))
-  
-  
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
+
+
 E.coli_fig
+  
+#find the slope of analyte levels over time
+e.coli_lm<-lm(result~sampledate, data=e.coli)
+
+coefficients(e.coli_lm)#very small slope 4.810970e-06
 
 E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
@@ -589,17 +594,32 @@ E.coli_fig_2 <- ggplot(data = e.coli, aes(x = sampledate, y = result)) +
 
 E.coli_fig_2 #shorted range to see closer what is beyond recommended level
 
+#create data frame with only encanto river and e.coli as analyte
+benchmark_encanto<-benchmark_data  %>%
+  filter(stationname=="El Encanto Creek (Phelps Ditch) at Phelps Rd.") %>%
+  filter(analyte == "E. coli") 
 
+#test proportion of total data that is above recommend e.coli levels
 e.coli_above_rec_level<-benchmark_data %>%
   filter(analyte == "E. coli") %>%
   filter(result > 410) # of the total 465 samples 204 were above the recommended 410 (43.87%)
 
+#test the proportion of data from target creek that is above recommended e.coli levels
+e.coli_encanto_above_rec_level<-benchmark_encanto %>%
+  filter(analyte == "E. coli") %>%
+  filter(result > 410) # of total 142 samples 84 of them are above recommended level (57.7%)
+
+view(e.coli_encanto_above_rec_level)
+
+
 
 ## Nitrogen ----
+#create dataframe with only nitrate as the analyte
 nitrogen<-benchmark_data %>%
   filter(analyte == "Nitrate as N, Dissolved")
+view(nitrogen)
 
-
+#facet wrap nitrogen levels for total river length
 nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = nitrogen, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
@@ -607,33 +627,54 @@ nitrogen_fig <- ggplot(data = nitrogen, aes(x = sampledate, y = result)) +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   xlab("Sample date") +
   ylab("N (mg/L)") +
-  ggtitle("Nitrogen levels (mg/L) over time")
+  ggtitle("Nitrogen levels (mg/L) over time")+
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
 
 nitrogen_fig
 
 ## Coliform ----
 
+#create data frame of with only coliform as the analye
 coliform<-benchmark_data %>%
   filter(analyte == "Coliform, Total")
 
+#create dataframe with only the specific stream location and coliform as analyte
+benchmark_encanto_coliform<-benchmark_data  %>%
+  filter(stationname=="El Encanto Creek (Phelps Ditch) at Phelps Rd.") %>%
+  filter(analyte == "Coliform, Total") 
+
+#facet wrap total length of river with all data locations around levels of coliform
 coliform_fig <- ggplot(data = coliform, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = coliform, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_hline(yintercept = 10000, linetype = "dashed") +
   scale_y_continuous(limits = c(0,250000)) +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Coliform levels (MPN/100 mL) overtime")
+  ggtitle("Coliform levels (MPN/100 mL) overtime") +
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
 
 coliform_fig
 
+#test proportion of all river locations over recommended levels of coliform
 coliform_above_rec_level<-benchmark_data %>%
   filter(analyte == "Coliform, Total") %>%
   filter(result > 10000) # Of the total 459 samples 314 were over the recommended 
                          #limit of 10000 (68.4%)
 
+#test proportion of encanto river location over recommened coliform levels
+coliform_encanto_above_rec_level<-benchmark_encanto_coliform %>%
+  filter(analyte == "Coliform, Total") %>%
+  filter(result > 10000) # out of total 141 samples 101 were about recommended levels of coliform (71.6%)
+
 ## Enterococcus ----
 
 enterococcus <-benchmark_data %>%
+  filter(analyte == "Enterococcus") 
+
+benchmark_encanto_enterococcus<-benchmark_data  %>%
+  filter(stationname=="El Encanto Creek (Phelps Ditch) at Phelps Rd.") %>%
   filter(analyte == "Enterococcus") 
 
 enterococcus_fig <- ggplot(data = enterococcus, aes(x = sampledate, y = result)) +
@@ -641,7 +682,10 @@ enterococcus_fig <- ggplot(data = enterococcus, aes(x = sampledate, y = result))
   geom_point(data = enterococcus, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_hline(yintercept = 235, linetype = "dashed") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Enterococcus levels (MPN/100 mL) over time")
+  ggtitle("Enterococcus levels (MPN/100 mL) over time") +
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
+
  
 enterococcus_fig
 
@@ -650,6 +694,11 @@ enterococcus_above_rec_level<-enterococcus %>%
   filter(result > 235) # of the total 72 samples 35 were above the recommended 235 (48.61%)
 
 mean(enterococcus$result) #mean is at level typical for agricultural runoff
+
+#test proportion of target site over recommended level of enteroccus
+enterococcus_encanto_above_rec_level<-benchmark_encanto_enterococcus %>%
+  filter(analyte == "Enterococcus") %>%
+  filter(result > 235) #out of total 22 samples 17 were over recommended level (77.3%)
 
 ## Temperature ----
   
@@ -660,7 +709,10 @@ temperature_fig <- ggplot(data = temperature, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
   geom_point(data = temperature, aes(x = sampledate, y = result), size = 2, color = "royalblue3") +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
-  ggtitle("Temperature (C) over time")
+  ggtitle("Temperature (C) over time") +
+  #put facet wrap in downstream order
+  facet_wrap(vars(factor(stationname, levels = unique(stationname[order(factor(targetlatitude), decreasing = TRUE)]))))
+
 
 temperature_fig
 
@@ -686,9 +738,10 @@ turbidity_above_rec_level<-benchmark_data %>%
   filter(result > 50) #less than 1% of the time (0.076%) the water had levels are above recommended turbitidy levels 
 
 ## pH ----
-
+view(pH)
 pH <-benchmark_data %>%
   filter(analyte == "pH") 
+
 
 pH_fig <- ggplot(data = pH, aes(x = sampledate, y = result)) +
   geom_point(color = "royalblue3") +
