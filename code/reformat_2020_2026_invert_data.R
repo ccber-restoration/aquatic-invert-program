@@ -8,8 +8,9 @@ library(writexl)
 taxa_names <- colnames(invert_data) %>% 
   as.data.frame()
 
-# pivot invert_data long
+# prep invert sheet for migration ----
 
+# pivot invert_data long
 invert_data_long <- invert_data %>% 
   relocate(comments, .after = sample_type) %>% 
   pivot_longer(cols = c(ostracod:unknown), names_to = "taxon", values_to = "count") %>% 
@@ -85,5 +86,52 @@ invert_data_long <- invert_data %>%
 unique(invert_data_long$sample_type)
 
 # write to file
-writexl::write_xlsx(invert_data_long, "data/migration/invert_data_migration_to_new_excel.xlsx")
+# writexl::write_xlsx(invert_data_long, "data/migration/invert_data_migration_to_new_excel.xlsx")
 
+# prep sample metadata for migration ----
+
+# specify order of columns (to match Box Excel)
+
+# note that this lacks the partial sample_note column
+columns_in_order <- c("date_on_vial", 
+                      "person_that_sorted_the_sample", 
+                      "date_data_entered", 
+                      "person_entering_data", 
+                      "site", 
+                      "sample_type", 
+                      "comments", 
+                      "partial_sample_note")
+
+sample_metadata_2020_2026 <- invert_data |>
+  select(date_data_entered:sample_type, comments) |> 
+  select(-c(year, month)) |> 
+  # standardize sample types
+  mutate(sample_type = case_when(
+    sample_type == "FB 250" ~ "FB250",
+    sample_type == "FB 18L" ~ "FB18L",
+    .default = sample_type
+  ))
+
+# use base R to reorder columns
+sample_metadata_2020_2026_correct_column_order <- sample_metadata_2020_2026[columns_in_order] |> 
+  # sort by date, then by site code
+  arrange(date_on_vial, site) |> 
+  # add blank columns to match Excel structure
+  mutate(vial_status = "Completed",
+         orgs_counts_entered = "Yes",
+         wq_uploaded = NA) |> 
+  relocate(vial_status:wq_uploaded, .before = comments) |> 
+  mutate(season = quarters(date_on_vial)) |> 
+  mutate(season = case_when(
+    season == "Q1" ~ "Winter",
+    season == "Q2" ~ "Spring",
+    season == "Q3" ~ "Summer",
+    season == "Q4" ~ "Fall"
+  )) |> 
+  relocate(season)
+  
+
+  
+  
+  
+  
