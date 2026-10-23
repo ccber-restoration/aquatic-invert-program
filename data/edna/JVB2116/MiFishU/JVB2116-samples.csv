@@ -1,0 +1,8 @@
+BatchId,ClientId,SampleId,ClientSampleId,Capture time (MT),Lat,Long,SiteName,PublishStatus,Notes
+JVB2116,stratton@ccber.ucsb.edu,VUKMSLPR,,11/19/2022 11:50:11 AM,34.420980893134455,-119.87725392852236,NPB1,Public,Taken with water quality data.
+JVB2116,stratton@ccber.ucsb.edu,RJRB1V9F,,11/11/2022 2:26:57 AM,34.4340149,-119.9095398,Mouth,Private,Water quality taken at same time
+JVB2116,stratton@ccber.ucsb.edu,M8XO50RP,,11/11/2022 11:16:55 AM,34.4274696,-119.8809779,PIER ,Public,Water quality taken at same time
+JVB2116,stratton@ccber.ucsb.edu,9CXHHFVN,,11/12/2022 1:21:03 PM,34.42127468003926,-119.87483737803876,NEC,Private,Taken with water quality data. 
+JVB2116,stratton@ccber.ucsb.edu,3CHOPUC7,,,,,,Private,
+JVB2116,stratton@ccber.ucsb.edu,0XUIGO0E,,11/18/2022 11:30:31 AM,,,NVBR,Public,Water quality also taken
+JVB2116,stratton@ccber.ucsb.edu,04Q3DGUX,,11/19/2022 12:29:27 PM,34.422009958301444,-119.88199368288211,NDC,Public,Taken with water quality data.
