@@ -30,4 +30,12 @@ water_quality_reformatted <- water_quality |>
   # remove columns not in the new sheet
   select(-wq_measurement_depth_cm) |> 
   select(-new_conductivity_u_s_cm) 
-  
+
+
+# TODO- resolve issues mentioned in an email to Jeremiah:
+
+# DO mg/l contains character values (over)
+# only one value for conductivity_specitic_ppt (doesn't make sense, anyway)
+# salinity_ppt column contains character values (out of range, etc.)
+# barometric pressure column hasn't been used recently, also contains a "n/s" (typo for "n/a")
+
