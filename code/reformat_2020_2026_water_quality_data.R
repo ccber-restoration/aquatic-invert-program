@@ -31,6 +31,44 @@ water_quality_reformatted <- water_quality |>
   select(-wq_measurement_depth_cm) |> 
   select(-new_conductivity_u_s_cm) 
 
+# check site codes ----
+
+sites_wq_summary <- water_quality_reformatted |> 
+  # group by site code
+  group_by(site) |> 
+  # count the number of rows per site code
+  summarize(n_records = n()) |> 
+  # sort by the number of rows
+  arrange(-n_records)
+
+
+# sites timeline ----
+# Custom function to only label the start of the year (January)
+yearly_label_format <- function(x) {
+  # Format as year if it's January, otherwise leave blank
+  ifelse(format(x, "%m") == "01", format(x, "%Y"), "")
+}
+
+# Apply to your ggplot
+ggplot(your_data, aes(x = your_date_column, y = your_value_column)) +
+  geom_line() +
+  scale_x_date(
+    date_breaks = "3 months",         # Forces tick marks every quarter
+    labels = yearly_label_format      # Applies the custom year-only filter
+  )
+
+
+fig_site_timeline <- ggplot(data = water_quality_reformatted, aes(x = date, y = site)) +
+  geom_point() +
+  ylab("Site") +
+  xlab("Date") +
+  scale_x_date(
+    date_breaks = "1 year",
+    date_labels = "%Y" 
+  ) +
+  labs(title = "Water quality measurements timeline by site")
+
+fig_site_timeline
 
 # TODO- resolve issues mentioned in an email to Jeremiah:
 
