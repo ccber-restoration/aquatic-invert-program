@@ -22,6 +22,27 @@
 - the only script is Bioassessment_FB.R 
 - Describe:
   - Can described based on headers of outline: 
+  - Run background script
+  - plot water quality in winter season for NPB1
+     - temp
+     - DO
+     - pH
+     - conductivity
+     - salinity 
+  - Plot graphs of invertebrate abundance by site
+     - chironomids
+     - copepods
+     - ostracod
+     - gastropod
+     - amphipod
+     - NZ mudsnails
+  - Plot invert abundance overtime
+     - chironomids
+     - copepods
+     - ostracod
+     - gastropod
+     - amphipod
+     - NZ mudsnails
   - What are the inputs?
   - What are the ouputs?
 
