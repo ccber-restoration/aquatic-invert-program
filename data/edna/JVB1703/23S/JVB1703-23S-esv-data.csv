@@ -1,0 +1,939 @@
+TestId,ESVId,Kingdom,Phylum,Class,Order,Family,Genus,Species,Accession,PercMatch
+23S,ESV_193717,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,93.7
+23S,ESV_193716,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,97.6
+23S,ESV_193716,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,97.3
+23S,ESV_193716,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,97.3
+23S,ESV_193716,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,97.3
+23S,ESV_193716,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.3
+23S,ESV_193716,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,97.6
+23S,ESV_193715,Bacteria,Cyanobacteriota,Cyanophyceae,Pleurocapsales,Hyellaceae,Pleurocapsa,Pleurocapsa sp. PCC 7319,NZ_KB235922,91.9
+23S,ESV_193715,Bacteria,Cyanobacteriota,Cyanophyceae,Pleurocapsales,Hyellaceae,Myxosarcina,Myxosarcina sp. GI1,NZ_JRFE01000052,92.5
+23S,ESV_193715,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,92.8
+23S,ESV_193714,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,93.4
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,95.2
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,95.8
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,96.1
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,96.1
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,96.1
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,95.5
+23S,ESV_193713,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,95.8
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,97.6
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,98.2
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,98.5
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,98.5
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,98.5
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.9
+23S,ESV_193712,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,98.2
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,97.9
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,98.5
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,98.8
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,98.8
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,98.8
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,98.2
+23S,ESV_193711,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,98.5
+23S,ESV_193710,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Microcoleaceae,Planktothrix,Planktothrix serta,NZ_LR734968,92.2
+23S,ESV_193710,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Microcoleaceae,Planktothrix,Planktothrix serta,NZ_LR734870,92.8
+23S,ESV_193709,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,92.8
+23S,ESV_193709,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,92.5
+23S,ESV_193709,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,92.5
+23S,ESV_193709,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,92.5
+23S,ESV_193709,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,92.5
+23S,ESV_193709,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,92.8
+23S,ESV_193708,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,92.8
+23S,ESV_193708,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,92.5
+23S,ESV_193708,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,92.5
+23S,ESV_193708,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,92.5
+23S,ESV_193708,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,92.5
+23S,ESV_193708,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,92.8
+23S,ESV_193707,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,97.9
+23S,ESV_193707,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,97.6
+23S,ESV_193707,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,97.6
+23S,ESV_193707,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,97.6
+23S,ESV_193707,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.6
+23S,ESV_193707,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,97.9
+23S,ESV_193706,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,95.5
+23S,ESV_189540,Bacteria,Cyanobacteriota,Cyanophyceae,Pleurocapsales,Hyellaceae,Pleurocapsa,Pleurocapsa sp. PCC 7319,NZ_KB235922,90.1
+23S,ESV_189540,Bacteria,Cyanobacteriota,Cyanophyceae,Pleurocapsales,Hyellaceae,Myxosarcina,Myxosarcina sp. GI1,NZ_JRFE01000052,90.7
+23S,ESV_189540,Bacteria,Cyanobacteriota,,,,,,HQ421026,90.7
+23S,ESV_189540,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,91
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp.,QBLT01000044,91.6
+23S,ESV_165207,Bacteria,Cyanobacteriota,,,,,,PVWE01000128,91.6
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Phormidium,Phormidium tenue,NZ_MRCG01000040,92.2
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. PCC 6406,NZ_KI913949,91.3
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. KIOST-1,NZ_JQFA01000004,91.9
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. LEGE 07088,NZ_JADEWX010000272,91.9
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. LEGE 06152,NZ_JADEWR010000002,91.6
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Phormidium,Phormidium tenue,NZ_JACJQN010000036,92.2
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. FACHB-13,NZ_JACJPQ010000018,91.3
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. FACHB-141,NZ_JACJPP010000031,91.3
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. FACHB-131,NZ_JACJOF010000045,91.3
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus elongatus,NZ_CP034671,91.9
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Oculatellales,Oculatellaceae,Trichotorquatus,Trichotorquatus maritimus,KY511273,91.6
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Oculatellales,Oculatellaceae,Trichotorquatus,Trichotorquatus maritimus,KY511272,91.3
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea chupicuarensis,KX859297,91.9
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Plectonema,Plectonema terebrans,AY584525,91.6
+23S,ESV_165207,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea nodulosa,AY584521,91.3
+23S,ESV_143292,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.7
+23S,ESV_143292,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.4
+23S,ESV_143292,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.4
+23S,ESV_143292,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.4
+23S,ESV_143292,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.4
+23S,ESV_143292,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.7
+23S,ESV_140839,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,93.7
+23S,ESV_107576,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Microcoleaceae,Planktothrix,Planktothrix serta,NZ_LR734968,98.8
+23S,ESV_107576,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Microcoleaceae,Planktothrix,Planktothrix serta,NZ_LR734870,99.4
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,97.3
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,97.9
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,98.2
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,98.2
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,98.2
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.6
+23S,ESV_100964,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,97.9
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,,,,OR805654,97.6
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,unk_order,Entomoneidaceae,Entomoneis,Entomoneis sp.,OM494341,97.9
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula tsukamotoi,OK729588,97.6
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula veneta,NC_056794,97.3
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,97.6
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,97.6
+23S,ESV_091779,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Phaeodactylaceae,Phaeodactylum,Phaeodactylum tricornutum,MN937452,98.2
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas papillosa,KM817978,92.2
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas muskokana,KM817975,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas morrisonensis,KM817974,92.2
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas elongata,KM817958,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas elongata,KM817957,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas crassisquama,KM817950,92.2
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas corymbosa,KM817948,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas aerolata,KM817940,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas alpina,KM817935,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas adamas,KM817930,92.8
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas acaroides,KM817929,92.5
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Mallomonas,Mallomonas acaroides,KM817927,92.2
+23S,ESV_070231,Eukaryota,unk_phylum,Chrysophyceae,Chromulinales,Chromulinaceae,Chromulina,Chromulina sp. SAG 17.97,KM590766,93.1
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Synura,Synura mammillosa,KM590729,92.2
+23S,ESV_070231,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Synura,Synura echinulata,KM590705,92.2
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,95.8
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,96.4
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,96.7
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,96.7
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,96.7
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,96.1
+23S,ESV_061739,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,96.4
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,95.5
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,96.1
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,96.4
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,96.4
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,96.4
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,95.8
+23S,ESV_059641,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,96.1
+23S,ESV_034858,Bacteria,Cyanobacteriota,Cyanophyceae,Pleurocapsales,Hyellaceae,Myxosarcina,Myxosarcina sp. GI1,NZ_JRFE01000052,93.1
+23S,ESV_034858,Bacteria,Cyanobacteriota,Cyanophyceae,Spirulinales,Spirulinaceae,Spirulina,Spirulina subsalsa,NZ_JH980292,92.5
+23S,ESV_034858,Bacteria,Cyanobacteriota,Cyanophyceae,Spirulinales,Spirulinaceae,Spirulina,Spirulina subsalsa,NZ_JAIHOM010000203,92.5
+23S,ESV_034858,Bacteria,Cyanobacteriota,Cyanophyceae,Pleurocapsales,Hyellaceae,Hyella,Hyella patelloides,KR676351,92.8
+23S,ESV_034858,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,93.1
+23S,ESV_033527,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,AP018281,95.8
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva lactuca,NC_042255,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva fasciata,NC_029040,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva compressa,MW344287,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva gigantea,MT179350,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva fenestrata,MT179349,90.7
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva australis,MT179348,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva pertusa,MN853875,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva expansa,MH731008,90.7
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva expansa,MH730974,90.4
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva flexuosa,KX579943,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva prolifera,KX342867,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva linza,KX058323,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. UNA00071828,KP720616,90.7
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00146,EF426568,91
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00149,EF426567,91.3
+23S,ESV_031891,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00260,EF426566,91.3
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula sp.,OR795085,99.1
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea ostrearia,ON548139,98.5
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea pseudostrearia,OK729589,98.2
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula tsukamotoi,OK729588,99.1
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea karadagensis,NC_067583,98.8
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea provincialis,NC_067582,98.8
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula veneta,NC_056794,98.8
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea nusantara,NC_044491,99.1
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,98.2
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,98.2
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea silbo,MW645084,98.8
+23S,ESV_007798,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Seminavis,Seminavis robusta,MH356727,98.8
+23S,ESV_005392,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,99.4
+23S,ESV_005392,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,99.7
+23S,ESV_005392,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,99.4
+23S,ESV_005392,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,98.8
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva lactuca,NC_042255,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva fasciata,NC_029040,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva compressa,MW344287,91.6
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva gigantea,MT179350,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva fenestrata,MT179349,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva australis,MT179348,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva pertusa,MN853875,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva expansa,MH731008,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva expansa,MH730974,91.9
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva flexuosa,KX579943,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva prolifera,KX342867,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva linza,KX058323,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. UNA00071828,KP720616,91.9
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00146,EF426568,92.2
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00149,EF426567,91.9
+23S,ESV_004091,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00260,EF426566,91.9
+23S,ESV_002977,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,99.7
+23S,ESV_002132,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula sp.,OR795085,99.7
+23S,ESV_002132,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula tsukamotoi,OK729588,99.7
+23S,ESV_002132,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula veneta,NC_056794,99.4
+23S,ESV_002132,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Seminavis,Seminavis robusta,MH356727,99.4
+23S,ESV_000344,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Choricystis,Choricystis parasitica,NC_025539,98.5
+23S,ESV_000110,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula veneta,NC_056794,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Bassia,Bassia scoparia,PP048887,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Atriplex,Atriplex prostrata,OR374024,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Atriplex,Atriplex patens,OR374023,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Chenopodium,Chenopodium berlandieri,OR374022,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Chenopodium,Chenopodium bryoniifolium,OR374021,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Anabasis,Anabasis aphylla,OP712667,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Pyankovia,Pyankovia brachiata,ON651428,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salicornia,Salicornia ramosissima,ON641338,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salicornia,Salicornia fruticosa,ON641336,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Suaeda,Suaeda physophora,ON571659,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Ericales,Actinidiaceae,Saurauia,Saurauia napaulensis,ON149869,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salsola,Salsola affinis,ON080842,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Zygophyllales,Zygophyllaceae,Tetraena,Tetraena simplex,OL943588,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Kalidium,Kalidium foliatum,OL397049,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Bassia,Bassia littorea,OK539756,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salsola,Salsola collina,OK189514,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Krascheninnikovia,Krascheninnikovia ceratoides,NC_084261,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Caroxylon,Caroxylon nitrarium,NC_084117,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Caroxylon,Caroxylon orientale,NC_084116,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Atriplex,Atriplex canescens,NC_082104,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Chenopodium,Chenopodium petiolare,NC_081912,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Chrozophora,Chrozophora sabulosa,NC_070248,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Amaranthaceae,Gomphrena,Gomphrena globosa,NC_069834,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Phytolacca,Phytolacca americana,NC_067846,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia vaginalis,NC_063312,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia elata,NC_063308,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Heteranthera,Heteranthera callifolia,NC_063306,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Atriplex,Atriplex gmelinii,NC_059062,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Oxybasis,Oxybasis glauca,NC_047226,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Amaranthaceae,Ptilotus,Ptilotus polystachyus,NC_046575,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Amaranthaceae,Celosia,Celosia cristata,NC_045887,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Atriplex,Atriplex centralasiatica,NC_045304,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Suaeda,Suaeda glauca,NC_045303,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Suaeda,Suaeda salsa,NC_045302,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Ericales,Actinidiaceae,Saurauia,Saurauia tristyla,NC_044098,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Ranunculales,Ranunculaceae,Leptopyrum,Leptopyrum fumarioides,NC_041542,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Seguieria,Seguieria aculeata,NC_041418,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Petiveriaceae,Petiveria,Petiveria alliacea,NC_041417,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Monococcus,Monococcus echinophorus,NC_041414,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Barbeuiaceae,Barbeuia,Barbeuia madagascariensis,NC_041301,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Gisekiaceae,Gisekia,Gisekia pharnaceoides,NC_041296,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Amaranthaceae,Celosia,Celosia argentea,NC_041294,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Aizoaceae,Mesembryanthemum,Mesembryanthemum cordifolium,NC_041280,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Amaranthaceae,Deeringia,Deeringia amaranthoides,NC_041267,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Stegnospermataceae,Stegnosperma,Stegnosperma halimifolium,NC_041235,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Chenopodium,Chenopodium ficifolium,NC_041200,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Phytolacca,Phytolacca insularis,NC_041113,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Lophiocarpaceae,Lophiocarpus,Lophiocarpus tenuissimus,NC_040951,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Asteropeiaceae,Asteropeia,Asteropeia rhopaloides,NC_040948,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Achatocarpaceae,Achatocarpus,Achatocarpus pubescens,NC_040947,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Achatocarpaceae,Achatocarpus,Achatocarpus nigricans,NC_040946,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Molluginaceae,Trigastrotheca,Trigastrotheca stricta,NC_040945,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Stegnospermataceae,Stegnosperma,Stegnosperma cubense,NC_040942,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Phytolacca,Phytolacca acinosa,NC_040941,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Suaeda,Suaeda malacosperma,NC_039180,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Aizoaceae,Mesembryanthemum,Mesembryanthemum crystallinum,NC_029049,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Haloxylon,Haloxylon persicum,NC_027669,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Haloxylon,Haloxylon ammodendron,NC_027668,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salicornia,Salicornia bigelovii,NC_027226,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salicornia,Salicornia europaea,NC_027225,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salicornia,Salicornia brachiata,NC_027224,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salsola,Salsola heptapotamica,MZ230595,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Caroxylon,Caroxylon passerinum,MW192441,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Salsola,Salsola abrotanoides,MW123092,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Chenopodium,Chenopodium acuminatum,MW057780,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Sclerolaena,Sclerolaena napiformis,MT027236,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia sp. AU63,MN750363,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia africana,MN750362,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia valida,MN750361,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia plantaginea,MN750357,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia korsakowii,MN750356,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia hastata,MN750354,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Commelinales,Pontederiaceae,Pontederia,Pontederia paniculata,MN750348,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Acorales,Acoraceae,Acorus,Acorus gramineus,MN175740,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Suaeda,Suaeda japonica,MK764271,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Amaranthaceae,Alternanthera,Alternanthera philoxeroides,MK450441,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Limeaceae,Limeum,Limeum africanum,MK397924,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Gisekiaceae,Gisekia,Gisekia sp. GY-2019,MK397921,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Ercilla,Ercilla volubilis,MK397920,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Aizoaceae,Tetragonia,Tetragonia tetragonoides,MK397903,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Lophiocarpaceae,Lophiocarpus,Lophiocarpus polystachyus,MH286341,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Agdestidaceae,Agdestis,Agdestis clematidea,MH286339,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Molluginaceae,Glinus,Glinus dahomensis,MH286335,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Achatocarpaceae,Phaulothamnus,Phaulothamnus spinescens,MH286322,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Limeaceae,Limeum,Limeum aethiopicum,MH286320,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Phytolacca,Phytolacca americana,MH286315,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Chenopodium,Chenopodium album,MF418659,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Chenopodiaceae,Bienertia,Bienertia sinuspersici,KU726550,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Asteropeiaceae,Asteropeia,Asteropeia micraster,HQ664638,100
+23S,ESV_000044,Eukaryota,Streptophyta,Magnoliopsida,Caryophyllales,Gisekiaceae,Gisekia,Gisekia africana,HQ664636,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix matsudana,OR826413,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix udensis,ON012186,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix viminalis,OK505606,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix floderusii,OK375876,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix annulifera,NC_063507,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix dunnii,NC_058985,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix gordejevii,NC_058001,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix psammophila,NC_051969,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus mexicana,NC_047300,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Bennettiodendron,Bennettiodendron leprosipes,NC_045898,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus afghanica,NC_045396,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus davidiana x Populus alba var. pyramidalis,NC_044462,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix koriyanagi,NC_044419,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Olmediella,Olmediella betschleriana,NC_043886,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Bennettiodendron,Bennettiodendron brevipes,NC_043885,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix gracilistyla,NC_043878,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus xiangchengensis,NC_040953,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Poliothyrsis,Poliothyrsis sinensis,NC_037412,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix tetrasperma,NC_035744,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix oreinoma,NC_035743,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Idesia,Idesia polycarpa,NC_032060,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus tremula x Populus alba,NC_028504,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix purpurea,NC_026722,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus balsamifera,NC_024735,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix linearistipularis,MZ018223,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix triandroides,MW929215,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix sitchensis,MW435450,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix silesiaca,MW435449,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix repens,MW435447,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix pentandra,MW435442,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix myrtilloides,MW435441,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix mielichhoferi,MW435438,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix lapponum,MW435437,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix daphnoides,MW435427,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix aurita,MW435417,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix alba,MW435414,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus ussuriensis,MW376844,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus talassica,MW376834,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus suaveolens,MW376825,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus szechuanica,MW376818,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus pseudomaximowiczii,MW376810,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus ningshanica,MW376801,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus maximowiczii,MW376795,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus grandidentata,MW376776,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus deltoides,MW373504,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus euphratica,MW122833,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix sinopurpurea,MW077725,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix matsudana,MT872638,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix sp.,MT872531,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix myrsinifolia,MT832833,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus angustifolia,MT593376,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus ilicifolia,MT593374,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus laurifolia,MT593373,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus pruinosa,MT593371,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus qiongdaoensis,MT593370,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus szechuanica,MT593369,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus fremontii,MT593368,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix integra,MT551162,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix eriocephala,MT551161,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix dasyclados,MT551160,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix argyracea,MT551159,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus rotundifolia,MT482542,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus wilsonii,MT482541,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus simonii,MT482540,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus adenopoda,MT482539,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus trinervis,MT482538,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus yunnanensis,MT482537,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus tremula,MT482535,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus davidiana,MT407464,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus koreana,MN864049,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix variegata,MN698825,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix cheilophila,MN495628,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Itoa,Itoa orientalis,MN078146,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix wilsonii,MK748469,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix triandra,MK722343,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus pamirica,MK288023,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus alba,MK267320,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus alba,MK267319,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus cathayana,MK267318,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus x canadensis,MK267315,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus gonggaensis,MK267313,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus haoana,MK267312,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus hopeiensis,MK267311,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus kangdingensis,MK267310,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus lasiocarpa,MK267309,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus pseudoglauca,MK267308,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus qamdoensis,MK267307,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus rotundifolia,MK267306,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus schneideri,MK267305,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus szechuanica,MK267302,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus tomentosa,MK251149,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Carrierea,Carrierea calycina,MK138584,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix arbutifolia,MK117825,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix babylonica,MF189167,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus nigra,LT996902,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix viminalis,LT996897,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Poales,Poaceae,Phyllostachys,Phyllostachys heteroclada,LC589953,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix suchowensis,KU341117,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix interior,KJ742926,100
+23S,ESV_000035,Eukaryota,Streptophyta,Magnoliopsida,Malpighiales,Salicaceae,Populus,Populus trichocarpa,EF489041,100
+23S,ESV_189666,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Picochlorum,Picochlorum sp. BH-2019,OQ942923,99.4
+23S,ESV_189665,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,97.9
+23S,ESV_189665,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,98.2
+23S,ESV_189665,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Fragilariopsis,Fragilariopsis cylindrus,NC_045244,97.3
+23S,ESV_189665,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,97.9
+23S,ESV_189665,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,98.2
+23S,ESV_189664,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M60BS1,NZ_JADBVU010000209,92.8
+23S,ESV_189664,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M53BS1,NZ_JADBVP010000054,92.8
+23S,ESV_189664,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M43BS1,NZ_JADBVL010000293,92.8
+23S,ESV_189664,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M41BS1,NZ_JADBVJ010000171,92.8
+23S,ESV_189664,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,92.8
+23S,ESV_189664,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,93.1
+23S,ESV_189664,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Fragilariopsis,Fragilariopsis cylindrus,NC_045244,92.8
+23S,ESV_189664,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,93.7
+23S,ESV_189664,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,93.1
+23S,ESV_189664,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,MH113811,92.8
+23S,ESV_189663,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Picochlorum,Picochlorum sp. BH-2019,OQ942923,92.2
+23S,ESV_189663,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Picochlorum,Picochlorum sp. 'soloecismus',MG552671,91.6
+23S,ESV_189662,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Nostocaceae,Nostoc,Nostoc linckia,NZ_LAHF01000446,87.1
+23S,ESV_189659,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,92.5
+23S,ESV_189659,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,92.2
+23S,ESV_189659,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,92.2
+23S,ESV_189659,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,92.2
+23S,ESV_189659,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,92.2
+23S,ESV_189659,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. UW140,NZ_UCOB01000013,92.2
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. UW105,NZ_UCNN01000021,92.2
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GEYO,NZ_UCNL01000012,92.8
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. UW179A,NZ_UCNJ01000026,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MIT S9509,NZ_LVHV01000022,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MIT S9504,NZ_LVHT01000025,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,NZ_LVHS01000012,92.2
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,NZ_LVHQ01000011,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 1306,NZ_LVHL01000003,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 1303,NZ_LVHK01000009,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 0703,NZ_JNBC01000051,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 0702,NZ_JNBB01000057,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 0701,NZ_JNBA01000052,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. P1344,NZ_JABBYR010000054,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp.P1363,NZ_JABBYQ010000031,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. P1361,NZ_JABBYP010000030,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. RS9916,NZ_DS022299,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 1300,NZ_CP139302,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. PROS-9-1,NZ_CP047961,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. SYN20,NZ_CP047959,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MIT S9220,NZ_CP047958,92.8
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. A18-25c,NZ_CP047957,92.2
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. ROS8604,NZ_CP047946,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MVIR-18-1,NZ_CP047942,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. NOUM97013,NZ_CP047941,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. BIOS-U3-1,NZ_CP047936,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. A15-60,NZ_CP047933,92.2
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. WH 8101,NZ_CP047932,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. WH 8016,NZ_AGIK01000004,92.5
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHR01000016,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHO01000011,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHN01000025,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHM01000019,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,CP000554,91.9
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CC9311,CP000435,92.8
+23S,ESV_189658,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,BX548175,91.9
+23S,ESV_189634,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,97.9
+23S,ESV_189634,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,97.9
+23S,ESV_189633,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,94
+23S,ESV_189633,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,94
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,98.8
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.4
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.7
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.7
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.7
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.1
+23S,ESV_165195,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.4
+23S,ESV_164527,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,94.9
+23S,ESV_164527,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,94.6
+23S,ESV_164527,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,94.6
+23S,ESV_164527,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,94.6
+23S,ESV_164527,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,94.6
+23S,ESV_164527,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,94.9
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,98.8
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.4
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.7
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.7
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.7
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.1
+23S,ESV_104853,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.4
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. UW140,NZ_UCOB01000013,92.5
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. UW105,NZ_UCNN01000021,92.5
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GEYO,NZ_UCNL01000012,93.1
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. UW179A,NZ_UCNJ01000026,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MIT S9509,NZ_LVHV01000022,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MIT S9504,NZ_LVHT01000025,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,NZ_LVHS01000012,92.5
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,NZ_LVHQ01000011,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 1306,NZ_LVHL01000003,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 1303,NZ_LVHK01000009,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 0703,NZ_JNBC01000051,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 0702,NZ_JNBB01000057,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 0701,NZ_JNBA01000052,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. P1344,NZ_JABBYR010000054,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp.P1363,NZ_JABBYQ010000031,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. P1361,NZ_JABBYP010000030,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. RS9916,NZ_DS022299,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus sp. MIT 1300,NZ_CP139302,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. PROS-9-1,NZ_CP047961,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. SYN20,NZ_CP047959,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MIT S9220,NZ_CP047958,93.1
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. A18-25c,NZ_CP047957,92.5
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. ROS8604,NZ_CP047946,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. MVIR-18-1,NZ_CP047942,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. NOUM97013,NZ_CP047941,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. BIOS-U3-1,NZ_CP047936,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. A15-60,NZ_CP047933,92.5
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. WH 8101,NZ_CP047932,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. WH 8016,NZ_AGIK01000004,92.8
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHR01000016,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHO01000011,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHN01000025,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,LVHM01000019,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,CP000554,92.2
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CC9311,CP000435,93.1
+23S,ESV_063301,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Prochlorococcus,Prochlorococcus marinus,BX548175,92.2
+23S,ESV_039003,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,98.8
+23S,ESV_039003,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,98.8
+23S,ESV_006602,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,98.8
+23S,ESV_006602,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,99.1
+23S,ESV_006602,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Fragilariopsis,Fragilariopsis cylindrus,NC_045244,98.2
+23S,ESV_006602,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,98.8
+23S,ESV_006602,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,99.1
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,,,,OR805654,98.8
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula sp.,OR795085,98.2
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula tsukamotoi,OK729588,98.2
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula veneta,NC_056794,97.9
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,97.9
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,97.9
+23S,ESV_004118,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Seminavis,Seminavis robusta,MH356727,97.9
+23S,ESV_000636,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Picochlorum,Picochlorum sp. BH-2019,OQ942923,99.7
+23S,ESV_000237,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. BS56D,NZ_PHQU01000008,98.8
+23S,ESV_000237,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. BS55D,NZ_PHQT01000007,98.8
+23S,ESV_000237,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. WH 8101,NZ_CP047932,99.7
+23S,ESV_000237,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CC9311,CP000435,98.8
+23S,ESV_000121,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. WH 8101,NZ_CP047932,100
+23S,ESV_000061,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,100
+23S,ESV_000061,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,100
+23S,ESV_000019,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,100
+23S,ESV_000019,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,100
+23S,ESV_000019,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,100
+23S,ESV_000015,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula sp.,OR795085,99.7
+23S,ESV_000015,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula tsukamotoi,OK729588,99.1
+23S,ESV_000015,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula veneta,NC_056794,98.8
+23S,ESV_000015,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Seminavis,Seminavis robusta,MH356727,99.4
+23S,ESV_189661,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GFB01,NZ_LFEK01000088,97
+23S,ESV_189661,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GFB01,NZ_LFEK01000082,97.3
+23S,ESV_189661,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GFB01,NZ_LFEK01000052,97
+23S,ESV_189661,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. LEGE 06113,NZ_JADEWM010000007,96.4
+23S,ESV_189661,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. NS01,NZ_CP047940,96.7
+23S,ESV_189660,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GFB01,NZ_LFEK01000088,91.9
+23S,ESV_189660,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. GFB01,NZ_LFEK01000082,91.6
+23S,ESV_189660,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. LEGE 06113,NZ_JADEWM010000007,92.5
+23S,ESV_189660,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. NS01,NZ_CP047940,92.2
+23S,ESV_164504,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,91.6
+23S,ESV_164504,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,91.9
+23S,ESV_164501,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,97.9
+23S,ESV_164501,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,98.5
+23S,ESV_193705,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,95.2
+23S,ESV_193705,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,94.9
+23S,ESV_193705,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,94.9
+23S,ESV_193705,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,94.9
+23S,ESV_193705,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,94.9
+23S,ESV_193705,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,95.2
+23S,ESV_193704,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,97.6
+23S,ESV_193704,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,97.6
+23S,ESV_189649,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,96.4
+23S,ESV_189649,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,96.4
+23S,ESV_189637,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,96.7
+23S,ESV_189637,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,96.7
+23S,ESV_189636,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,94.3
+23S,ESV_189636,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,94
+23S,ESV_189636,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,94
+23S,ESV_189636,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,94
+23S,ESV_189636,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,94
+23S,ESV_189636,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,94.3
+23S,ESV_189632,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,93.4
+23S,ESV_189632,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,93.4
+23S,ESV_164518,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,98.8
+23S,ESV_164518,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,98.5
+23S,ESV_164518,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,98.5
+23S,ESV_164518,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,98.5
+23S,ESV_164518,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,98.5
+23S,ESV_164518,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,98.8
+23S,ESV_164508,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,91.9
+23S,ESV_164508,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,92.2
+23S,ESV_107557,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,98.2
+23S,ESV_107557,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,98.2
+23S,ESV_001009,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NZ_NGZV01000103,80.3
+23S,ESV_001009,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NMQF01000252,80.3
+23S,ESV_001009,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NMQB01000685,80.6
+23S,ESV_001009,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NHAD01000098,80.6
+23S,ESV_001009,Eukaryota,unk_phylum,Glaucocystophyceae,Glaucocystales,Glaucocystaceae,Glaucocystis,Glaucocystis incrassata,NC_040152,80.2
+23S,ESV_001009,Eukaryota,unk_phylum,Glaucocystophyceae,unk_order,Cyanophoraceae,Cyanophora,Cyanophora sudae,NC_038215,79.9
+23S,ESV_001009,Eukaryota,unk_phylum,Glaucocystophyceae,Glaucocystales,Glaucocystaceae,Glaucocystis,Glaucocystis sp. BBH,MF167424,80.2
+23S,ESV_001009,Eukaryota,Chlorophyta,Chlorophyceae,Sphaeropleales,Scenedesmaceae,Tetradesmus,Tetradesmus obliquus,KY951714,80
+23S,ESV_001009,Eukaryota,unk_phylum,Glaucocystophyceae,unk_order,Cyanophoraceae,Cyanophora,Cyanophora paradoxa,KM198929,79.9
+23S,ESV_001009,Bacteria,Cyanobacteriota,,,,,,HQ421026,80.8
+23S,ESV_001009,Eukaryota,unk_phylum,Glaucocystophyceae,Glaucocystales,Glaucocystaceae,Glaucocystis,Glaucocystis nostochinearum,AM084274,80.2
+23S,ESV_001009,Bacteria,Cyanobacteriota,Cyanophyceae,Acaryochloridales,Acaryochloridaceae,Acaryochloris,Acaryochloris sp. CCMEE 5410,AFEJ02000002,80.4
+23S,ESV_189657,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,93.7
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,OP179279,86.8
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Monomorphina,Monomorphina aenigmatica,NC_020018,86.4
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889713,87.1
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889710,86.5
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889708,86.8
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889706,86.8
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889705,86.5
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889704,87.1
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889703,86.8
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889701,87.1
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena deses,KX889700,86.8
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Monomorphina,Monomorphina aenigmatica,JN603965,86.7
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Monomorphina,Monomorphina aenigmatica,JN603963,86.7
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Strombomonas,Strombomonas verrucosa,FJ719745,86.3
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Monomorphina,Monomorphina aenigmatica,FJ719727,86.9
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglena,Euglena sp. Wollyang110406A,FJ719722,86.2
+23S,ESV_189656,Eukaryota,Euglenozoa,Euglenida,Euglenales,Euglenaceae,Euglenaria,Euglenaria anabaena,FJ719720,87.2
+23S,ESV_189655,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,92.8
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,98.5
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.1
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.4
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.4
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.4
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,98.8
+23S,ESV_189654,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.1
+23S,ESV_189653,Bacteria,Cyanobacteriota,Cyanophyceae,Gomontiellales,Cyanothecaceae,Cyanothece,Cyanothece sp. BG0011,NZ_PRLH01000196,88.9
+23S,ESV_189653,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Aphanothecaceae,Crocosphaera,Crocosphaera chwakensis,NZ_AAXW01000006,88.9
+23S,ESV_189653,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Aphanothecaceae,Crocosphaera,Crocosphaera subtropica,NR_076532,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas tetrapyrenoidosa,KF907455,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas tetrapyrenoidosa,KF907454,88.6
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas tetrapyrenoidosa,KF907452,88.7
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas tetrapyrenoidosa,KF907451,88.6
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas sp. Sinjeong 080610A,KF907447,88.9
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas sp. Okgeum121809C,KF907446,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas sp. Dumo2 100310C,KF907445,88.9
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas sp. CNUCRY 75,KF907443,89.2
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas marssonii,KF907424,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas marssonii,JX470947,88.3
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas ozolini,JX470946,89.2
+23S,ESV_189653,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas ovata,JX470945,88.9
+23S,ESV_189652,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.4
+23S,ESV_189652,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.1
+23S,ESV_189652,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.1
+23S,ESV_189652,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.1
+23S,ESV_189652,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.1
+23S,ESV_189652,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.4
+23S,ESV_189651,Bacteria,Cyanobacteriota,Cyanophyceae,Gomontiellales,Cyanothecaceae,Cyanothece,Cyanothece sp. BG0011,NZ_PRLH01000196,91.9
+23S,ESV_189651,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Lyngbya,Lyngbya aestuarii,NZ_AUZM01000153,91.9
+23S,ESV_189651,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Aphanothecaceae,Crocosphaera,Crocosphaera chwakensis,NZ_AAXW01000006,92.2
+23S,ESV_189651,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Lyngbya,Lyngbya sp. PCC 8106,NZ_AAVU01000018,91.3
+23S,ESV_189651,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Aphanothecaceae,Crocosphaera,Crocosphaera subtropica,NR_076532,91.9
+23S,ESV_189651,Eukaryota,unk_phylum,Cryptophyceae,Cryptomonadales,Cryptomonadaceae,Cryptomonas,Cryptomonas ozolini,JX470946,91.3
+23S,ESV_189651,Bacteria,Cyanobacteriota,,,,,,HQ421026,91.3
+23S,ESV_189651,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Lyngbya,Lyngbya aestuarii,AY584522,91.3
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,93.4
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,94
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,94.3
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,94.3
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,94.3
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,93.7
+23S,ESV_189650,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,94
+23S,ESV_178628,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,98.5
+23S,ESV_178628,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,98.2
+23S,ESV_178628,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,99.1
+23S,ESV_164494,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,94.3
+23S,ESV_164494,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,94
+23S,ESV_164494,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,94
+23S,ESV_164494,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,94
+23S,ESV_164494,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,94
+23S,ESV_164494,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,94.3
+23S,ESV_103020,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,94.9
+23S,ESV_103020,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,94.3
+23S,ESV_103020,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira oceanica,GU323224,94.3
+23S,ESV_103020,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,95.2
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. BO 8801,NZ_NQKY01000040,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Aljojuca 7A6,NZ_JAGQCY010000031,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. AMD-g,NZ_JAGQCW010000013,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Cruz-8D1,NZ_JAGQCD010000091,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Cruz-8H5,NZ_JAGQCC010000087,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. La Preciosa 7G6,NZ_JAGQBO010000032,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Lug-B,NZ_JAGQBM010000102,93.7
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. N5-Cardenillas,NZ_JAGQBG010000004,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CCAP 1479/9,NZ_JAFKRK010000013,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CCAP 1479/10,NZ_JAFKRJ010000014,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CCAP 1479/13,NZ_JAFKRI010000025,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CCY 0621,NZ_JAFKRH010000013,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. CCY 9618,NZ_JAFKRG010000016,92.8
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. FACHB-909,NZ_JACJTY010000017,93.1
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Copco_Reservoir_LC18,NZ_ASAC01000026,93.7
+23S,ESV_067997,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium gracile,NR_102534,93.7
+23S,ESV_063117,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,94.3
+23S,ESV_063117,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,93.7
+23S,ESV_063117,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Skeletonemataceae,Skeletonema,Skeletonema pseudocostatum,MK372941,93.7
+23S,ESV_063117,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira oceanica,GU323224,93.7
+23S,ESV_063117,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,94.6
+23S,ESV_062196,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,94
+23S,ESV_062196,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,94.6
+23S,ESV_062196,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,93.7
+23S,ESV_032949,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,98.2
+23S,ESV_032949,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,99.1
+23S,ESV_032949,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,98.2
+23S,ESV_031746,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,98.2
+23S,ESV_031746,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,98.5
+23S,ESV_031746,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,98.2
+23S,ESV_031746,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,98.8
+23S,ESV_031485,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,97.6
+23S,ESV_031415,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,98.2
+23S,ESV_031415,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,99.1
+23S,ESV_031415,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Skeletonemataceae,Skeletonema,Skeletonema pseudocostatum,MK372941,98.8
+23S,ESV_031415,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira oceanica,GU323224,98.2
+23S,ESV_031415,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,98.2
+23S,ESV_031321,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,98.2
+23S,ESV_001141,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Lug-B,NZ_JAGQBM010000102,100
+23S,ESV_001141,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium sp. Copco_Reservoir_LC18,NZ_ASAC01000026,100
+23S,ESV_001141,Bacteria,Cyanobacteriota,Cyanophyceae,Synechococcales,Prochlorococcaceae,Cyanobium,Cyanobium gracile,NR_102534,100
+23S,ESV_001044,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,98.8
+23S,ESV_001044,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,99.7
+23S,ESV_001044,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Skeletonemataceae,Skeletonema,Skeletonema pseudocostatum,MK372941,98.8
+23S,ESV_001044,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,99.4
+23S,ESV_000875,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,99.7
+23S,ESV_000875,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,99.4
+23S,ESV_000875,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira oceanica,GU323224,99.1
+23S,ESV_000875,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,99.7
+23S,ESV_000368,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,98.5
+23S,ESV_000200,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,99.1
+23S,ESV_000200,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,98.8
+23S,ESV_000200,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,99.7
+23S,ESV_000119,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira punctigera,MT902152,98.8
+23S,ESV_000119,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,99.7
+23S,ESV_000119,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,98.8
+23S,ESV_000028,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,EF067921,100
+23S,ESV_000025,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella cryptica,MT385839,100
+23S,ESV_193703,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,93.4
+23S,ESV_193703,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,93.1
+23S,ESV_193703,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,93.1
+23S,ESV_193703,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,93.1
+23S,ESV_193703,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,93.1
+23S,ESV_193703,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,93.4
+23S,ESV_193702,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.1
+23S,ESV_193702,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,98.8
+23S,ESV_193702,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,98.8
+23S,ESV_193702,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,98.8
+23S,ESV_193702,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,98.8
+23S,ESV_193702,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.1
+23S,ESV_193701,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,92.8
+23S,ESV_193701,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,92.5
+23S,ESV_193701,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,92.5
+23S,ESV_193701,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,92.5
+23S,ESV_193701,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,92.5
+23S,ESV_193701,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,92.8
+23S,ESV_164514,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,97
+23S,ESV_164514,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,97.6
+23S,ESV_164510,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,97.3
+23S,ESV_164510,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,97.9
+23S,ESV_164509,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,92.5
+23S,ESV_164509,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,92.2
+23S,ESV_164509,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,92.2
+23S,ESV_164509,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,92.2
+23S,ESV_164509,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,92.2
+23S,ESV_164509,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,92.5
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva lactuca,NC_042255,100
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva fasciata,NC_029040,100
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva gigantea,MT179350,100
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva flexuosa,KX579943,100
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva prolifera,KX342867,100
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva linza,KX058323,100
+23S,ESV_130263,Eukaryota,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva sp. 00146,EF426568,100
+23S,ESV_193700,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M60BS1,NZ_JADBVU010000209,98.5
+23S,ESV_193700,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M53BS1,NZ_JADBVP010000054,98.5
+23S,ESV_193700,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M43BS1,NZ_JADBVL010000293,98.5
+23S,ESV_193700,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M41BS1,NZ_JADBVJ010000171,98.5
+23S,ESV_193700,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,98.2
+23S,ESV_193700,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,98.2
+23S,ESV_193700,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,MH113811,98.5
+23S,ESV_193700,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,AP018511,98.2
+23S,ESV_193699,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M60BS1,NZ_JADBVU010000209,99.4
+23S,ESV_193699,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M53BS1,NZ_JADBVP010000054,99.4
+23S,ESV_193699,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M43BS1,NZ_JADBVL010000293,99.4
+23S,ESV_193699,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M41BS1,NZ_JADBVJ010000171,99.4
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,98.5
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,98.8
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Pseudo-nitzschia,Pseudo-nitzschia multiseries,NC_027721,98.5
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,99.1
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,98.5
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,MH113811,99.4
+23S,ESV_193699,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,AP018511,99.1
+23S,ESV_189571,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M60BS1,NZ_JADBVU010000209,99.1
+23S,ESV_189571,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M53BS1,NZ_JADBVP010000054,99.1
+23S,ESV_189571,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M43BS1,NZ_JADBVL010000293,99.1
+23S,ESV_189571,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M41BS1,NZ_JADBVJ010000171,99.1
+23S,ESV_189571,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,98.8
+23S,ESV_189571,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,99.1
+23S,ESV_189571,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Fragilariopsis,Fragilariopsis cylindrus,NC_045244,98.5
+23S,ESV_189571,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,99.4
+23S,ESV_189571,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,MH113811,99.1
+23S,ESV_189571,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,AP018511,98.8
+23S,ESV_000239,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M60BS1,NZ_JADBVU010000209,98.2
+23S,ESV_000239,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M53BS1,NZ_JADBVP010000054,98.2
+23S,ESV_000239,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M43BS1,NZ_JADBVL010000293,98.2
+23S,ESV_000239,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M41BS1,NZ_JADBVJ010000171,98.2
+23S,ESV_000239,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,97.3
+23S,ESV_000239,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,98.2
+23S,ESV_000239,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,97.9
+23S,ESV_000239,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,MH113811,98.2
+23S,ESV_000239,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,AP018511,97.9
+23S,ESV_000096,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M60BS1,NZ_JADBVU010000209,100
+23S,ESV_000096,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M53BS1,NZ_JADBVP010000054,100
+23S,ESV_000096,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M43BS1,NZ_JADBVL010000293,100
+23S,ESV_000096,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis sp. M41BS1,NZ_JADBVJ010000171,100
+23S,ESV_000096,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia palea,MH113811,100
+23S,ESV_189640,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,94.9
+23S,ESV_189640,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,94.9
+23S,ESV_189635,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,97.6
+23S,ESV_189635,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,97.3
+23S,ESV_189635,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,97.3
+23S,ESV_189635,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,97.3
+23S,ESV_189635,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.3
+23S,ESV_189635,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,97.6
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,81.7
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,82.3
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,82
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,82
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,82
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,82
+23S,ESV_193698,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,82.3
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Gomontiellales,Cyanothecaceae,Cyanothece,Cyanothece sp. BG0011,NZ_PRLH01000196,78.7
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NZ_NGZV01000103,79.1
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Trichocoleusaceae,Trichocoleus,Trichocoleus sp. FACHB-262,NZ_JACJPK010000072,79.5
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Trichocoleusaceae,Trichocoleus,Trichocoleus sp. FACHB-591,NZ_JACJPA010000126,79.5
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Acaryochloridales,Acaryochloridaceae,Acaryochloris,Acaryochloris marina,NZ_AP026075,78.9
+23S,ESV_193697,Bacteria,Cyanobacteriota,,,,,,NZ_AP018341,79
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Acaryochloridales,Acaryochloridaceae,Acaryochloris,Acaryochloris marina,NR_076538,78.9
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NMQF01000252,79.1
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NMQB01000685,79.4
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Hapalosiphonaceae,Fischerella,Fischerella thermalis,NHAD01000098,79.4
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,78.7
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,79.3
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,79
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,79
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Oculatellales,Oculatellaceae,Trichotorquatus,Trichotorquatus maritimus,KY511273,78.7
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,79
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,79
+23S,ESV_193697,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,79.3
+23S,ESV_193697,Bacteria,Cyanobacteriota,,,,,,HQ421026,79.6
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema hongdechloris,CP021983,79.6
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Acaryochloridales,Acaryochloridaceae,Acaryochloris,Acaryochloris marina,CP000828,78.9
+23S,ESV_193697,Bacteria,Cyanobacteriota,Cyanophyceae,Acaryochloridales,Acaryochloridaceae,Acaryochloris,Acaryochloris sp. CCMEE 5410,AFEJ02000002,78.9
+23S,ESV_193696,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,92.2
+23S,ESV_193696,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,91.9
+23S,ESV_193696,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,91.9
+23S,ESV_193696,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,91.9
+23S,ESV_193696,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,91.9
+23S,ESV_193696,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,92.2
+23S,ESV_193695,Bacteria,Cyanobacteriota,,,,,,PVWE01000128,93.4
+23S,ESV_193695,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. LEGE 06152,NZ_JADEWR010000002,93.4
+23S,ESV_193695,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Plectonema,Plectonema terebrans,AY584525,93.7
+23S,ESV_193694,Bacteria,Cyanobacteriota,,,,,,PVWE01000128,88.3
+23S,ESV_193694,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Nodosilinea,Nodosilinea sp. LEGE 06152,NZ_JADEWR010000002,88.3
+23S,ESV_193694,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema hongdechloris,CP021983,87.7
+23S,ESV_193694,Bacteria,Cyanobacteriota,Cyanophyceae,Oscillatoriales,Oscillatoriaceae,Plectonema,Plectonema terebrans,AY584525,88.6
+23S,ESV_193693,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,91.6
+23S,ESV_193693,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,91.3
+23S,ESV_193693,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,91.3
+23S,ESV_193693,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,91.3
+23S,ESV_193693,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,91.3
+23S,ESV_193693,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,91.6
+23S,ESV_193692,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. PCC 6406,NZ_KI913949,94.6
+23S,ESV_193692,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,93.7
+23S,ESV_193691,Bacteria,Cyanobacteriota,Cyanophyceae,Leptolyngbyales,Leptolyngbyaceae,Leptolyngbya,Leptolyngbya sp. LK,NZ_QVFV01000001,88.3
+23S,ESV_193691,Bacteria,Cyanobacteriota,Cyanophyceae,Nodosilineales,Nodosilineaceae,Halomicronema,Halomicronema sp. CCY15110,NZ_JACSWC010000258,88.9
+23S,ESV_165250,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Nostocaceae,Nostoc,Nostoc linckia,NZ_LAHF01000446,87.4
+23S,ESV_189648,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Choricystis,Choricystis parasitica,NC_025539,97.3
+23S,ESV_189647,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.4
+23S,ESV_189647,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.1
+23S,ESV_189647,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.1
+23S,ESV_189647,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.1
+23S,ESV_189647,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.1
+23S,ESV_189647,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.4
+23S,ESV_189646,Eukaryota,Bacillariophyta,Fragilariophyceae,Fragilariales,Staurosiraceae,Nanofrustulum,Nanofrustulum shiloi,MN276191,99.4
+23S,ESV_189645,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.4
+23S,ESV_189645,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.1
+23S,ESV_189645,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.1
+23S,ESV_189645,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.1
+23S,ESV_189645,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.1
+23S,ESV_189645,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.4
+23S,ESV_189644,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Choricystis,Choricystis parasitica,NC_025539,98.2
+23S,ESV_189643,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis aeruginosa,SFBC01000325,98.2
+23S,ESV_189643,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella sp. NJD-19,KY656463,97.3
+23S,ESV_189643,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Botryococcus,Botryococcus sp. NJD-1,KY656445,97.6
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,,,,OR805654,97
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia dubiiformis,NC_065388,97.6
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Tryblionella,Tryblionella apiculata,NC_056791,97.9
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Fragilariopsis,Fragilariopsis cylindrus,NC_045244,97.3
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia inconspicua,MW971520,97
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia anatoliensis,MT742551,97.6
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia supralitorea,MT383638,97.9
+23S,ESV_164516,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia sp. 00196,EF426584,97
+23S,ESV_102789,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis aeruginosa,SFBC01000325,98.2
+23S,ESV_102789,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella sp. NJD-19,KY656463,97.3
+23S,ESV_102789,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Botryococcus,Botryococcus sp. NJD-1,KY656445,97.6
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,98.2
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,98.8
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.1
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.1
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.1
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,98.5
+23S,ESV_059332,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,98.8
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,96.1
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,96.1
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,96.4
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,96.4
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,96.4
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,95.8
+23S,ESV_031183,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,96.1
+23S,ESV_002827,Bacteria,Cyanobacteriota,Cyanophyceae,Chroococcales,Microcystaceae,Microcystis,Microcystis aeruginosa,SFBC01000325,98.5
+23S,ESV_002827,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella sp. NJD-19,KY656463,97.6
+23S,ESV_002827,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Botryococcus,Botryococcus sp. NJD-1,KY656445,97.9
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oceanica,NC_022263,97
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,97.6
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,97.9
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,97.9
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,97.9
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.3
+23S,ESV_000105,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,97.6
+23S,ESV_189642,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,93.1
+23S,ESV_189642,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,93.1
+23S,ESV_189642,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea silbo,MW645084,92.2
+23S,ESV_189641,Eukaryota,unk_phylum,Dictyochophyceae,Pedinellales,unk_family,Pseudopedinella,Pseudopedinella elastica,NC_044408,92.8
+23S,ESV_189639,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,98.2
+23S,ESV_189639,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,97.9
+23S,ESV_189639,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,97.9
+23S,ESV_189639,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,97.9
+23S,ESV_189639,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,97.9
+23S,ESV_189639,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,98.2
+23S,ESV_189638,Eukaryota,Haptophyta,unk_class,Prymnesiales,Chrysochromulinaceae,Chrysochromulina,Chrysochromulina parva,NC_036937,91.6
+23S,ESV_189638,Eukaryota,Haptophyta,unk_class,Prymnesiales,Chrysochromulinaceae,Chrysochromulina,Chrysochromulina tobinii,KJ201907,91.6
+23S,ESV_165197,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.7
+23S,ESV_165197,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,99.4
+23S,ESV_165197,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,99.4
+23S,ESV_165197,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,99.4
+23S,ESV_165197,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,99.4
+23S,ESV_165197,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.7
+23S,ESV_113536,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora calidilacuna,NC_044464,98.5
+23S,ESV_113536,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Amphipleuraceae,Halamphora,Halamphora americana,NC_044463,98.5
+23S,ESV_113536,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Haslea,Haslea silbo,MW645084,97.6
+23S,ESV_193690,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,NC_022260,99.1
+23S,ESV_193690,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis granulata,NC_022259,98.8
+23S,ESV_193690,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis limnetica,MT872226,98.8
+23S,ESV_193690,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,KJ410685,98.8
+23S,ESV_193690,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis oculata,KJ410684,98.8
+23S,ESV_193690,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410682,99.1

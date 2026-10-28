@@ -1,0 +1,679 @@
+TestId,ESVId,Kingdom,Phylum,Class,Order,Family,Genus,Species,Accession,PercMatch
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp.,OM609051,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex restuans,OL351548,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex brami,NC_037828,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex surinamensis,NC_037797,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex camposi,NC_036008,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex usquatus,NC_036005,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex declarator,MT999166,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex stigmatosoma,MT108648,99.4
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex stigmatosoma,MT108573,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,MN793310,99.4
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,MN793308,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG087495,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG25512-F06,MG087274,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG01402-C08,MG087205,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG086027,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG085568,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG085381,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG085142,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG084518,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG084219,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG25469-C05,MG083401,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG01422-D05,MG082709,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG081685,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG01459-H08,MG081269,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG081163,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG079921,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG17326-G03,MF826993,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG26829-A11,MF824713,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG27459-G03,MF818769,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex usquatissimus,MF509894,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex coronator,MF509890,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex coronator,KX671399,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex tarsalis,KR695532,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BOLD-2016,KR525741,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BOLD:AAA7661,KR390986,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex nigripalpus,KM593058,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR033-Colombia,KM593018,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR031-Colombia,KM593016,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR028-Colombia,KM593013,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR024-Colombia,KM593009,99.4
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR011-Colombia,KM592996,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex usquatus,KJ812984,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex acharistus,KF919249,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex brethesi,HE605121,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,HE599225,98.7
+ArthCOI,ESV_044695,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Aedes,Aedes togoi,EF645645,98.7
+ArthCOI,ESV_044694,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108622,95.5
+ArthCOI,ESV_044694,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108598,96.2
+ArthCOI,ESV_044693,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309528,95.5
+ArthCOI,ESV_044693,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309358,94.9
+ArthCOI,ESV_044693,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,EU076848,95.5
+ArthCOI,ESV_044692,Eukaryota,Arthropoda,Hexanauplia,Cyclopoida,,,,MZ964929,100
+ArthCOI,ESV_044692,Eukaryota,Arthropoda,Hexanauplia,Cyclopoida,Cyclopidae,Acanthocyclops,Acanthocyclops americanus,KC016177,100
+ArthCOI,ESV_044692,Eukaryota,Arthropoda,Hexanauplia,Cyclopoida,Cyclopidae,Acanthocyclops,Acanthocyclops americanus,KC016162,100
+ArthCOI,ESV_044692,Eukaryota,Arthropoda,Hexanauplia,Cyclopoida,Cyclopidae,Acanthocyclops,Acanthocyclops americanus,HM884009,100
+ArthCOI,ESV_044691,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108622,95.5
+ArthCOI,ESV_044691,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108598,96.2
+ArthCOI,ESV_044690,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,OK510581,98.1
+ArthCOI,ESV_044690,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MW363388,98.1
+ArthCOI,ESV_044690,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MG976099,98.7
+ArthCOI,ESV_044690,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella anatina,AY651177,98.1
+ArthCOI,ESV_044689,Eukaryota,Arthropoda,Malacostraca,Amphipoda,Hyalellidae,Hyalella,Hyalella azteca,KF596733,100
+ArthCOI,ESV_044688,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108622,95.5
+ArthCOI,ESV_044688,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108598,96.2
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp.,OM609051,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex restuans,OL351548,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex brami,NC_037828,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex surinamensis,NC_037797,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex camposi,NC_036008,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex usquatus,NC_036005,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex declarator,MT999166,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex stigmatosoma,MT108648,99.4
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex salinarius,MT108593,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex stigmatosoma,MT108573,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,MN793310,99.4
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,MN793308,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex dolosus,MN793270,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG087495,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG25512-F06,MG087274,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG01402-C08,MG087205,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG086027,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG085568,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG085381,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG085142,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG084518,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG084219,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG25469-C05,MG083401,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG01422-D05,MG082709,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG081685,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG01459-H08,MG081269,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG081163,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,,,MG079921,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG17326-G03,MF826993,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG26829-A11,MF824713,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BIOUG27459-G03,MF818769,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex usquatissimus,MF509894,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex coronator,MF509890,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex coronator,KX671399,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex tarsalis,KR695532,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BOLD-2016,KR525741,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. BOLD:AAA7661,KR390986,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex nigripalpus,KM593058,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR033-Colombia,KM593018,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR031-Colombia,KM593016,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR028-Colombia,KM593013,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR024-Colombia,KM593009,99.4
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR011-Colombia,KM592996,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex usquatus,KJ812984,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex acharistus,KF919249,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex erythrothorax,JX260648,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex brethesi,HE605121,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,HE599225,98.7
+ArthCOI,ESV_044687,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Aedes,Aedes togoi,EF645645,98.7
+ArthCOI,ESV_044686,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108622,96.8
+ArthCOI,ESV_044686,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108598,96.2
+ArthCOI,ESV_044686,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108562,96.2
+ArthCOI,ESV_044685,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia sp. BOLD:AAB5055,JN294918,100
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata AS10a1,KC616844,99.4
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata AS10a3,KC616831,99.4
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia sp. BOLD:AAB5055,JN294918,98.7
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata BOLD:AAB5055,JN233855,98.7
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata BOLD:AAB5055,JN233854,99.4
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata BOLD:AAB5055,JN233846,98.7
+ArthCOI,ESV_044684,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata BOLD:AAB5055,EU702033,98.7
+ArthCOI,ESV_044683,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108622,96.2
+ArthCOI,ESV_044683,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culiseta,Culiseta particeps,MT108598,96.8
+ArthCOI,ESV_044682,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,OK510581,98.7
+ArthCOI,ESV_044682,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MW363388,98.7
+ArthCOI,ESV_044682,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MG976099,99.4
+ArthCOI,ESV_044682,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella anatina,AY651177,98.7
+ArthCOI,ESV_044668,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,OK510581,98.7
+ArthCOI,ESV_044668,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MW363388,98.7
+ArthCOI,ESV_044668,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MN809500,98.7
+ArthCOI,ESV_044668,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MG976099,99.4
+ArthCOI,ESV_044668,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella anatina,AY651177,98.7
+ArthCOI,ESV_039267,Eukaryota,Mollusca,Gastropoda,Littorinimorpha,Tateidae,Potamopyrgus,Potamopyrgus antipodarum,MG979458,100
+ArthCOI,ESV_033816,Eukaryota,Arthropoda,Malacostraca,Amphipoda,Hyalellidae,Hyalella,Hyalella azteca,DQ464650,100
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula obscuriventris,MZ627702,96.8
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula flavolineata,MT410828,96.2
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula sp. BOLD:AAF8981,KR642677,96.2
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula sp. BOLD:ACG9936,KR642651,96.2
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula sp. BOLD-2016,KR517676,96.2
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,,,HQ979844,96.2
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,,,HQ552743,96.2
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,,,HM416374,96.8
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,,,HM416332,96.8
+ArthCOI,ESV_033751,Eukaryota,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula sp. CABIN3,GU712911,96.2
+ArthCOI,ESV_030554,Eukaryota,Arthropoda,Ostracoda,Podocopida,Cyprididae,,,JN294881,92.4
+ArthCOI,ESV_030551,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,OK510581,98.7
+ArthCOI,ESV_030551,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MW363388,98.7
+ArthCOI,ESV_030551,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MG976099,99.4
+ArthCOI,ESV_030551,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella anatina,AY651177,98.7
+ArthCOI,ESV_030491,Eukaryota,Mollusca,Gastropoda,unk_order,Physidae,Physella,Physella acuta,MG976099,100
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Proalidae,Proales,Proales similis,MN970216,82.2
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Synchaetidae,Synchaeta,Synchaeta kitina,MK905875,82.2
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Asplanchnidae,Asplanchna,Asplanchna sp. BIOUG30062-H10,MG449545,82.2
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Asplanchnidae,Asplanchna,Asplanchna sp. BIOUG30062-C04,MG449527,82.2
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Asplanchnidae,Asplanchna,Asplanchna sp. BIOUG30062-G04,MG448790,82.2
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Synchaetidae,Synchaeta,Synchaeta pectinata,KY501128,81.5
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Synchaetidae,Synchaeta,Synchaeta kitina,JN936608,81.5
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Ploima,Synchaetidae,Synchaeta,Synchaeta kitina,JN936585,82.2
+ArthCOI,ESV_027813,Eukaryota,Rotifera,Eurotatoria,Flosculariaceae,Conochilidae,Conochilus,Conochilus hippocrepis,DQ297767,82.2
+ArthCOI,ESV_027369,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex stigmatosoma,MT108648,100
+ArthCOI,ESV_027369,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex maxi,MN793310,100
+ArthCOI,ESV_027369,Eukaryota,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex sp. ZFMK PR024-Colombia,KM593009,100
+ArthCOI,ESV_027364,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,92
+ArthCOI,ESV_027364,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,92.6
+ArthCOI,ESV_027362,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,EU076858,98.7
+ArthCOI,ESV_027362,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,EU076852,98.1
+ArthCOI,ESV_027343,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,98.8
+ArthCOI,ESV_027343,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,99.4
+ArthCOI,ESV_027341,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,96.3
+ArthCOI,ESV_027341,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,96.9
+ArthCOI,ESV_025161,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,100
+ArthCOI,ESV_025160,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,92.6
+ArthCOI,ESV_025160,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,93.3
+ArthCOI,ESV_012474,Eukaryota,Oomycota,unk_class,Albuginales,Albuginaceae,Pustula,Pustula obtusata,KT257396,77.9
+ArthCOI,ESV_012474,Eukaryota,Arthropoda,Arachnida,Mesostigmata,,,,KR103618,78.5
+ArthCOI,ESV_012474,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium uncinulatum,EU350530,77.9
+ArthCOI,ESV_012474,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium orthogonon,EU350521,77.9
+ArthCOI,ESV_004660,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata AS10a1,KC616844,100
+ArthCOI,ESV_004660,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata AS10a3,KC616831,100
+ArthCOI,ESV_004660,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Ceriodaphnia,Ceriodaphnia cf. laticaudata BOLD:AAB5055,JN233854,100
+ArthCOI,ESV_000600,Eukaryota,Cnidaria,Hydrozoa,Anthoathecata,Hydridae,Hydra,Hydra vulgaris,LC053821,100
+ArthCOI,ESV_000027,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,Coccomyxaceae,Medakamo,Medakamo hakoo,LC604817,87.7
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Myzocytiopsidales,Myzocytiopsidaceae,Chlamydomyzium,Chlamydomyzium dictyuchoides,KT257398,84
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,KM888096,84
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia eccentrica,HQ709022,84.7
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces sp. BOLD:AAO9952,HQ708196,84
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces laevis,HQ708195,84.7
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya spinosa,HQ708182,84
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya papillosa,HQ708175,84.7
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya oligocantha,HQ708174,84
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708173,84.7
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708172,84
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,HQ708161,84.7
+ArthCOI,ESV_030465,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya ambisexualis,HQ708155,84.7
+ArthCOI,ESV_030464,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis punctata,JQ661928,98.7
+ArthCOI,ESV_030464,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis sp. AMI 1,HQ261063,99.4
+ArthCOI,ESV_030464,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis punctata,HM900418,99.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Myzocytiopsidales,Myzocytiopsidaceae,Chlamydomyzium,Chlamydomyzium dictyuchoides,KT257398,83.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,unk_order,unk_family,Haptoglossa,Haptoglossa sp. DM2 4/12,KT257394,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,KM888096,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Albuginales,Albuginaceae,Albugo,Albugo sp. YJC-2014,KJ654008,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia eccentrica,HQ709022,83.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia diclina,HQ709020,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces sp. BOLD:AAO9952,HQ708196,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces laevis,HQ708195,83.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya spinosa,HQ708182,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya papillosa,HQ708175,83.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya oligocantha,HQ708174,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708173,83.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708172,82.8
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,HQ708161,83.4
+ArthCOI,ESV_030463,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya ambisexualis,HQ708155,83.4
+ArthCOI,ESV_030462,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis punctata,JQ661928,98.7
+ArthCOI,ESV_030462,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis sp. AMI 1,HQ261063,99.4
+ArthCOI,ESV_030462,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis punctata,HM900418,99.4
+ArthCOI,ESV_030461,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,92
+ArthCOI,ESV_030461,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,92.6
+ArthCOI,ESV_030460,Eukaryota,Rotifera,Eurotatoria,Ploima,Brachionidae,Brachionus,Brachionus plicatilis complex sp. JPNAG034,KU299334,98.1
+ArthCOI,ESV_030460,Eukaryota,Rotifera,Eurotatoria,Ploima,Brachionidae,Brachionus,Brachionus plicatilis complex sp. JPNAG033,KU299333,98.1
+ArthCOI,ESV_030460,Eukaryota,Rotifera,Eurotatoria,Ploima,Brachionidae,Brachionus,Brachionus plicatilis,KJ845634,98.7
+ArthCOI,ESV_030459,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium perplexum,EU350520,81.6
+ArthCOI,ESV_030458,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba sp.,MN240294,100
+ArthCOI,ESV_030458,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba castellanii,MH124177,100
+ArthCOI,ESV_027564,Eukaryota,Mucoromycota,Mortierellomycetes,Mortierellales,Mortierellaceae,Entomortierella,Entomortierella parvispora,LC659289,79.1
+ArthCOI,ESV_027563,Eukaryota,Oomycota,unk_class,Myzocytiopsidales,Myzocytiopsidaceae,Chlamydomyzium,Chlamydomyzium dictyuchoides,KT257398,87.1
+ArthCOI,ESV_027563,Eukaryota,Oomycota,unk_class,Leptomitales,unk_family,Apodachlya,Apodachlya brachynema,HQ708198,86.5
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,OR662003,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,OP622276,82.2
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,ON186561,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,MT981142,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,MT780679,82.2
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium irregulare,MT222497,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU812,LC224111,82.2
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU811,LC224110,82.2
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU810,LC224109,82.2
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU809,LC224108,82.2
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium junctum,KJ995597,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium utonaiense,KJ995589,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium utonaiense,KJ995588,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium flevoense,HQ708583,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium angustatum,HQ708484,81.6
+ArthCOI,ESV_027523,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. AL-2010,HQ261483,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,OP622276,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,ON186561,82.2
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,MT981142,82.2
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,MT780679,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium irregulare,MT222497,82.2
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,MH760243,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium catenulatum,LC553640,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU812,LC224111,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU811,LC224110,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU810,LC224109,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU809,LC224108,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium junctum,KJ995597,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium monospermum,HQ708742,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium flevoense,HQ708583,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium angustatum,HQ708484,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya spinosa,HQ708182,81.6
+ArthCOI,ESV_027345,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Elongisporangium,Elongisporangium helicandrum,GU071823,81.6
+ArthCOI,ESV_027340,Eukaryota,Rotifera,Eurotatoria,Ploima,Brachionidae,Brachionus,Brachionus plicatilis complex sp. JPNAG034,KU299334,98.7
+ArthCOI,ESV_027340,Eukaryota,Rotifera,Eurotatoria,Ploima,Brachionidae,Brachionus,Brachionus plicatilis complex sp. JPNAG033,KU299333,98.7
+ArthCOI,ESV_027340,Eukaryota,Rotifera,Eurotatoria,Ploima,Brachionidae,Brachionus,Brachionus plicatilis,KJ845634,99.4
+ArthCOI,ESV_025166,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,92
+ArthCOI,ESV_025166,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,92.6
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Myzocytiopsidales,Myzocytiopsidaceae,Chlamydomyzium,Chlamydomyzium dictyuchoides,KT257398,83.4
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,KM888096,83.4
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia eccentrica,HQ709022,84
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces sp. BOLD:AAO9952,HQ708196,83.4
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces laevis,HQ708195,84
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya spinosa,HQ708182,83.4
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya papillosa,HQ708175,84
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya oligocantha,HQ708174,83.4
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708173,84
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708172,83.4
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,HQ708161,84
+ArthCOI,ESV_025164,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya ambisexualis,HQ708155,84
+ArthCOI,ESV_022763,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis sp. AMI 1,HQ261063,100
+ArthCOI,ESV_022763,Eukaryota,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis punctata,HM900418,100
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,OP622276,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,ON186561,82.2
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,MT981142,82.2
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,MT780679,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium irregulare,MT222497,82.2
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,MH760243,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium catenulatum,LC553640,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU812,LC224111,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU811,LC224110,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU810,LC224109,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU809,LC224108,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium junctum,KJ995597,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium monospermum,HQ708742,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium angustatum,HQ708484,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya spinosa,HQ708182,81.6
+ArthCOI,ESV_027588,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Elongisporangium,Elongisporangium helicandrum,GU071823,81.6
+ArthCOI,ESV_027347,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,95.1
+ArthCOI,ESV_027347,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,95.7
+ArthCOI,ESV_027344,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,95.1
+ArthCOI,ESV_027344,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,95.7
+ArthCOI,ESV_027342,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,95.7
+ArthCOI,ESV_027342,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,96.3
+ArthCOI,ESV_044681,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,95.7
+ArthCOI,ESV_044681,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,96.3
+ArthCOI,ESV_027351,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,94.5
+ArthCOI,ESV_027351,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,95.1
+ArthCOI,ESV_044680,Eukaryota,Rotifera,Eurotatoria,Ploima,Lecanidae,Lecane,Lecane bulla,MN983093,80.3
+ArthCOI,ESV_044680,Eukaryota,Rotifera,Eurotatoria,Ploima,Proalidae,Proales,Proales similis,MN970216,79.6
+ArthCOI,ESV_044680,Eukaryota,Rotifera,Eurotatoria,Ploima,Asplanchnidae,Asplanchna,Asplanchna sp. BIOUG30062-H10,MG449545,79.6
+ArthCOI,ESV_044680,Eukaryota,Rotifera,Eurotatoria,Ploima,Asplanchnidae,Asplanchna,Asplanchna sp. BIOUG30062-C04,MG449527,79.6
+ArthCOI,ESV_044680,Eukaryota,Rotifera,Eurotatoria,Ploima,Asplanchnidae,Asplanchna,Asplanchna sp. BIOUG30062-G04,MG448790,79.6
+ArthCOI,ESV_044679,Eukaryota,Tubulinea,Elardia,Euamoebida,unk_family,Copromyxa,Copromyxa flindersi,OR062369,82.2
+ArthCOI,ESV_044678,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,85.9
+ArthCOI,ESV_044678,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,86.5
+ArthCOI,ESV_044677,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba castellanii,MN240296,79.1
+ArthCOI,ESV_044677,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba hatchetti,MH124182,79.1
+ArthCOI,ESV_044677,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba sp.,MH124168,79.8
+ArthCOI,ESV_044646,Eukaryota,Arthropoda,Insecta,Lepidoptera,Limacodidae,Anepopsia,Anepopsia sp. ACM4568,MK019977,76.1
+ArthCOI,ESV_044646,Eukaryota,Arthropoda,Insecta,Lepidoptera,Limacodidae,,,KP850664,76.1
+ArthCOI,ESV_044646,Eukaryota,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cydia,Cydia caryana,HM388066,75.5
+ArthCOI,ESV_044676,Eukaryota,Tubulinea,Elardia,Arcellinida,Hyalospheniidae,Nebela,Nebela tincta,KP691356,81
+ArthCOI,ESV_044676,Eukaryota,Tubulinea,Elardia,Arcellinida,Hyalospheniidae,Nebela,Nebela tincta,KP691351,80.4
+ArthCOI,ESV_044676,Eukaryota,Tubulinea,Elardia,Arcellinida,Hyalospheniidae,Nebela,Nebela guttata,JX682588,80.4
+ArthCOI,ESV_044676,Eukaryota,Tubulinea,Elardia,Arcellinida,Hyalospheniidae,Gibbocarina,Gibbocarina galeata,JN849060,80.4
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia australis,OR790630,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia parasitica,OK872242,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia parasitica,OK872241,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia parasitica,NW_012157837,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia ferax,NC_005984,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia sp.,MN058729,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Peronosporales,Salisapiliaceae,Salisapilia,Salisapilia mycoparasitica,MG523281,81.6
+ArthCOI,ESV_044648,Eukaryota,Arthropoda,Insecta,Diptera,Drosophilidae,Mycodrosophila,Mycodrosophila gratiosa,LC194026,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Dictyuchus,Dictyuchus monosporus,KM888095,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Dictyuchus,Dictyuchus monosporus,KM888094,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia bulbosa,KM888092,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia unispora,HQ709057,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia sp. BOLD:AAO5998,HQ709048,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia parasitica,HQ709046,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia parasitica,HQ709043,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia parasitica,HQ709042,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia mixta,HQ709036,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia lapponica,HQ709031,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia hypogyna,HQ709030,82.2
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia diclina,HQ709021,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia delica,HQ709018,81.6
+ArthCOI,ESV_044648,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya conspicua,HQ708165,81.6
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium nodosum,OR662039,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp.,MZ803207,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium carolinianum,MT981126,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium spinosum,MT981112,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium splendens,MT780664,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium spinosum,MT222908,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium spinosum,MN990464,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,[Pythium] brassicae (nom. inval.),MK216325,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium serotinoosporum,MG182701,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. 2 JJC-2018,MF984162,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium middletonii,KX387360,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium pleroticum,KT692816,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium pleroticum,KT692812,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium pleroticum,KT692803,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium nodosum,KT692785,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium middletonii,KT247397,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CLE-2015b,KT247389,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium selbyi,JF895536,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium violae,HQ709008,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Elongisporangium,Elongisporangium undulatum,HQ708989,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CAL-2011a,HQ708819,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium rhizosaccharum,HQ708799,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Elongisporangium,Elongisporangium prolatum,HQ708795,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium polymastum,HQ708793,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium parvum,HQ708779,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium paroecandrum,HQ708778,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium paroecandrum,HQ708777,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CAL-2011e,HQ708770,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium nagaii,HQ708751,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium multisporum,HQ708744,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium minor,HQ708740,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium middletonii,HQ708738,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium megalacanthum,HQ708737,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium mamillatum,HQ708733,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Elongisporangium,Elongisporangium helicandrum,HQ708594,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium aff. polymastum,HQ708476,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aff. pleroticum,HQ708475,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium emineosum,GQ244424,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium uncinulatum,EU350530,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium echinulatum,EU350526,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium jasmonium,EU350525,84
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium jasmonium,EU350524,84.7
+ArthCOI,ESV_027635,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium mastophorum,EU350523,84
+ArthCOI,ESV_027350,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,96.3
+ArthCOI,ESV_027350,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,96.9
+ArthCOI,ESV_030457,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,92
+ArthCOI,ESV_030456,Eukaryota,unk_phylum,Phaeophyceae,Dictyotales,Dictyotaceae,Zonaria,Zonaria sp. 7ODeC,MW127624,78.5
+ArthCOI,ESV_030456,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia unispora,HQ709056,79.1
+ArthCOI,ESV_030456,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia monilifera,HQ709037,79.1
+ArthCOI,ESV_030456,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Newbya,Newbya spinosa,HQ708182,78.5
+ArthCOI,ESV_030455,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,95.7
+ArthCOI,ESV_030454,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,94.5
+ArthCOI,ESV_030453,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,93.9
+ArthCOI,ESV_030452,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,97.5
+ArthCOI,ESV_030451,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,93.3
+ArthCOI,ESV_030450,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,95.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,OP622276,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium aphanidermatum,MT981142,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium irregulare,MT222497,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,MH673799,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,LC728447,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium catenulatum,LC553640,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU812,LC224111,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU811,LC224110,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU810,LC224109,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. OPU809,LC224108,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,unk_order,unk_family,Haptoglossa,Haptoglossa sp. DM2 4/12,KT257394,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Dictyuchus,Dictyuchus monosporus,KM888094,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya flagellata,KM888093,79.1
+ArthCOI,ESV_027762,Eukaryota,unk_phylum,Glaucocystophyceae,unk_order,Cyanophoraceae,Cyanophora,Cyanophora paradoxa,KM198930,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Sclerosporales,Verrucalvaceae,Pachymetra,Pachymetra chaunorhiza,KJ654028,79.1
+ArthCOI,ESV_027762,Eukaryota,unk_phylum,Chrysophyceae,,,,,KF697355,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya hypogyna,KF226724,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Plectospira,Plectospira myriandra,HQ708449,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Brevilegnia,Brevilegnia unisperma,HQ708202,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,HQ708193,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces cochlioides,HQ708188,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya racemosa,HQ708178,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya heterosexualis,HQ708173,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya conspicua,HQ708165,79.1
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya bisexualis,HQ708161,78.5
+ArthCOI,ESV_027762,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya ambisexualis,HQ708155,78.5
+ArthCOI,ESV_027762,Eukaryota,unk_phylum,Glaucocystophyceae,unk_order,Cyanophoraceae,Cyanophora,Cyanophora paradoxa,AB491672,78.5
+ArthCOI,ESV_001023,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Cyclotella,Cyclotella glomerata,OQ504932,89.6
+ArthCOI,ESV_001023,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Discostella,Discostella sp. clade A (type II),OQ504929,89
+ArthCOI,ESV_001023,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Discostella,Discostella sp. clade A (type II),OQ504923,89
+ArthCOI,ESV_001023,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Stephanodiscales,Stephanodiscaceae,Discostella,Discostella sp. clade E,OQ504894,89.6
+ArthCOI,ESV_000372,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,100
+ArthCOI,ESV_000362,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Skeletonemataceae,Skeletonema,Skeletonema grevillei,NC_058789,89.6
+ArthCOI,ESV_000362,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira nordenskioeldii,MW387419,90.2
+ArthCOI,ESV_000362,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,90.2
+ArthCOI,ESV_044675,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,96.9
+ArthCOI,ESV_044675,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,97.5
+ArthCOI,ESV_027630,Eukaryota,Haptophyta,unk_class,Phaeocystales,Phaeocystaceae,Phaeocystis,Phaeocystis globosa,MT760710,79.1
+ArthCOI,ESV_027358,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,95.1
+ArthCOI,ESV_027358,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,95.7
+ArthCOI,ESV_027359,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,93.9
+ArthCOI,ESV_027359,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,94.5
+ArthCOI,ESV_044674,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia turfosa,HQ709054,78.5
+ArthCOI,ESV_044674,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia turfosa,HQ709053,79.1
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Tetragnathidae,Leucauge,Leucauge sp.,OR893931,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Tetragnathidae,,,OR893851,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Tetragnathidae,Chrysometa,Chrysometa sp.,OR893656,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Anyphaenidae,Philisca,Philisca huapi,MZ902454,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Thecostraca,unk_order,Lepadidae,Lepas,Lepas lalandii (nom. nud.),MT563428,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Linyphiidae,Diplocephalus,Diplocephalus barbiger,MN674313,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Linyphiidae,Diplocephalus,Diplocephalus barbiger,MN671125,79
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Anamidae,Aname,Aname watsoni,MN635071,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Ctenizidae,Conothele,Conothele sp. MYG282,MK735640,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Araneidae,Neoscona,Neoscona arabesca,MF815412,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Sparassidae,Pseudopoda,Pseudopoda yunnanensis,KY096643,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Sparassidae,Pseudopoda,Pseudopoda yunnanensis,KY096636,79
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Sparassidae,Pseudopoda,Pseudopoda rivicola,KY096288,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Sparassidae,Pseudopoda,Pseudopoda gibberosa,KY096200,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Thecostraca,Balanomorpha,Pyrgomatidae,Galkinius,Galkinius cf. indica 1,KP702781,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Thecostraca,Balanomorpha,Pyrgomatidae,Galkinius,Galkinius cf. indica 7,KP702780,78.3
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Thecostraca,Balanomorpha,Pyrgomatidae,Galkinius,Galkinius equus,JQ946276,79
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Thecostraca,Balanomorpha,Pyrgomatidae,Galkinius,Galkinius equus,JQ946251,79
+ArthCOI,ESV_044673,Eukaryota,Arthropoda,Arachnida,Araneae,Gnaphosidae,Zimiris,Zimiris diffusa,JN306301,78.3
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. 1 YL-2020,OL331986,92.6
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium heterothallicum,MT981137,93.3
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium heterothallicum,KT692901,92.6
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium violae,HQ709006,92.6
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CAL-2011c,HQ708859,92.6
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CAL-2011c,HQ708858,92.6
+ArthCOI,ESV_044672,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium glomeratum,HQ708588,92.6
+ArthCOI,ESV_044671,Eukaryota,Arthropoda,Insecta,Diptera,Ceratopogonidae,Culicoides,Culicoides occidentalis,OL604761,100
+ArthCOI,ESV_044671,Eukaryota,Arthropoda,Insecta,Diptera,Ceratopogonidae,Culicoides,Culicoides sonorensis,KR683671,100
+ArthCOI,ESV_044670,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia turfosa,HQ709054,79.1
+ArthCOI,ESV_044670,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia turfosa,HQ709053,79.8
+ArthCOI,ESV_044669,Eukaryota,Oomycota,unk_class,Lagenidiales,unk_family,Paralagenidium,Paralagenidium karlingii,MH094549,70.6
+ArthCOI,ESV_044669,Eukaryota,Cnidaria,Hydrozoa,Anthoathecata,Proboscidactylidae,Fabienna,Fabienna sphaerica,KT981900,70.6
+ArthCOI,ESV_044669,Eukaryota,Oomycota,unk_class,Albuginales,Albuginaceae,Pustula,Pustula obtusata,KT257396,71.2
+ArthCOI,ESV_044669,Eukaryota,Oomycota,unk_class,Lagenidiales,unk_family,Paralagenidium,Paralagenidium sp. C09-TL95,KC741451,71.2
+ArthCOI,ESV_044669,Eukaryota,Oomycota,unk_class,Lagenidiales,unk_family,Paralagenidium,Paralagenidium sp. C06-TW60,KC741450,70.6
+ArthCOI,ESV_044669,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Hyaloperonospora,Hyaloperonospora sisymbrii-sophiae,HM033186,70.6
+ArthCOI,ESV_044667,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia sp. BOLD:AAO7110,HQ317085,87.7
+ArthCOI,ESV_044667,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia frustulum,HQ317083,88.3
+ArthCOI,ESV_044666,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces stellatus,LC728452,91.4
+ArthCOI,ESV_044666,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya catenulata,KR264879,90.8
+ArthCOI,ESV_044666,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Protoachlya,Protoachlya paradoxa,HQ708451,90.8
+ArthCOI,ESV_044665,Eukaryota,Chlorophyta,Chlorodendrophyceae,Chlorodendrales,Chlorodendraceae,Tetraselmis,Tetraselmis subcordiformis,Z47795,84
+ArthCOI,ESV_044665,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,Coccomyxaceae,Medakamo,Medakamo hakoo,LC604817,84
+ArthCOI,ESV_044664,Eukaryota,Arthropoda,Insecta,Hemiptera,Lygaeidae,Melanopleurus,Melanopleurus belfragei,KC425127,96.2
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309591,91.1
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309460,91.1
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309414,91.7
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309329,91.1
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309214,91.1
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,EU076832,91.7
+ArthCOI,ESV_044663,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,DQ656834,91.1
+ArthCOI,ESV_044662,Eukaryota,Tubulinea,Elardia,Euamoebida,unk_family,Copromyxa,Copromyxa flindersi,OR062369,77.9
+ArthCOI,ESV_044662,Eukaryota,Tubulinea,Elardia,Arcellinida,,,,OQ631087,77.9
+ArthCOI,ESV_044662,Eukaryota,Tubulinea,Elardia,Arcellinida,Hyalospheniidae,Argynnia,Argynnia sp.,OQ631083,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora palmivora,MH760227,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. 'mugwort',MF687218,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,LC728447,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces cladogamus,LC728444,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces cladogamus,LC728443,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium lacustre,LC209787,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium yorkense,KT692796,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium nodosum,KT692785,78.5
+ArthCOI,ESV_044662,Eukaryota,Tubulinea,Elardia,Arcellinida,Hyalospheniidae,Nebela,Nebela flabellulum,JN849026,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium pyrilobum,HQ708796,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium polymastum,HQ708793,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium megalacanthum,HQ708737,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium canariense,HQ708528,78.5
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium aff. polymastum,HQ708476,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,HQ708193,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,HQ708192,78.5
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces cochlioides,HQ708188,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces cladogamus,HQ708187,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces cladogamus,HQ708186,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya glomerata,HQ708171,77.9
+ArthCOI,ESV_044662,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya dubia,HQ708167,77.9
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Siphonophorae,Prayidae,Praya,Praya sp.,OQ957213,77.3
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia sp. WA01,OQ322681,76.7
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Siphonophorae,Prayidae,Praya,Praya dubia,NC_080949,76.7
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Paratimea,Paratimea sp. JAD-2021,MW858351,76.8
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Anthoathecata,Corynidae,,,MW277715,76.7
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Axinellida,Stelligeridae,Higginsia,Higginsia sp. 1 PRT-2020,MT491601,76.8
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Axinellida,Stelligeridae,Higginsia,Higginsia sp. 3 PRT-2020,MT491600,76.8
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Paratimea,Paratimea mosambicensis,MK096542,76.8
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Paratimea,Paratimea lalori,MK096541,76.8
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Paratimea,Paratimea hoffmannae,MK096540,76.8
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Paratimea,Paratimea camelus,MK096539,77.4
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Stelligera,Stelligera rigida,KY492524,76.8
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia elsaeoswaldae,KX665227,76.7
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia elsaeoswaldae,KX665226,77.3
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia hemisphaerica,KX665171,76.7
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia elsaeoswaldae,KX665163,76.7
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Anthoathecata,Corynidae,Coryne,Coryne sp. JRH-2014,KF962108,76.7
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Stelligera,Stelligera stuposa,HQ379421,76.8
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Paratimea,Paratimea loennbergi,HQ379419,76.8
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia gracilis,DQ068056,76.7
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia gracilis,DQ068055,76.7
+ArthCOI,ESV_044661,Eukaryota,Cnidaria,Hydrozoa,Leptothecata,Clytiidae,Clytia,Clytia sp. 701AC,AY789903,76.7
+ArthCOI,ESV_044661,Eukaryota,Porifera,Demospongiae,Tethyida,Hemiasterellidae,Axos,Axos cliftoni,AY561974,76.8
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Lagenidiales,Lagenidiaceae,Lagenidium,Lagenidium giganteum,MN099105,80.4
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Lagenidiales,Lagenidiaceae,Lagenidium,Lagenidium sp. DAOM 242348,KT257387,80.4
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Lagenidiales,Lagenidiaceae,Lagenidium,Lagenidium giganteum,KF923747,80.4
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium cederbergense,JQ412803,80.4
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. rooibos 2,JQ412801,80.4
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. rooibos 2,JQ412796,80.4
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CAL-2011c,HQ708866,81
+ArthCOI,ESV_044660,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium alternatum,AB998877,80.4
+ArthCOI,ESV_044659,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Pleurosigmataceae,Pleurosigma,Pleurosigma sp. mgcode 4,MW861541,90.2
+ArthCOI,ESV_044658,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Pleurosigmataceae,Pleurosigma,Pleurosigma sp. mgcode 4,MW861541,90.2
+ArthCOI,ESV_044657,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Pleurosigmataceae,Pleurosigma,Pleurosigma sp. mgcode 4,MW861541,89.6
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,Pseudeuphausia,Pseudeuphausia sinica,NC_045269,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Arachnida,Araneae,Linyphiidae,Diplocephalus,Diplocephalus barbiger,MN674313,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Arachnida,Araneae,Linyphiidae,Diplocephalus,Diplocephalus barbiger,MN671125,78.3
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Arachnida,Araneae,Araneidae,Wagneriana,Wagneriana lechuza,MK227460,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Arachnida,Araneae,Araneidae,Neoscona,Neoscona arabesca,MF815412,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Arachnida,Araneae,Sparassidae,Pseudopoda,Pseudopoda yunnanensis,KY096636,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Arachnida,Araneae,Sparassidae,Pseudopoda,Pseudopoda gibberosa,KY096200,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,Pseudeuphausia,Pseudeuphausia latifrons,KF977316,77.7
+ArthCOI,ESV_044656,Eukaryota,Arthropoda,Malacostraca,Euphausiacea,Euphausiidae,Pseudeuphausia,Pseudeuphausia sinica,AY947487,77.7
+ArthCOI,ESV_044655,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309460,94.3
+ArthCOI,ESV_044655,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria tardigrada,EU076827,94.3
+ArthCOI,ESV_044655,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,DQ656834,94.9
+ArthCOI,ESV_044654,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Pleurosigmataceae,Pleurosigma,Pleurosigma sp. mgcode 4,MW861541,90.8
+ArthCOI,ESV_044653,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Pleurosigmataceae,Pleurosigma,Pleurosigma sp. mgcode 4,MW861541,89
+ArthCOI,ESV_044652,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309591,91.7
+ArthCOI,ESV_044652,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309460,91.7
+ArthCOI,ESV_044652,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309329,91.7
+ArthCOI,ESV_044652,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,JQ309214,91.7
+ArthCOI,ESV_044652,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,EU076832,92.4
+ArthCOI,ESV_044652,Eukaryota,Rotifera,Eurotatoria,unk_order,unk_family,Rotaria,Rotaria rotatoria,DQ656834,91.7
+ArthCOI,ESV_044651,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Pleurosigmataceae,Pleurosigma,Pleurosigma sp. mgcode 4,MW861541,91.4
+ArthCOI,ESV_044650,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella sp. FACHB-1855,MK226128,82.2
+ArthCOI,ESV_044650,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Auxenochlorella,Auxenochlorella pyrenoidosa,MK226121,82.2
+ArthCOI,ESV_044650,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella heliozoae,KY629615,82.8
+ArthCOI,ESV_044649,Eukaryota,Chlorophyta,Chlorodendrophyceae,Chlorodendrales,Chlorodendraceae,Tetraselmis,Tetraselmis subcordiformis,Z47795,81.6
+ArthCOI,ESV_044649,Eukaryota,Rhodophyta,Florideophyceae,Gigartinales,Cystocloniaceae,Calliblepharis,Calliblepharis sp.,OL795915,82.2
+ArthCOI,ESV_044649,Eukaryota,Rhodophyta,Florideophyceae,Hapalidiales,Hapalidiaceae,Roseolithon,Roseolithon tamoioi,MT511998,81.6
+ArthCOI,ESV_044649,Eukaryota,Chlorophyta,Chlorodendrophyceae,Chlorodendrales,Chlorodendraceae,Tetraselmis,Tetraselmis sp. CCMP 881,MN642087,82.2
+ArthCOI,ESV_044649,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,unk_family,Botryococcus,Botryococcus braunii,LT545992,81.6
+ArthCOI,ESV_044649,Eukaryota,Chlorophyta,Chlorodendrophyceae,Chlorodendrales,Chlorodendraceae,Tetraselmis,Tetraselmis aff. maculata,AF116777,82.2
+ArthCOI,ESV_044649,Eukaryota,Chlorophyta,Mamiellophyceae,Monomastigales,Monomastigaceae,Monomastix,Monomastix minuta,AB491656,82.2
+ArthCOI,ESV_030473,Eukaryota,Bacillariophyta,Mediophyceae,Lithodesmiales,Lithodesmiaceae,Lithodesmium,Lithodesmium undulatum,MW023083,85.3
+ArthCOI,ESV_030473,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Chaetocerotales,Chaetocerotaceae,Chaetoceros,Chaetoceros tenuissimus,LC537470,85.9
+ArthCOI,ESV_027390,Eukaryota,Arthropoda,Insecta,Diptera,Chironomidae,,,MG308410,98.7
+ArthCOI,ESV_027390,Eukaryota,Arthropoda,Insecta,Diptera,Chironomidae,,,JF872303,98.7
+ArthCOI,ESV_027377,Eukaryota,Bacillariophyta,Mediophyceae,Lithodesmiales,Lithodesmiaceae,Lithodesmioides,Lithodesmioides sp. mgcode 4,MW849271,82.2
+ArthCOI,ESV_027377,Eukaryota,Bacillariophyta,Bacillariophyceae,Naviculales,Naviculaceae,Navicula,Navicula tsukamotoi,MW849268,81.6
+ArthCOI,ESV_027377,Eukaryota,Bacillariophyta,Mediophyceae,Hemiaulales,Hemiaulaceae,Eucampia,Eucampia zodiacus,MW026607,81.6
+ArthCOI,ESV_027068,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces invadans,NC_032052,79.8
+ArthCOI,ESV_027068,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp.,MZ803208,79.1
+ArthCOI,ESV_027068,Eukaryota,Oomycota,unk_class,Peronosporales,Salisapiliaceae,Salisapilia,Salisapilia epistomia,MG523279,79.8
+ArthCOI,ESV_027068,Eukaryota,Oomycota,unk_class,Peronosporales,Salisapiliaceae,Salisapilia,Salisapilia bahamensis,MG523275,79.8
+ArthCOI,ESV_027068,Eukaryota,Oomycota,unk_class,Rhipidiales,Rhipidiaceae,Sapromyces,Sapromyces elongatus,MG019398,79.8
+ArthCOI,ESV_027068,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Globisporangium,Globisporangium kunmingense,GU071820,79.1
+ArthCOI,ESV_025388,Eukaryota,Bacillariophyta,Mediophyceae,Cymatosirales,Cymatosiraceae,Minutocellus,Minutocellus polymorphus,MW417226,85.9
+ArthCOI,ESV_025388,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Chaetocerotales,Chaetocerotaceae,Chaetoceros,Chaetoceros tenuissimus,LC537470,86.5
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora pseudolactucae,MH136965,73.6
+ArthCOI,ESV_009923,Eukaryota,Arthropoda,Insecta,Diptera,Cecidomyiidae,,,KR496356,73
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora dauci,KC478732,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. taxon castitis,KC478730,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. AL-2010b,HQ261454,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2013_4_1,AB894398,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2013_3_2,AB894397,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2013_1_1,AB894395,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2011_1_1,AB894394,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2010_4_1,AB894393,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2010_3_2,AB894392,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora sp. KPh2010_1_1,AB894391,73.6
+ArthCOI,ESV_009923,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Phytophthora,Phytophthora brassicae,AB688309,73.6
+ArthCOI,ESV_009128,Eukaryota,Bacillariophyta,Bacillariophyceae,Bacillariales,Bacillariaceae,Nitzschia,Nitzschia sp. BOLD:AAO7110,HQ317085,86.5
+ArthCOI,ESV_004823,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Chaetocerotales,Chaetocerotaceae,Chaetoceros,Chaetoceros tenuissimus,LC537470,89
+ArthCOI,ESV_004624,Eukaryota,Streptophyta,Zygnemophyceae,Zygnematales,Mesotaeniaceae,Roya,Roya anglica,NC_046950,81.6
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces invadans,NC_032052,81.6
+ArthCOI,ESV_004624,Eukaryota,Streptophyta,Zygnemophyceae,Zygnematales,Mesotaeniaceae,Roya,Roya obtusa,NC_022863,81.6
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium deliense,MT780679,81.6
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces stellatus,LC728452,82.2
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,LC728447,81.6
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Plectospira,Plectospira myriandra,HQ708449,82.2
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces laevis,HQ708195,82.2
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,HQ708193,81.6
+ArthCOI,ESV_004624,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Aphanomyces,Aphanomyces euteiches,HQ708192,82.2
+ArthCOI,ESV_004624,Eukaryota,Streptophyta,Coleochaetophyceae,Coleochaetales,Chaetosphaeridiaceae,Chaetosphaeridium,Chaetosphaeridium globosum,AF494279,82.2
+ArthCOI,ESV_002668,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella vulgaris,NC_045362,82.8
+ArthCOI,ESV_002668,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,Chlorella vulgaris,MK948103,82.2
+ArthCOI,ESV_002668,Eukaryota,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Pseudochlorella,Pseudochlorella pringsheimii,MK226124,82.8
+ArthCOI,ESV_000904,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,Coccomyxaceae,Medakamo,Medakamo hakoo,LC604817,88.3
+ArthCOI,ESV_000224,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,89
+ArthCOI,ESV_000224,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba sp.,MH124198,89
+ArthCOI,ESV_000058,Eukaryota,Bacillariophyta,Coscinodiscophyceae,Thalassiosirales,Thalassiosiraceae,Thalassiosira,Thalassiosira pseudonana,MT383636,89.6
+ArthCOI,ESV_030442,Eukaryota,Discosea,Flabellinia,unk_order,Vannellidae,Paravannella,Paravannella minima,NC_040955,77.9
+ArthCOI,ESV_030442,Eukaryota,Chlorophyta,Trebouxiophyceae,unk_order,Coccomyxaceae,Medakamo,Medakamo hakoo,LC604817,77.9
+ArthCOI,ESV_030442,Eukaryota,Oomycota,unk_class,unk_order,unk_family,Haptoglossa,Haptoglossa zoospora,KT257397,78.5
+ArthCOI,ESV_030442,Eukaryota,Oomycota,unk_class,unk_order,Lagenaceae,Lagena,Lagena radicicola,KT257388,77.9
+ArthCOI,ESV_030442,Eukaryota,Oomycota,unk_class,unk_order,unk_family,Haptoglossa,Haptoglossa sp. UK,KP965744,78.5
+ArthCOI,ESV_030442,Eukaryota,Discosea,Flabellinia,unk_order,Vannellidae,Paravannella,Paravannella minima,KF895382,78.5
+ArthCOI,ESV_030442,Eukaryota,unk_phylum,Synurophyceae,Synurales,Mallomonadaceae,Synura,Synura synuroidea,AF222718,77.9
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Costaria,Costaria costata,ON552981,84
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Thalassiophyllum,Thalassiophyllum clathrus,LC148159,83.4
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Thalassiophyllum,Thalassiophyllum clathrus,LC148157,84
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Costaria,Costaria costata,LC148153,83.4
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Costaria,Costaria costata,LC148152,83.4
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Ectocarpales,Chordariaceae,Pleurocladia,Pleurocladia lacustris,KU164874,84
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Ectocarpales,Chordariaceae,Pleurocladia,Pleurocladia lacustris,KU164873,83.4
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Costaria,Costaria costata,HQ990667,84
+ArthCOI,ESV_004483,Eukaryota,unk_phylum,Phaeophyceae,Laminariales,Agaraceae,Costaria,Costaria costata,HM891337,83.4
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Peronosporales,Peronosporaceae,Nothophytophthora,Nothophytophthora amphigynosa,KY788480,74.8
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Lagenidiales,Lagenidiaceae,Lagenidium,Lagenidium sp. YJC-2014,KJ654030,75.5
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya hypogyna,KF226724,75.5
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Saprolegnia,Saprolegnia turfosa,HQ709054,74.8
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium sp. CAL-2011c,HQ708856,75.5
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium pectinolyticum,HQ708780,75.5
+ArthCOI,ESV_030449,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium capillosum,HQ708529,75.5
+ArthCOI,ESV_002681,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba sp.,MH124168,93.3
+ArthCOI,ESV_044647,Eukaryota,unk_phylum,Bigyra,Bicosoecida,unk_family,Caecitellus,Caecitellus parvulus,FJ030895,83.4
+ArthCOI,ESV_030448,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Microchloropsis,Microchloropsis salina,NC_022255,98.2
+ArthCOI,ESV_030448,Eukaryota,unk_phylum,Eustigmatophyceae,Eustigmatales,Monodopsidaceae,Nannochloropsis,Nannochloropsis gaditana,KJ410686,98.8
+ArthCOI,ESV_030447,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Daphnia,Daphnia sp. 1 SA-2003,AY323058,94.9
+ArthCOI,ESV_030446,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Simocephalus,Simocephalus sp. IMP-BG-Z021,MK757262,90.4
+ArthCOI,ESV_030446,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Simocephalus,Simocephalus sp. IMP-BG-Z017,MK757261,90.4
+ArthCOI,ESV_030446,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Simocephalus,Simocephalus cf. punctatus 4 NA,MG936596,90.4
+ArthCOI,ESV_030446,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Simocephalus,Simocephalus vetuloides,KF960099,91.1
+ArthCOI,ESV_030446,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Simocephalus,Simocephalus sp. BOLD:AAB1538,KC502785,90.4
+ArthCOI,ESV_030446,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Simocephalus,Simocephalus cf. punctatus 3 NA,GU680031,90.4
+ArthCOI,ESV_027778,Eukaryota,Arthropoda,Branchiopoda,Diplostraca,Daphniidae,Daphnia,Daphnia sp. 1 SA-2003,AY323058,95.5
+ArthCOI,ESV_002666,Eukaryota,Discosea,unk_class,Longamoebia,Acanthamoebidae,Acanthamoeba,Acanthamoeba sp.,MH124168,92.6
+ArthCOI,ESV_030445,Eukaryota,Oomycota,unk_class,Myzocytiopsidales,Myzocytiopsidaceae,Chlamydomyzium,Chlamydomyzium dictyuchoides,KT257398,71.5
+ArthCOI,ESV_030444,Eukaryota,Haptophyta,unk_class,Phaeocystales,Phaeocystaceae,Phaeocystis,Phaeocystis globosa,MT760742,83.4
+ArthCOI,ESV_030444,Eukaryota,Haptophyta,unk_class,Phaeocystales,Phaeocystaceae,Phaeocystis,Phaeocystis globosa,MT760738,82.8
+ArthCOI,ESV_030443,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium insidiosum,LC553020,82.8
+ArthCOI,ESV_030443,Eukaryota,Oomycota,unk_class,Pythiales,Pythiaceae,Pythium,Pythium insidiosum,LC553019,83.4
+ArthCOI,ESV_030443,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya sparrowii,HQ708181,82.8
+ArthCOI,ESV_030443,Eukaryota,Oomycota,unk_class,Saprolegniales,Saprolegniaceae,Achlya,Achlya colorata,HQ708163,82.8

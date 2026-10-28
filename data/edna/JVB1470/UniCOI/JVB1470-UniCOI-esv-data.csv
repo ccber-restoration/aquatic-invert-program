@@ -1,0 +1,45 @@
+TestId,ESVId,Kingdom,Phylum,Class,Order,Family,Genus,Species,Accession,PercMatch
+UniCOI,ESV_078959,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,MK657847,99
+UniCOI,ESV_078959,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Cercamia,Cercamia eremia,KP842562,99
+UniCOI,ESV_078959,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon sp. BOLD:ABW7007,KJ967890,99
+UniCOI,ESV_078959,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,AB890011,99
+UniCOI,ESV_078958,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK658479,99.4
+UniCOI,ESV_078958,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK657739,99
+UniCOI,ESV_078958,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,JQ431503,98.4
+UniCOI,ESV_078957,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,MK657847,99.4
+UniCOI,ESV_078957,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Cercamia,Cercamia eremia,KP842562,99.4
+UniCOI,ESV_078957,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon sp. BOLD:ABW7007,KJ967890,99.4
+UniCOI,ESV_078957,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,AB890011,99.4
+UniCOI,ESV_078956,Eukaryota,Chordata,Aves,Strigiformes,Strigidae,Athene,Athene cunicularia,DQ433340,99.7
+UniCOI,ESV_078956,Eukaryota,Chordata,Aves,Strigiformes,Strigidae,Athene,Athene cunicularia,DQ432754,98.7
+UniCOI,ESV_078955,Eukaryota,Chordata,Mammalia,Rodentia,Cricetidae,Reithrodontomys,Reithrodontomys megalotis,OR638040,100
+UniCOI,ESV_078954,Eukaryota,Arthropoda,Insecta,Dermaptera,Forficulidae,Forficula,Forficula mediterranea,MT072854,99
+UniCOI,ESV_078954,Eukaryota,Arthropoda,Insecta,Dermaptera,Forficulidae,Forficula,Forficula mediterranea,MT072795,98.7
+UniCOI,ESV_078953,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK658479,99.4
+UniCOI,ESV_078953,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK657739,99
+UniCOI,ESV_078953,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,JQ431503,98.4
+UniCOI,ESV_078952,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,MK657847,99.4
+UniCOI,ESV_078952,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Cercamia,Cercamia eremia,KP842562,99.4
+UniCOI,ESV_078952,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon sp. BOLD:ABW7007,KJ967890,99.4
+UniCOI,ESV_078952,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,AB890011,99.4
+UniCOI,ESV_078951,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,MK657847,99.4
+UniCOI,ESV_078951,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Cercamia,Cercamia eremia,KP842562,99.4
+UniCOI,ESV_078951,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon sp. BOLD:ABW7007,KJ967890,99.4
+UniCOI,ESV_078951,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,AB890011,99.4
+UniCOI,ESV_078950,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,MK657847,99.4
+UniCOI,ESV_078950,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Cercamia,Cercamia eremia,KP842562,99.4
+UniCOI,ESV_078950,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon sp. BOLD:ABW7007,KJ967890,99.4
+UniCOI,ESV_078950,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,AB890011,99.4
+UniCOI,ESV_078949,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK658479,99.4
+UniCOI,ESV_078949,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK657739,99
+UniCOI,ESV_078949,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,JQ431503,98.4
+UniCOI,ESV_078948,Eukaryota,Arthropoda,Insecta,Dermaptera,Forficulidae,Forficula,Forficula mediterranea,MT072854,99.4
+UniCOI,ESV_078948,Eukaryota,Arthropoda,Insecta,Dermaptera,Forficulidae,Forficula,Forficula mediterranea,MT072795,99
+UniCOI,ESV_078947,Eukaryota,Chordata,Aves,Strigiformes,Strigidae,Athene,Athene cunicularia,DQ433340,100
+UniCOI,ESV_078946,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,MK657847,99.7
+UniCOI,ESV_078946,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Cercamia,Cercamia eremia,KP842562,99.7
+UniCOI,ESV_078946,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon sp. BOLD:ABW7007,KJ967890,99.7
+UniCOI,ESV_078946,Eukaryota,Chordata,Actinopteri,Kurtiformes,Apogonidae,Apogon,Apogon crassiceps,AB890011,99.7
+UniCOI,ESV_014042,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK658479,99.7
+UniCOI,ESV_014042,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,MK657739,99.4
+UniCOI,ESV_014042,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Cabillus,Cabillus tongarevae,JQ431503,98.7

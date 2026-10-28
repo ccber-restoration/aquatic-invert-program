@@ -1,0 +1,307 @@
+TestId,ESVId,Kingdom,Phylum,Class,Order,Family,Genus,Species,Accession,PercMatch
+MiFishU,ESV_068387,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,98.8
+MiFishU,ESV_068387,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.2
+MiFishU,ESV_068386,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,98.8
+MiFishU,ESV_068386,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.2
+MiFishU,ESV_068383,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,99.4
+MiFishU,ESV_068383,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.8
+MiFishU,ESV_039680,Eukaryota,Chordata,Actinopteri,Cypriniformes,Danionidae,Danio,Danio rerio,NC_002333,100
+MiFishU,ESV_039680,Eukaryota,Chordata,Actinopteri,Cypriniformes,Danionidae,Danio,Danio rerio,KT624627,100
+MiFishU,ESV_039680,Eukaryota,Chordata,Actinopteri,Cypriniformes,Danionidae,Danio,Danio rerio,KT624625,100
+MiFishU,ESV_039680,Eukaryota,Chordata,Actinopteri,Cypriniformes,Danionidae,Danio,Danio rerio,KT624623,100
+MiFishU,ESV_010047,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,100
+MiFishU,ESV_000989,Eukaryota,Chordata,Mammalia,Artiodactyla,Suidae,Sus,Sus scrofa,MZ647672,100
+MiFishU,ESV_000989,Eukaryota,Chordata,Mammalia,Artiodactyla,Suidae,Sus,Sus scrofa,MW342493,100
+MiFishU,ESV_000989,Eukaryota,Chordata,Mammalia,Artiodactyla,Suidae,Sus,Sus scrofa,KP301137,100
+MiFishU,ESV_000989,Eukaryota,Chordata,Mammalia,Artiodactyla,Suidae,Sus,Sus scrofa,GU147934,100
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,OQ564392,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,ON479126,98.9
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,NC_042402,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus x Megalobrama amblycephala x Carassius cuvieri,NC_035976,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK726305,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK085973,98.8
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,MF443771,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. 'Ginbuna',LC552370,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KY798482,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,KX781320,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KX505166,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KU668573,98.8
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KT756205,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,JF496198,98.8
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GU186888,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,GU086397,98.8
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903706,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903705,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,natural gynogenetic Carassius auratus red var.,GQ303444,99.4
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,AY771781,98.8
+MiFishU,ESV_039661,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,AY694420,98.8
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,OQ564392,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,ON479126,98.9
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,NC_042402,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus x Megalobrama amblycephala x Carassius cuvieri,NC_035976,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK726305,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK085973,98.8
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,MF443771,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. 'Ginbuna',LC552370,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KY798482,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,KX781320,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KX505166,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KU668573,98.8
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KT756205,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,JF496198,98.8
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GU186888,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,GU086397,98.8
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903706,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903705,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,natural gynogenetic Carassius auratus red var.,GQ303444,99.4
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,AY771781,98.8
+MiFishU,ESV_039660,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,AY694420,98.8
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,OQ564392,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,NC_042402,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus x Megalobrama amblycephala x Carassius cuvieri,NC_035976,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK726305,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,MF443771,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. 'Ginbuna',LC552370,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KY798482,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,KX781320,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KX505166,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KT756205,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GU186888,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903706,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903705,100
+MiFishU,ESV_015498,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,natural gynogenetic Carassius auratus red var.,GQ303444,100
+MiFishU,ESV_039657,Eukaryota,Chordata,Actinopteri,Perciformes,Cottidae,Leptocottus,Leptocottus armatus,AB188194,100
+MiFishU,ESV_033299,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Fundulidae,Fundulus,Fundulus parvipinnis,OQ846298,100
+MiFishU,ESV_068382,Eukaryota,Chordata,Aves,Charadriiformes,Scolopacidae,Calidris,Calidris alba,MW168384,96.6
+MiFishU,ESV_068382,Eukaryota,Chordata,Aves,Charadriiformes,Scolopacidae,Calidris,Calidris pugnax,MN356392,96.6
+MiFishU,ESV_068382,Eukaryota,Chordata,Aves,Charadriiformes,Scolopacidae,Calidris,Calidris alpina,MN122893,96.6
+MiFishU,ESV_000021,Eukaryota,Chordata,Actinopteri,Siluriformes,Ariidae,Ariopsis,Ariopsis felis,OP154149,99.4
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,OQ884964,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MZ921070,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MZ846685,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN857324,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN699953,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN687313,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN687302,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN595885,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN540547,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN503404,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK308705,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK288002,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK165686,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MH605028,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MG182500,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MF464491,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KY408525,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KU523303,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT726064,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT725922,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KJ154217,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162836,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162599,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162573,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162435,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162376,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162278,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162038,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161463,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161434,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161379,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161259,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161220,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161163,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161149,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161136,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF148183,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KC993968,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KC911343,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JX893365,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ702405,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ702343,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ324798,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JN581659,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,HM852776,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733820,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733801,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733718,100
+MiFishU,ESV_000003,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,DQ112748,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,OR094956,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius langsdorfii,NC_002079,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. IDEA_Fish426,LC742188,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. 'Ginbuna',LC552368,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,LC468871,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,LC146349,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,LC069404,100
+MiFishU,ESV_017510,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. HUMZ:222861,LC020956,100
+MiFishU,ESV_068376,Eukaryota,Chordata,Actinopteri,Blenniiformes,Blenniidae,Entomacrodus,Entomacrodus caudofasciatus,LC622101,89.9
+MiFishU,ESV_028474,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN628149,100
+MiFishU,ESV_028474,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT725922,100
+MiFishU,ESV_028474,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,DQ112748,100
+MiFishU,ESV_001197,Eukaryota,Chordata,Mammalia,Artiodactyla,Suidae,Sus,Sus scrofa,MK344653,100
+MiFishU,ESV_001197,Eukaryota,Chordata,Mammalia,Artiodactyla,Suidae,Sus,Sus scrofa,KM224342,100
+MiFishU,ESV_068375,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Atherinops,Atherinops affinis,NC_066928,99.4
+MiFishU,ESV_001067,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Atherinops,Atherinops affinis,NC_066928,100
+MiFishU,ESV_068374,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Fundulidae,Fundulus,Fundulus parvipinnis,OQ846298,98.8
+MiFishU,ESV_068373,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia audens,OQ793739,98.8
+MiFishU,ESV_068373,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia beryllina,OP154168,98.8
+MiFishU,ESV_068373,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia peninsulae,OP057007,98.8
+MiFishU,ESV_068372,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia audens,OQ793739,99.4
+MiFishU,ESV_068372,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia beryllina,OP154168,99.4
+MiFishU,ESV_068372,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia peninsulae,OP057007,99.4
+MiFishU,ESV_019226,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia audens,OQ793739,100
+MiFishU,ESV_019226,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia beryllina,OP154168,100
+MiFishU,ESV_019226,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia peninsulae,OP057007,100
+MiFishU,ESV_068371,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia affinis,OK576402,97.7
+MiFishU,ESV_068371,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia affinis,NC_004388,98.3
+MiFishU,ESV_068371,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia holbrooki,KY798480,97.7
+MiFishU,ESV_068370,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,98.2
+MiFishU,ESV_068370,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.8
+MiFishU,ESV_009993,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia affinis,OK576402,98.8
+MiFishU,ESV_009993,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia affinis,NC_004388,99.4
+MiFishU,ESV_009993,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia holbrooki,KY798480,98.8
+MiFishU,ESV_009594,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Poeciliidae,Gambusia,Gambusia affinis,NC_004388,100
+MiFishU,ESV_039651,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Atherinops,Atherinops affinis,NC_066928,99.4
+MiFishU,ESV_000837,Eukaryota,Chordata,Actinopteri,Labriformes,Labridae,Thalassoma,Thalassoma quinquevittatum,KX354995,100
+MiFishU,ESV_039650,Eukaryota,Chordata,Actinopteri,Mugiliformes,Mugilidae,Mugil,Mugil cephalus,OQ846182,100
+MiFishU,ESV_039649,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia audens,OQ793739,99.4
+MiFishU,ESV_039649,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia beryllina,OP154168,99.4
+MiFishU,ESV_039649,Eukaryota,Chordata,Actinopteri,Atheriniformes,Atherinopsidae,Menidia,Menidia peninsulae,OP057007,99.4
+MiFishU,ESV_039648,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,99.4
+MiFishU,ESV_039648,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,OQ884964,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MZ921070,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MZ846685,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN857324,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN699953,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN687313,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN687302,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN628149,99.4
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN595885,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN595882,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN540547,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN503404,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK308705,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK288002,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK165686,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MH605028,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MH553708,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MG182500,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MF464491,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KY408525,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KX456521,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KU523303,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT726064,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT725922,99.4
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KJ154217,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162836,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162599,99.4
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162573,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162435,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162376,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162278,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162204,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162038,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161463,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161434,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161379,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161259,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161220,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161163,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161149,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161136,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF148183,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KC993968,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KC911343,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JX893365,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ702405,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ702343,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ324798,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JN581659,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,HM852776,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733820,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733801,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733718,98.8
+MiFishU,ESV_068369,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,DQ112748,99.4
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,OQ884964,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MZ921070,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MZ846685,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN857324,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN699953,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN687313,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN687302,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN628149,99.4
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN595885,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN595882,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN540547,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MN503404,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK308705,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK288002,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MK165686,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MH605028,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MH553708,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MG182500,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,MF464491,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KY408525,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KX456521,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KU523303,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT726064,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KT725922,99.4
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KJ154217,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162836,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162599,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162573,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162435,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162376,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162278,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF162038,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161463,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161434,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161379,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161259,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161220,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161163,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161149,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF161136,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KF148183,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KC993968,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KC911343,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JX893365,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ703657,99.4
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ702405,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ702343,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JQ324798,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,JN581659,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,HM852776,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733820,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733801,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,GU733718,98.8
+MiFishU,ESV_068368,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,DQ112748,99.4
+MiFishU,ESV_023095,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,KY408525,100
+MiFishU,ESV_039646,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,98.8
+MiFishU,ESV_039646,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.2
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,OQ564392,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,ON479126,98.9
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,NC_042402,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus x Megalobrama amblycephala x Carassius cuvieri,NC_035976,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK726305,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,MK085973,98.8
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,MF443771,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius sp. 'Ginbuna',LC552370,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KY798482,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius carassius,KX781320,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KX505166,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,KU668573,98.8
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,KT756205,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius gibelio,JF496198,98.8
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GU186888,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,Carassius auratus,GU086397,98.8
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903706,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,GQ903705,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,Cyprinidae,Carassius,natural gynogenetic Carassius auratus red var.,GQ303444,99.4
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,AY771781,98.8
+MiFishU,ESV_039644,Eukaryota,Chordata,Actinopteri,Cypriniformes,,,,AY694420,98.8
+MiFishU,ESV_039643,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,OQ846096,99.4
+MiFishU,ESV_039643,Eukaryota,Chordata,Actinopteri,Gobiiformes,Gobiidae,Gillichthys,Gillichthys mirabilis,FJ211845,98.8
+MiFishU,ESV_018065,Eukaryota,Chordata,Actinopteri,Perciformes,Cottidae,Leptocottus,Leptocottus armatus,OR582704,100
+MiFishU,ESV_018056,Eukaryota,Chordata,Actinopteri,Salmoniformes,Salmonidae,Salmo,Salmo salar,NC_001960,100
+MiFishU,ESV_068367,Eukaryota,Chordata,Actinopteri,Cyprinodontiformes,Fundulidae,Fundulus,Fundulus parvipinnis,OQ846298,99.4
