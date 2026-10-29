@@ -1,6 +1,8 @@
 library(tidyverse)
+library(ggridges)
 
 bridge_wq <- read_rds("data/bridge_water_quality/ncos_bridge_ysi_data_for_Fiorella.rds")
+
 
 Venoco <- bridge_wq |> 
   filter(site_name == "Venoco Bridge") |> 
@@ -77,3 +79,30 @@ ggplot(Phelps, aes(x = salinity_ppt)) +
   geom_vline(xintercept = 0.5) +
   geom_vline(xintercept = 30) +
   geom_vline(xintercept = 40)
+
+# try plotting curves for all three sites together:
+bridge_wq_filtered <- bridge_wq |> 
+  filter(salinity_ppt <80) |> 
+  filter(!is.na(site_name))
+
+prob_density <- ggplot(data = bridge_wq_filtered, aes(x = salinity_ppt, color = site_name, fill = site_name)) +
+  geom_density(alpha = 0.5) +
+  geom_vline(xintercept = 0.5) +
+  geom_vline(xintercept = 30) +
+  geom_vline(xintercept = 40)
+
+prob_density
+
+# try geom_ridges
+prob_density_ridges <- ggplot(data = bridge_wq_filtered, aes(x = salinity_ppt, y = site_name, color = site_name, fill = site_name)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_vline(xintercept = 0.5) +
+  geom_vline(xintercept = 30) +
+  geom_vline(xintercept = 40) +
+  theme_ridges()
+
+prob_density_ridges
+
+
+
+
