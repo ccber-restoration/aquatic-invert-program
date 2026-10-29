@@ -6,19 +6,24 @@ source("code/00_setup.R")
 # loads a package used to make figures interactive
 library(plotly)
 
+#Reorder sample types
+reorder_invert_data <-invert_data |> 
+  mutate(sample_type = fct_relevel(sample_type, "FB250", "SW250", "SW500")) |> 
+  mutate(sample_type = fct_rev(sample_type))
+
+
+
 # create plot 
 # dataframe is invert_data
 # x axis is date on vial,
 # color for points is the sample type
-figure_timeline <- ggplot(data = invert_data,
-                          mapping = aes(x = date_on_vial, y = 1, color = sample_type)) +
+figure_timeline <- ggplot(data = reorder_invert_data,
+                          mapping = aes(x = date_on_vial, y = sample_type, color = sample_type)) +
   # add points to figure with a small amount of randomness so that points aren't directly on top of each other
   # only move points in the (arbitrary) vertical direction, not horizontally
-  geom_jitter(height = 0.1) +
-  # set the y axis limits to 0 to 2
-  scale_y_continuous(limits = c(0, 2)) +
-  # use a separate panel for each site...
-  facet_wrap(vars(site))
+  geom_jitter(height = 0.1)
+ 
+ 
 
 figure_timeline
 
@@ -40,7 +45,7 @@ figure_timeline_simple <- ggplot(data = invert_data_unique_dates,
   # set the y axis limits to 0 to 2
   scale_y_continuous(limits = c(0, 2)) +
   # use a separate panel for each method
-  facet_wrap(vars(sample_type), ncol = 1)
+
 
 figure_timeline_simple
 
