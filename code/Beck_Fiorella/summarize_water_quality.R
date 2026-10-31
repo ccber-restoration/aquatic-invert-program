@@ -2,13 +2,9 @@
 
 # run 00_setup.R to obtain the water_quality dataframe
 
-source("code/00_setup.R")
-
-# declutter
-rm(invert_data, taxa, data_path, unique_sites, unique_sites_wq)
 # Note that the input dataframe will change slightly after migrating to the "new" spreadsheet
 
-# explore missing values
+
 library(naniar)
 
 vis_miss(water_quality)
@@ -84,17 +80,11 @@ Salinity <- ggplot(data = water_quality10, aes(x = year, y = salinity_ppt, group
   xlab("year") +
   ylab("Salinity (ppt)") +
   theme_cowplot() +
-  facet_wrap(vars(site)) +
-  # add line for hypersaline threshold
-  geom_hline(yintercept = 40, linetype = "dashed") +
-  # add line for lower range of seawater
-  geom_hline(yintercept = 30, linetype = "dashed") +
-  # add line for freshwater
-  geom_hline(yintercept = 0.5, linetype = "dashed")
+  facet_wrap(vars(site))
  # ggtitle("Salinity by Site") 
                      
-Salinity
 
+Salinity
 
 Salinity_point <- ggplot(data = water_quality10, aes(x = date, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
