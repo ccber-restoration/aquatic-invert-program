@@ -2,13 +2,9 @@
 
 # run 00_setup.R to obtain the water_quality dataframe
 
-source("code/00_setup.R")
-
-# declutter
-rm(invert_data, taxa, data_path, unique_sites, unique_sites_wq)
 # Note that the input dataframe will change slightly after migrating to the "new" spreadsheet
 
-# explore missing values
+
 library(naniar)
 
 vis_miss(water_quality)
@@ -84,17 +80,11 @@ Salinity <- ggplot(data = water_quality10, aes(x = year, y = salinity_ppt, group
   xlab("year") +
   ylab("Salinity (ppt)") +
   theme_cowplot() +
-  facet_wrap(vars(site)) +
-  # add line for hypersaline threshold
-  geom_hline(yintercept = 40, linetype = "dashed") +
-  # add line for lower range of seawater
-  geom_hline(yintercept = 30, linetype = "dashed") +
-  # add line for freshwater
-  geom_hline(yintercept = 0.5, linetype = "dashed")
+  facet_wrap(vars(site))
  # ggtitle("Salinity by Site") 
                      
-Salinity
 
+Salinity
 
 Salinity_point <- ggplot(data = water_quality10, aes(x = date, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
@@ -167,7 +157,7 @@ Pressure <- ggplot(data = water_quality10, aes(x = year, y = barometric_pressure
 
 Pressure
 
-# Salt vs Fresh ----
+# Salinity categorization----
 
 #check is any of sites are fresh (none are)
 #according Senesac report NWP, NDC, NVP2 and NVP4 are fresh??
@@ -178,6 +168,75 @@ Salinity_site <- water_quality10 %>%
   filter(site== "NDC") %>%
   filter(salinity_ppt < 0.5) %>%
  summarise(count = n())
+
+
+##Probability Density Graphs: ----
+
+wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) +# seawater
+  theme_ridges()
+
+wq_density_10
+
+oligo_pier<-benchmark_data %>%
+  filter(analyte == "SpecificConductivity, Total") %>%
+  filter(result > 2000)
+
+##Table of Salinities: ----
+
+breaks <- c(-Inf, 0.5, 5, 18, 30, 40, Inf)
+labels <- c("Fresh", "Oligohaline", "Mesohaline", "Polyhaline", "Euhaline", "Hypersaline")
+
+
+# Ranges: "0-0.5 (Fresh)", "0.6-5 (oligohaline)", "6-18 (mesohaline)", "19-30 (Polyhaline)", "31-40 (Euhaline)", ">40 (Hypersaline)
+
+Salinity_ranges_tb <- water_quality10 %>%
+  mutate(range = factor(cut(salinity_ppt, breaks = breaks, labels = labels, include.lowest = TRUE, right = TRUE ),
+    levels = labels)) %>%
+  filter(!is.na(salinity_ppt))
+  
+Salt_table_result <- Salinity_ranges_tb %>%
+  group_by(site, range) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
+  select(site, all_of(labels))
+
+range_levels <- levels(Salinity_ranges_tb$range)
+Salt_table_result<- Salt_table_result %>%
+  select(site, all_of(range_levels))
+
+Salt_table_result
+
+#NPB is mostly oligohaline
+#NBP1 is almost completely oligohaline
+#NPB2 is mostly oligohaline too but much smaller data set
+#NWP mostly oligohaline
+
+#Pier mostly hypersaline
+
+#Oligohaline plots: 
+ 
+
+
+oligohaline_sites<- water_quality10 %>%
+  filter(site %in% c("NPB2", "NPB1", "NPB", "NWP"))
+
+
+oligo_density_10 <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) +# seawater
+  theme_ridges()
+
+oligo_density_10
 
 #Upstream plots: ----
 
