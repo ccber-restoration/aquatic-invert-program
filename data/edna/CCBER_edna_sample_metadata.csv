@@ -1,0 +1,77 @@
+BatchId,ClientId,SampleId,ClientSampleId,Capture time (MT),Lat,Long,SiteName,PublishStatus,Notes
+JVB1470,stratton@ccber.ucsb.edu,XOCTKIVA,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034214,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034210,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034208,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034205,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034202,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034199,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034195,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034191,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034187,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034179,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034174,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034173,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034171,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034170,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034169,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034168,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034166,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034158,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034155,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034150,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034149,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034148,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034147,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034138,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034128,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034127,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,S034126,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,RPSYC3SA,NA,11/23/2021 4:20:45 AM,34.4227004,-119.8801913,NPB2,Public,Water quality sample also taken
+JVB1470,stratton@ccber.ucsb.edu,PSKOYG86,NA,NA,NA,NA,NA,Private,NA
+JVB1470,stratton@ccber.ucsb.edu,LLWCAYM3,NA,11/18/2021 11:25:47 AM,34.4272509,-119.8806163,PIER,Public,Took ph and salinity at same time
+JVB1470,stratton@ccber.ucsb.edu,CVI9JR2K,NA,11/17/2021 10:33:10 AM,34.4269068,-119.8748309,CUL1,Public,Culvert; no water running
+JVB1554,stratton@ccber.ucsb.edu,XFXCT0L6,NA,2/23/2022 11:53:57 AM,34.41765084459398,-119.87397539504096,NVBR,Public,Could only get 40mL through-windy day so lots of sediment kicked up in water column
+JVB1554,stratton@ccber.ucsb.edu,XEL7KT2G,NA,1/28/2022 3:40:38 AM,34.4218897,-119.8805078,NDC,Public,Water quality taken as well
+JVB1554,stratton@ccber.ucsb.edu,O0LYM0YU,NA,NA,NA,NA,NA,Private,NA
+JVB1554,stratton@ccber.ucsb.edu,GJDV8PYM,NA,1/28/2022 2:26:37 AM,34.4221291,-119.8811932,NWP (NCOS West Pond),Public,Water Quality data taken as well
+JVB1554,stratton@ccber.ucsb.edu,CGEMAYKY,NA,2/24/2022 1:59:53 PM,34.4337205,-119.9012249,MO1,Public,Water quality measurements taken at same time
+JVB1554,stratton@ccber.ucsb.edu,5J7FNP4O,NA,1/20/2022 11:45:14 AM,34.4272509,-119.8806163,NVP4,Public,WQ also taken
+JVB1554,stratton@ccber.ucsb.edu,53CM7JPJ,NA,1/14/2022 3:57:18 AM,34.4217374,-119.8788084,Coprvp1,Public,Water quality data taken as well
+JVB1554,stratton@ccber.ucsb.edu,38WW1C5A,NA,2/22/2022 3:36:32 AM,34.413915672371644,-119.8739073147251,CUL1,Public,DO and salinity measurements taken at same time
+JVB1554,stratton@ccber.ucsb.edu,17OXC1IX,NA,1/20/2022 11:30:10 AM,34.4220512,-119.8803264,NVP2,Public,We samples taken as well
+JVB1554,stratton@ccber.ucsb.edu,0NOSWX7W,NA,2/25/2022 3:41:00 AM,34.42086709285423,-119.87415816919996,NEC,Public,NEC. Lots of sediment in water. Preservative shot the filter out so not all of it got into the filter when pushing it through.
+JVB1554,stratton@ccber.ucsb.edu,0IOX2T8L,NA,2/23/2022 3:12:16 AM,34.42175162445333,-119.87948111643836,NPB1,Public,sample was taken after id; replicate; ys and ph meter
+JVB1554,stratton@ccber.ucsb.edu,0CEL3NO8,NA,2/21/2022 11:52:58 AM,34.421386,-119.879012,NPB,Private,Water quality samples taken at the same time.
+JVB1703,stratton@ccber.ucsb.edu,ZWDZ7WZK,NA,8/8/2022 4:32:46 AM,34.4226943,-119.8793902,NPB2,Public,Water quality data taken at same time
+JVB1703,stratton@ccber.ucsb.edu,WS7KZWVL,NA,5/11/2022 4:33:20 AM,34.42,-119.789,NDC,Public,NA
+JVB1703,stratton@ccber.ucsb.edu,VAVM5TF7,NA,5/10/2022 12:23:47 PM,34.4337963,-119.9091783,MO1,Public,Water quality taken at same time
+JVB1703,stratton@ccber.ucsb.edu,RJD00L2Q,NA,8/18/2022 11:42:51 AM,34.4342794,-119.902671,Cul1,Public,Water quality taken at same time
+JVB1703,stratton@ccber.ucsb.edu,NO77X77Z,NA,8/12/2022 12:41:38 PM,34.42094797974527,-119.87410322489453,NEC,Public,Taken along with water quality data
+JVB1703,stratton@ccber.ucsb.edu,GHYRWQ8W,NA,5/5/2022 1:30:17 PM,NA,NA,NEC,Public,NA
+JVB1703,stratton@ccber.ucsb.edu,F0XPDBKX,NA,8/12/2022 11:22:08 AM,34.418301,-119.874252,NVBR,Public,Taken along with water quality data
+JVB1703,stratton@ccber.ucsb.edu,DTDENWBP,NA,5/12/2022 12:30:03 PM,34.421485561648744,-119.87884889707364,NPB(0),Public,Close to the rocks
+JVB1703,stratton@ccber.ucsb.edu,BMUDL134,NA,8/9/2022 3:14:32 AM,34.4114011,-119.8770431,Pier,Public,Water quality taken at same time
+JVB1703,stratton@ccber.ucsb.edu,AV00ETE1,NA,8/26/2022 10:52:35 AM,34.4285664,-119.8556649,MO1,Public,Water quality taken at same time
+JVB1703,stratton@ccber.ucsb.edu,A76BYNY4,NA,5/6/2022 5:12:38 AM,34.42,-119.88,NMC,Public,High Amounts of Algae present
+JVB1703,stratton@ccber.ucsb.edu,91TGAHP8,NA,8/10/2022 2:27:12 AM,34.421304,-119.87899,NPB,Public,Taken with water quality data
+JVB1703,stratton@ccber.ucsb.edu,8RHC0YBR,NA,5/10/2022 11:03:03 AM,34.4272759,-119.881701,CUL1,Public,Water quality taken at same time
+JVB1703,stratton@ccber.ucsb.edu,6XDCL142,NA,5/13/2022 4:47:40 AM,34.418240047994466,-119.87331442883976,NVBR,Public,Water quality taken at same time
+JVB1703,stratton@ccber.ucsb.edu,3LAFC32T,NA,8/15/2022 2:01:52 AM,34.41964771102123,-119.87578379660113,NMC,Public,Sample taken along with water quality data
+JVB1703,stratton@ccber.ucsb.edu,1VSWCRMT,NA,5/12/2022 11:34:29 AM,34.42181210099598,-119.87939856291608,NPB1,Public,NA
+JVB1703,stratton@ccber.ucsb.edu,1PE37FGF,NA,5/11/2022 4:08:48 AM,34.21,-118.87,NWP,Public,NA
+JVB1703,stratton@ccber.ucsb.edu,12AI55MM,NA,6/24/2022 4:40:25 AM,NA,NA,NEC,Public,NA
+JVB1703,stratton@ccber.ucsb.edu,0L0KTXL0,NA,5/12/2022 1:37:42 PM,34.4115348,-119.8770103,NA,Public,Water quality taken at same time
+JVB2116,stratton@ccber.ucsb.edu,VUKMSLPR,NA,11/19/2022 11:50:11 AM,34.420980893134455,-119.87725392852236,NPB1,Public,Taken with water quality data.
+JVB2116,stratton@ccber.ucsb.edu,RJRB1V9F,NA,11/11/2022 2:26:57 AM,34.4340149,-119.9095398,Mouth,Private,Water quality taken at same time
+JVB2116,stratton@ccber.ucsb.edu,M8XO50RP,NA,11/11/2022 11:16:55 AM,34.4274696,-119.8809779,PIER,Public,Water quality taken at same time
+JVB2116,stratton@ccber.ucsb.edu,9CXHHFVN,NA,11/12/2022 1:21:03 PM,34.42127468003926,-119.87483737803876,NEC,Private,Taken with water quality data.
+JVB2116,stratton@ccber.ucsb.edu,3CHOPUC7,NA,NA,NA,NA,NA,Private,NA
+JVB2116,stratton@ccber.ucsb.edu,0XUIGO0E,NA,11/18/2022 11:30:31 AM,NA,NA,NVBR,Public,Water quality also taken
+JVB2116,stratton@ccber.ucsb.edu,04Q3DGUX,NA,11/19/2022 12:29:27 PM,34.422009958301444,-119.88199368288213,NDC,Public,Taken with water quality data.
+JVB2332,stratton@ccber.ucsb.edu,S034204,NA,NA,NA,NA,NA,Private,NA
+JVB2332,stratton@ccber.ucsb.edu,S034203,NA,NA,NA,NA,NA,Private,NA
+JVB2332,stratton@ccber.ucsb.edu,S034188,NA,NA,NA,NA,NA,Private,NA
+JVB2332,stratton@ccber.ucsb.edu,S034182,NA,NA,NA,NA,NA,Private,NA
+JVB2332,stratton@ccber.ucsb.edu,S034139,NA,NA,NA,NA,NA,Private,NA
+JVB2332,stratton@ccber.ucsb.edu,S034125,NA,NA,NA,NA,NA,Private,NA
