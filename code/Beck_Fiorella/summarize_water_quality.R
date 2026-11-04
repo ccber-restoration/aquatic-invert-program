@@ -179,32 +179,28 @@ wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, 
   geom_vline(xintercept = 18) + # mesohaline
   geom_vline(xintercept = 30) + # polyhaline
   geom_vline(xintercept = 40) +# seawater
-  theme_ridges()
+  theme_ridges() 
+  #coord_cartesian(xlim = c(0, 50)) 
+  
 
 wq_density_10
-
-oligo_pier<-benchmark_data %>%
-  filter(analyte == "SpecificConductivity, Total") %>%
-  filter(result > 2000)
 
 ##Table of Salinities: ----
 
 breaks <- c(-Inf, 0.5, 5, 18, 30, 40, Inf)
 labels <- c("Fresh", "Oligohaline", "Mesohaline", "Polyhaline", "Euhaline", "Hypersaline")
-
-
-# Ranges: "0-0.5 (Fresh)", "0.6-5 (oligohaline)", "6-18 (mesohaline)", "19-30 (Polyhaline)", "31-40 (Euhaline)", ">40 (Hypersaline)
+#Ranges: "0-0.5 (Fresh)", "0.6-5 (oligohaline)", "6-18 (mesohaline)", "19-30 (Polyhaline)", "31-40 (Euhaline)", ">40 (Hypersaline)
 
 Salinity_ranges_tb <- water_quality10 %>%
   mutate(range = factor(cut(salinity_ppt, breaks = breaks, labels = labels, include.lowest = TRUE, right = TRUE ),
     levels = labels)) %>%
-  filter(!is.na(salinity_ppt))
+  filter(!is.na(salinity_ppt)) #create df form salinity table
   
 Salt_table_result <- Salinity_ranges_tb %>%
   group_by(site, range) %>%
   summarise(count = n(), .groups = "drop") %>%
   pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
-  select(site, all_of(labels))
+  select(site, all_of(labels)) 
 
 range_levels <- levels(Salinity_ranges_tb$range)
 Salt_table_result<- Salt_table_result %>%
@@ -219,24 +215,61 @@ Salt_table_result
 
 #Pier mostly hypersaline
 
-#Oligohaline plots: 
- 
-
+##Oligohaline plots: ---- 
 
 oligohaline_sites<- water_quality10 %>%
   filter(site %in% c("NPB2", "NPB1", "NPB", "NWP"))
 
 
-oligo_density_10 <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
+oligo_density_plot <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  #geom_vline(xintercept = 30) + # polyhaline
+  #geom_vline(xintercept = 40) +# seawater
+  theme_ridges() 
+  # coord_cartesian(xlim = c(0, 25)) #zoom in
+
+oligo_density_plot
+
+##Highly variable sites: -----
+
+variable_sites<- water_quality10 %>%
+  filter(site %in% c("MO1", "NEC", "NVBR", "NMC"))
+
+variable_density_plot <- ggplot(data = variable_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
   geom_density_ridges(scale = 5, alpha = 0.5) +
   geom_vline(xintercept = 0.5) + # fresh water
   geom_vline(xintercept = 5) + # oligohaline 
   geom_vline(xintercept = 18) + # mesohaline
   geom_vline(xintercept = 30) + # polyhaline
   geom_vline(xintercept = 40) +# seawater
-  theme_ridges()
+  theme_ridges() +
+  coord_cartesian(xlim = c(0, 100)) # zoom in (excludes NBVR highest value 174 ppt)
 
-oligo_density_10
+variable_density_plot
+
+
+##Fresh to Oligohaline sites: -----
+
+Fresh_Oligo_sites<- water_quality10 %>%
+  filter(site %in% c("NDC", "NVP2", "NVP4"))
+
+Fresh_Oligo_plot <- ggplot(data = Fresh_Oligo_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  #geom_vline(xintercept = 18) + # mesohaline
+  #geom_vline(xintercept = 30) + # polyhaline
+  #geom_vline(xintercept = 40) +# seawater
+  theme_ridges()
+  
+
+Fresh_Oligo_plot
+
+
+
 
 #Upstream plots: ----
 
