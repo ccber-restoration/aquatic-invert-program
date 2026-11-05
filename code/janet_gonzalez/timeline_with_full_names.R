@@ -35,7 +35,8 @@ reorder_invert_data <-invert_data |>
   mutate(sample_type = fct_relevel(sample_type, "FB250", "SW250", "SW500","Algae", "SAV")) |> 
   # reverses the order of levels
   mutate(sample_type = fct_rev(sample_type)) |> 
-  mutate(year_qtr = as.yearqtr(date_on_vial))
+  mutate(year_qtr = as.yearqtr(date_on_vial)) |> 
+  mutate(qtr_date = as.Date(year_qtr))
 
 unique(reorder_invert_data$sample_type)
 
@@ -80,28 +81,34 @@ ggsave(filename = "figures/Gonzalez_Janet/sample_type_timeline_labeled.pdf",
 
 # now try plotting by quarter:
 
-start_date <- as.yearqtr("2020-01")
-end_date <- as.yearqtr("2026-02")
+start_date <- as.Date("2019-10-01")
+end_date <- as.Date("2026-06-01")
 
 figure_timeline_qtr <- ggplot(data = reorder_invert_data,
-                          mapping = aes(x = year_qtr, y = sample_type, color = sample_type)) +
+                          mapping = aes(x = qtr_date, y = sample_type, color = sample_type)) +
   
   # add points to figure with a small amount of randomness so that points aren't directly on top of each other
   # only move points in the (arbitrary) vertical direction, not horizontally
   geom_jitter(height = 0.2, width = 0) +
   # use full sample type names as labels, rather than raw values
-  scale_x_yearqtr(
-    format = "'%y",
-    breaks = seq(from = start_date, to = end_date, by = 0.25)) + # Displays format as: 2026-Q1
+  scale_x_date(
+    date_breaks = "1 year",
+    date_labels = "%Y",
+    date_minor_breaks = "3 months",
+    expand = c(0,0),
+    limits = c(start_date, end_date)
+    ) +
   # label axes
   labs (x="Date", 
         y= "Method"
   ) +
   # remove legend
-  theme(legend.position = "none")  +
-  theme_minimal_grid()
+  theme(legend.position = "none")
 
 figure_timeline_qtr
+
+
+ggplotly(figure_timeline_qtr)
 
 
 # CURRENTLY NOT USED:
