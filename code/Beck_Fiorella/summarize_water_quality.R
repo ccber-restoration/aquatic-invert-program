@@ -6,6 +6,8 @@
 
 
 library(naniar)
+library(ggridges)
+library(gt)
 
 vis_miss(water_quality)
 
@@ -86,6 +88,7 @@ Salinity <- ggplot(data = water_quality10, aes(x = year, y = salinity_ppt, group
 
 Salinity
 
+# check observations below 5 ppt
 Salinity_point <- ggplot(data = water_quality10, aes(x = date, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
   xlab("year") +
@@ -172,14 +175,26 @@ Salinity_site <- water_quality10 %>%
 
 ##Probability Density Graphs: ----
 
-wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, group = site, color = site)) +
-  geom_density_ridges(scale = 5, alpha = 0.5) +
-  geom_vline(xintercept = 0.5) + # fresh water
-  geom_vline(xintercept = 5) + # oligohaline 
-  geom_vline(xintercept = 18) + # mesohaline
-  geom_vline(xintercept = 30) + # polyhaline
-  geom_vline(xintercept = 40) +# seawater
-  theme_ridges() 
+# TODO- figure revisions:
+# prevent curves going below 0
+# move axis labels
+
+wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, group = site, color = site, fill = site)) +
+  # use stat = "binline" to show historgram instead of smooth density curves
+  geom_density_ridges(scale = 2, alpha = 0.25) +
+  geom_vline(xintercept = 0.5, linetype = "dashed") + # fresh water
+  geom_vline(xintercept = 5, linetype = "dashed") + # oligohaline 
+  geom_vline(xintercept = 18, linetype = "dashed") + # mesohaline
+  geom_vline(xintercept = 30, linetype = "dashed") + # polyhaline
+  geom_vline(xintercept = 40, linetype = "dashed") +# seawater
+  theme_ridges() +
+  theme(
+    axis.title.x = element_text(hjust = 0.5), # Center x-axis title
+    axis.title.y = element_text(hjust = 0.5),  # Center y-axis title
+    legend.position = "none"
+  ) +
+  labs(x = "Salinity (ppt)",
+       y = "Site")
   #coord_cartesian(xlim = c(0, 50)) 
   
 
@@ -206,7 +221,10 @@ range_levels <- levels(Salinity_ranges_tb$range)
 Salt_table_result<- Salt_table_result %>%
   select(site, all_of(range_levels))
 
-Salt_table_result
+# TODO- pass the dataframe to gt(), then export as Word doc for more editing and inserting into report doc
+# if possible, add salinity ranges into header labels
+
+Salt_table_result 
 
 #NPB is mostly oligohaline
 #NBP1 is almost completely oligohaline
@@ -222,7 +240,7 @@ oligohaline_sites<- water_quality10 %>%
 
 
 oligo_density_plot <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
-  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_density_ridges(scale = 2, alpha = 0.5) +
   geom_vline(xintercept = 0.5) + # fresh water
   geom_vline(xintercept = 5) + # oligohaline 
   geom_vline(xintercept = 18) + # mesohaline
