@@ -65,7 +65,10 @@ filtered_water_quality %>%
 water_quality10 <- filtered_water_quality %>%
   filter(!site %in% c("DSP","ETNP", "ETSP","VP1"))
 
-
+# check depth values
+water_quality10 |> 
+  group_by(wq_measurement_depth_cm) |> 
+  count()
 
 #Plots: ----
 
