@@ -4,10 +4,7 @@
 
 # Note that the input dataframe will change slightly after migrating to the "new" spreadsheet
 
-
 library(naniar)
-library(ggridges)
-library(gt)
 
 vis_miss(water_quality)
 
@@ -65,12 +62,9 @@ filtered_water_quality %>%
 water_quality10 <- filtered_water_quality %>%
   filter(!site %in% c("DSP","ETNP", "ETSP","VP1"))
 
-# check depth values
-water_quality10 |> 
-  group_by(wq_measurement_depth_cm) |> 
-  count()
 
-#Plots: ----
+
+# Visualizing data: ----
 
 ## All sites: ----
 water_quality10 <- water_quality10 %>%
@@ -91,7 +85,6 @@ Salinity <- ggplot(data = water_quality10, aes(x = year, y = salinity_ppt, group
 
 Salinity
 
-# check observations below 5 ppt
 Salinity_point <- ggplot(data = water_quality10, aes(x = date, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
   xlab("year") +
@@ -107,7 +100,7 @@ Salinity_point
 
 ### pH ----
 
-pH <- ggplot(data = water_quality10, aes(x = year, y = p_h, group = site, color = site)) +
+pH <- ggplot(data = water_quality10, aes(x = date, y = p_h, group = site, color = site)) +
   geom_point() +
   geom_line()+
   xlab("year") +
@@ -163,47 +156,25 @@ Pressure <- ggplot(data = water_quality10, aes(x = year, y = barometric_pressure
 
 Pressure
 
-# Salinity categorization----
 
-#check is any of sites are fresh (none are)
-#according Senesac report NWP, NDC, NVP2 and NVP4 are fresh??
-Salinity_site <- water_quality10 %>%
-  filter(site== "NDC") 
+# Deep dive: Salinity ----
 
-Salinity_site <- water_quality10 %>%
-  filter(site== "NDC") %>%
-  filter(salinity_ppt < 0.5) %>%
- summarise(count = n())
+##All sites:----
 
-
-##Probability Density Graphs: ----
-
-# TODO- figure revisions:
-# prevent curves going below 0
-# move axis labels
-
-wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, group = site, color = site, fill = site)) +
-  # use stat = "binline" to show historgram instead of smooth density curves
-  geom_density_ridges(scale = 2, alpha = 0.25) +
-  geom_vline(xintercept = 0.5, linetype = "dashed") + # fresh water
-  geom_vline(xintercept = 5, linetype = "dashed") + # oligohaline 
-  geom_vline(xintercept = 18, linetype = "dashed") + # mesohaline
-  geom_vline(xintercept = 30, linetype = "dashed") + # polyhaline
-  geom_vline(xintercept = 40, linetype = "dashed") +# seawater
-  theme_ridges() +
-  theme(
-    axis.title.x = element_text(hjust = 0.5), # Center x-axis title
-    axis.title.y = element_text(hjust = 0.5),  # Center y-axis title
-    legend.position = "none"
-  ) +
-  labs(x = "Salinity (ppt)",
-       y = "Site")
+wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) +# seawater
+  theme_ridges() 
   #coord_cartesian(xlim = c(0, 50)) 
   
 
 wq_density_10
 
-##Table of Salinities: ----
+##Table: ----
 
 breaks <- c(-Inf, 0.5, 5, 18, 30, 40, Inf)
 labels <- c("Fresh", "Oligohaline", "Mesohaline", "Polyhaline", "Euhaline", "Hypersaline")
@@ -224,10 +195,7 @@ range_levels <- levels(Salinity_ranges_tb$range)
 Salt_table_result<- Salt_table_result %>%
   select(site, all_of(range_levels))
 
-# TODO- pass the dataframe to gt(), then export as Word doc for more editing and inserting into report doc
-# if possible, add salinity ranges into header labels
-
-Salt_table_result 
+Salt_table_result
 
 #NPB is mostly oligohaline
 #NBP1 is almost completely oligohaline
@@ -236,14 +204,16 @@ Salt_table_result
 
 #Pier mostly hypersaline
 
-##Oligohaline plots: ---- 
+##Oligohaline sites: ---- 
+
+###Density ----
 
 oligohaline_sites<- water_quality10 %>%
   filter(site %in% c("NPB2", "NPB1", "NPB", "NWP"))
 
 
 oligo_density_plot <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
-  geom_density_ridges(scale = 2, alpha = 0.5) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
   geom_vline(xintercept = 0.5) + # fresh water
   geom_vline(xintercept = 5) + # oligohaline 
   geom_vline(xintercept = 18) + # mesohaline
@@ -254,7 +224,22 @@ oligo_density_plot <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y =
 
 oligo_density_plot
 
-##Highly variable sites: -----
+
+###Linear ----
+
+oligo_line_plot <- ggplot(data = oligohaline_sites, aes(x = date, y = salinity_ppt, group = site, color = site)) +
+  geom_point() +
+  xlab("year") +
+  ylab("pH") +
+  theme_cowplot() +
+  facet_wrap(vars(site))+
+  ggtitle("Salinity by Site") +
+  ylim(0, 25)
+
+
+oligo_line_plot
+
+##Variable sites: -----
 
 variable_sites<- water_quality10 %>%
   filter(site %in% c("MO1", "NEC", "NVBR", "NMC"))
@@ -290,9 +275,107 @@ Fresh_Oligo_plot <- ggplot(data = Fresh_Oligo_sites, aes(x = salinity_ppt, y = s
 Fresh_Oligo_plot
 
 
+# PH Plots: ----
+
+density_pH <- ggplot(data = water_quality10, aes(x = p_h, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges() + 
+  coord_cartesian(xlim = c(4, 10)) #zoom in
 
 
-#Upstream plots: ----
+
+density_pH
+
+
+#DO ----
+
+##Table ----
+
+num_do_wq<-water_quality10 %>%
+  filter(dissolved_oxygen_mg_l != "over")
+#Filter out over, 
+#TODO: NEED TO DETERMINE ACTUAL VALUES SO CAN ADD BACK IN!!!
+
+num_do_wq <- num_do_wq %>%
+  mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l))
+
+breaks_DO <- c(0,.5,3,4.99,Inf)
+labels_DO <- c("Anoxic","Hypoxic","Intermediate","Good")
+
+
+DO_tb <- num_do_wq %>%
+  mutate( dissolved_oxygen_mg_l = round(dissolved_oxygen_mg_l, 2),range = factor(cut(dissolved_oxygen_mg_l, breaks = breaks_DO, labels = labels_DO),
+                        levels = labels_DO)) %>%
+  filter(!is.na(dissolved_oxygen_mg_l))
+
+DO_table_result <- DO_tb %>%
+  group_by(site, range) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
+  select(site, all_of(labels_DO)) 
+
+range_levels <- levels(DO_tb$range)
+DO_table_result<- DO_table_result %>%
+  select(site, all_of(range_levels))
+
+DO_table_result
+
+##DO Plots: ----
+
+density_DO <- ggplot(data = num_do_wq, aes(x = dissolved_oxygen_mg_l, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges() +
+  coord_cartesian(xlim = c(0, 27)) + #zoom in
+  geom_vline(xintercept = 0.5) + # Anoxic 
+  geom_vline(xintercept = 3) + # Hypoxic  
+  geom_vline(xintercept = 4) + # Intermediate
+  geom_vline(xintercept = 4) + # Good
+  theme_ridges() 
+
+
+
+density_DO
+
+##NPB sites ----
+
+DO_NPBs<-num_do_wq %>%
+  filter(site %in% c("NPB2", "NPB1", "NPB"))
+  
+
+density_NBPs <- ggplot(data = DO_NPBs, aes(x = dissolved_oxygen_mg_l, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges() +
+  coord_cartesian(xlim = c(0, 27)) + #zoom in
+  geom_vline(xintercept = 0.5) + # Anoxic 
+  geom_vline(xintercept = 3) + # Hypoxic  
+  geom_vline(xintercept = 4) + # Intermediate
+  geom_vline(xintercept = 4) + # Good
+  theme_ridges() 
+
+density_NBPs
+
+##Healthy sites ----
+
+
+DO_good<-num_do_wq %>%
+  filter(site %in% c( "NVP4", "NWP"))
+
+
+density_good <- ggplot(data = DO_good, aes(x = dissolved_oxygen_mg_l, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges() +
+  coord_cartesian(xlim = c(0, 27)) + #zoom in
+  geom_vline(xintercept = 0.5) + # Anoxic 
+  geom_vline(xintercept = 3) + # Hypoxic  
+  geom_vline(xintercept = 4) + # Intermediate
+  geom_vline(xintercept = 4) + # Good
+  theme_ridges() 
+
+density_good
+
+
+
+# Other: Upstream plots: ----
 
 
 upstream_quality <- water_quality10 %>%
