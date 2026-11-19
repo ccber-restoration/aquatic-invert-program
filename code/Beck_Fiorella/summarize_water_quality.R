@@ -5,6 +5,13 @@
 # Note that the input dataframe will change slightly after migrating to the "new" spreadsheet
 
 library(naniar)
+library(dplyr)
+library(ggridges)
+library(gt)
+ # general use
+
+
+version
 
 vis_miss(water_quality)
 
@@ -39,59 +46,43 @@ filtered_water_quality<-water_quality_correct %>%
 filtered_water_quality %>%
   count(site)
 
-#CUL1     11
-# VP1       5*
-# DSP       5* 
-# ETNP      1*
-# ETSP      1*
-# MO1      26
-# NDC      17
-# NEC      26
-# NMC      24
-# NPB      51
-# NPB1     27
-# NPB2     10
-# NVBR     34
-# NVP2     10
-# NVP4     12
-# NWP      21
-# PIER     25
-# *=less than 10 records
-
 #filter out sites with less than 10 data points 
 water_quality10 <- filtered_water_quality %>%
   filter(!site %in% c("DSP","ETNP", "ETSP","VP1"))
 
 
-
 # Visualizing data: ----
 
 ## All sites: ----
+
 water_quality10 <- water_quality10 %>%
-  mutate(salinity_ppt = as.numeric(salinity_ppt))
+  mutate(salinity_ppt = as.numeric(salinity_ppt)) #force salinity to be numberic
 
 
 
 ### Salinity ----
+
+# visualize salinity for all sites
 Salinity <- ggplot(data = water_quality10, aes(x = year, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
   geom_line()+
   xlab("year") +
   ylab("Salinity (ppt)") +
   theme_cowplot() +
-  facet_wrap(vars(site))
+  facet_wrap(vars(site)) 
  # ggtitle("Salinity by Site") 
                      
 
 Salinity
 
+# visualize salinity without lines
 Salinity_point <- ggplot(data = water_quality10, aes(x = date, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
   xlab("year") +
   ylab("Salinity (ppt)") +
   theme_cowplot() +
  facet_wrap(vars(site)) +
-  ylim(0, 0.5)
+  ylim(0, 0.5) 
 # ggtitle("Salinity by Site") 
 
 
@@ -100,6 +91,7 @@ Salinity_point
 
 ### pH ----
 
+#visualize pH for all sites 
 pH <- ggplot(data = water_quality10, aes(x = date, y = p_h, group = site, color = site)) +
   geom_point() +
   geom_line()+
@@ -110,11 +102,11 @@ pH <- ggplot(data = water_quality10, aes(x = date, y = p_h, group = site, color 
 # ggtitle("Salinity by Site") 
 
 
-pH
-#largely all similar
+pH #largely all similar
 
 ### DO ----
 
+# visualize DO for all sites 
 DO <- ggplot(data = water_quality10, aes(x = year, y = dissolved_oxygen_percent, group = site, color = site)) +
   geom_point() +
   geom_line()+
@@ -128,6 +120,7 @@ DO
 
 ### Temperature ----
 
+#visualize temperature for all sites 
 Temperature <- ggplot(data = water_quality10, aes(x = year, y = temperature_c, group = site, color = site)) +
   geom_point() +
   geom_line()+
@@ -141,9 +134,11 @@ Temperature
 
 ### Pressure ----
 
+# force barometic pressure to be numeric 
 water_quality10 <- water_quality10 %>%
   mutate(barometric_pressure_mm_hg = as.numeric(barometric_pressure_mm_hg))
 
+# visualize pressure for all sites
 Pressure <- ggplot(data = water_quality10, aes(x = year, y = barometric_pressure_mm_hg, group = site, color = site)) +
   geom_point() +
   geom_line()+
@@ -157,10 +152,12 @@ Pressure <- ggplot(data = water_quality10, aes(x = year, y = barometric_pressure
 Pressure
 
 
-# Deep dive: Salinity ----
+# Deep dive: ----
+# Salinity ----
 
-##All sites:----
+## Density Plot ----
 
+#visualize density salinity for all sites 
 wq_density_10 <- ggplot(data = water_quality10, aes(x = salinity_ppt, y = site, group = site, color = site)) +
   geom_density_ridges(scale = 5, alpha = 0.5) +
   geom_vline(xintercept = 0.5) + # fresh water
@@ -176,16 +173,17 @@ wq_density_10
 
 ##Table: ----
 
-breaks <- c(-Inf, 0.5, 5, 18, 30, 40, Inf)
-labels <- c("Fresh", "Oligohaline", "Mesohaline", "Polyhaline", "Euhaline", "Hypersaline")
+
+breaks <- c(-Inf, 0.5, 5, 18, 30, 40, Inf) #create ranges for breaks in table
+labels <- c("Fresh", "Oligohaline", "Mesohaline", "Polyhaline", "Euhaline", "Hypersaline") #label breaks on tabel
 #Ranges: "0-0.5 (Fresh)", "0.6-5 (oligohaline)", "6-18 (mesohaline)", "19-30 (Polyhaline)", "31-40 (Euhaline)", ">40 (Hypersaline)
 
-Salinity_ranges_tb <- water_quality10 %>%
+Salinity_ranges_tb <- water_quality10 %>% #create df form salinity table
   mutate(range = factor(cut(salinity_ppt, breaks = breaks, labels = labels, include.lowest = TRUE, right = TRUE ),
     levels = labels)) %>%
-  filter(!is.na(salinity_ppt)) #create df form salinity table
+  filter(!is.na(salinity_ppt)) 
   
-Salt_table_result <- Salinity_ranges_tb %>%
+Salt_table_result <- Salinity_ranges_tb %>% 
   group_by(site, range) %>%
   summarise(count = n(), .groups = "drop") %>%
   pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
@@ -197,18 +195,50 @@ Salt_table_result<- Salt_table_result %>%
 
 Salt_table_result
 
-#NPB is mostly oligohaline
-#NBP1 is almost completely oligohaline
-#NPB2 is mostly oligohaline too but much smaller data set
-#NWP mostly oligohaline
+## GT table ----
 
-#Pier mostly hypersaline
+
+custom_order <- c("PIER", "CUL1", "MO1", "NVBR", "NEC", "NMC", "NPB", "NPB1", "NWP", "NPB2","NDC", "NVP2", "NVP4")
+
+Salt_gt <- Salt_table_result %>%
+  mutate(site = factor(site, levels = custom_order)) %>%
+  arrange(site)
+  
+
+
+gt(Salt_gt) %>%
+  tab_header(
+    title = "Salinity Ranges",
+    subtitle = "Data within EPA ranges") %>% #create a gt table
+  cols_align(
+    align = "center",  
+    columns = everything()) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#8CB7DF"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NPB2", "NPB1", "NPB", "NWP"))) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#5992C6"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("MO1", "NEC", "NVBR", "NMC"))) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#C7DBEF"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NDC", "NVP2", "NVP4")))
+
+
 
 ##Oligohaline sites: ---- 
 
-###Density ----
+### Density ----
 
-oligohaline_sites<- water_quality10 %>%
+oligohaline_sites<- water_quality10 %>% #create a df of oligohaline sites
   filter(site %in% c("NPB2", "NPB1", "NPB", "NWP"))
 
 
@@ -225,7 +255,7 @@ oligo_density_plot <- ggplot(data = oligohaline_sites, aes(x = salinity_ppt, y =
 oligo_density_plot
 
 
-###Linear ----
+### Linear ----
 
 oligo_line_plot <- ggplot(data = oligohaline_sites, aes(x = date, y = salinity_ppt, group = site, color = site)) +
   geom_point() +
@@ -241,7 +271,7 @@ oligo_line_plot
 
 ##Variable sites: -----
 
-variable_sites<- water_quality10 %>%
+variable_sites<- water_quality10 %>% #create df of sites that were variable in salinity ranges 
   filter(site %in% c("MO1", "NEC", "NVBR", "NMC"))
 
 variable_density_plot <- ggplot(data = variable_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
@@ -259,7 +289,7 @@ variable_density_plot
 
 ##Fresh to Oligohaline sites: -----
 
-Fresh_Oligo_sites<- water_quality10 %>%
+Fresh_Oligo_sites<- water_quality10 %>% #create df of sites salinity that range from fresh to oligohaline
   filter(site %in% c("NDC", "NVP2", "NVP4"))
 
 Fresh_Oligo_plot <- ggplot(data = Fresh_Oligo_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
@@ -292,15 +322,13 @@ density_pH
 ##Table ----
 
 num_do_wq<-water_quality10 %>%
-  filter(dissolved_oxygen_mg_l != "over")
-#Filter out over, 
-#TODO: NEED TO DETERMINE ACTUAL VALUES SO CAN ADD BACK IN!!!
+  filter(dissolved_oxygen_mg_l != "over") #Filter out over 
 
 num_do_wq <- num_do_wq %>%
-  mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l))
+  mutate(dissolved_oxygen_mg_l = as.numeric(dissolved_oxygen_mg_l)) # make DO numeric 
 
-breaks_DO <- c(0,.5,3,4.99,Inf)
-labels_DO <- c("Anoxic","Hypoxic","Intermediate","Good")
+breaks_DO <- c(0,.5,3,4.99,Inf) #create ranges for breaks 
+labels_DO <- c("Anoxic","Hypoxic","Intermediate","Good") #create labels for tabel breaks 
 
 
 DO_tb <- num_do_wq %>%
@@ -319,6 +347,31 @@ DO_table_result<- DO_table_result %>%
   select(site, all_of(range_levels))
 
 DO_table_result
+
+
+## GT table: ----
+
+num_do_wq %>%
+  count(site)
+
+DO_table_result %>%
+  gt() %>%
+  tab_header(
+    title = "Dissolved Oxygen Ranges",
+    subtitle = "Data within EPA ranges") %>%
+  cols_align(
+    align = "center",  
+    columns = everything()) %>% #create a gt table
+  tab_style(
+    style = list(
+      cell_fill(color = "#D9654B"),   # Background color
+      cell_text(color = "white") ), # Text color
+    locations = cells_body(
+      rows = site == "CUL1")) # Condition to match specific row
+    
+
+#%>%
+  #fmt_number(columns = avg_value, decimals = 1)
 
 ##DO Plots: ----
 

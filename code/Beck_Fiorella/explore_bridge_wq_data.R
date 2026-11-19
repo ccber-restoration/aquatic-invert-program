@@ -12,17 +12,21 @@ Venoco <- bridge_wq |>
 
 Venoco_salinity_histogram <- ggplot(data = Venoco, aes(x = salinity_ppt)) +
   geom_histogram() +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
   
 Venoco_salinity_histogram
 
 Venoco_prob_density <- ggplot(data = Venoco, aes(x = salinity_ppt)) +
   geom_density() +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
 
 Venoco_prob_density
 
@@ -37,9 +41,11 @@ ggplot(Venoco, aes(x = salinity_ppt)) +
     y = "Cumulative Proportion F(x)"
   ) +
   theme_minimal() +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
 
 
 # ~~~~~~~~~~~~~~~~~~ ----
@@ -51,19 +57,23 @@ Phelps <- bridge_wq |>
 
 Phelps_salinity_histogram <- ggplot(data = Phelps, aes(x = salinity_ppt)) +
   geom_histogram() +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
 
 Phelps_salinity_histogram
 
 Phelps_prob_density <- ggplot(data = Phelps, aes(x = salinity_ppt)) +
   geom_density() +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
 
-Phelps_prob_density
+Phelps_prob_density #most data is oligohaline
 
 #  empirical cumulative distribution function
 
@@ -76,9 +86,12 @@ ggplot(Phelps, aes(x = salinity_ppt)) +
     y = "Cumulative Proportion F(x)"
   ) +
   theme_minimal() +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
+#mostly data is oligohaline
 
 # try plotting curves for all three sites together:
 bridge_wq_filtered <- bridge_wq |> 
@@ -87,18 +100,22 @@ bridge_wq_filtered <- bridge_wq |>
 
 prob_density <- ggplot(data = bridge_wq_filtered, aes(x = salinity_ppt, color = site_name, fill = site_name)) +
   geom_density(alpha = 0.5) +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40)
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) # seawater
 
 prob_density
 
 # try geom_ridges
 prob_density_ridges <- ggplot(data = bridge_wq_filtered, aes(x = salinity_ppt, y = site_name, color = site_name, fill = site_name)) +
   geom_density_ridges(scale = 5, alpha = 0.5) +
-  geom_vline(xintercept = 0.5) +
-  geom_vline(xintercept = 30) +
-  geom_vline(xintercept = 40) +
+  geom_vline(xintercept = 0.5) + # fresh water
+  geom_vline(xintercept = 5) + # oligohaline 
+  geom_vline(xintercept = 18) + # mesohaline
+  geom_vline(xintercept = 30) + # polyhaline
+  geom_vline(xintercept = 40) +# seawater
   theme_ridges()
 
 prob_density_ridges
