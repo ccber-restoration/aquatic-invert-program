@@ -1,6 +1,7 @@
 # the purpose of this script is to begin exploring, visualizing, and summarizing water quality measurements
 
 # run 00_setup.R to obtain the water_quality dataframe
+source("code/00_setup.R")
 
 # Note that the input dataframe will change slightly after migrating to the "new" spreadsheet
 
@@ -200,13 +201,13 @@ Salt_table_result
 
 custom_order <- c("PIER", "CUL1", "MO1", "NVBR", "NEC", "NMC", "NPB", "NPB1", "NWP", "NPB2","NDC", "NVP2", "NVP4")
 
-Salt_gt <- Salt_table_result %>%
+Salt_gt_input <- Salt_table_result %>%
   mutate(site = factor(site, levels = custom_order)) %>%
   arrange(site)
   
 
 
-gt(Salt_gt) %>%
+Salt_gt <- gt(Salt_gt_input) %>%
   tab_header(
     title = "Salinity Ranges",
     subtitle = "Data within EPA ranges") %>% #create a gt table
@@ -232,7 +233,10 @@ gt(Salt_gt) %>%
     locations = cells_body(
       rows = site %in% c("NDC", "NVP2", "NVP4")))
 
+Salt_gt
 
+# save to file (preliminary version)
+gtsave(Salt_gt, filename = "table_outputs/site_salinity_category_table.docx")
 
 ##Oligohaline sites: ---- 
 
