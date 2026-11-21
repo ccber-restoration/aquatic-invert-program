@@ -1,7 +1,6 @@
 # the purpose of this script is to begin exploring, visualizing, and summarizing water quality measurements
 
 # run 00_setup.R to obtain the water_quality dataframe
-source("code/00_setup.R")
 
 # Note that the input dataframe will change slightly after migrating to the "new" spreadsheet
 
@@ -9,6 +8,7 @@ library(naniar)
 library(dplyr)
 library(ggridges)
 library(gt)
+library(ggpl)
  # general use
 
 
@@ -196,18 +196,25 @@ Salt_table_result<- Salt_table_result %>%
 
 Salt_table_result
 
+#in percent
+Salt_table_result_row <- Salt_table_result
+num_cols <- sapply(Salt_table_result_row, is.numeric)
+Salt_table_result_row[num_cols] <- round(prop.table(as.matrix(Salt_table_result_row[num_cols]), margin = 1) * 100, 2)
+
+print("Percent table (row-wise):")
+print(Salt_table_result_row)
+
 ## GT table ----
 
 
-custom_order <- c("PIER", "CUL1", "MO1", "NVBR", "NEC", "NMC", "NPB", "NPB1", "NWP", "NPB2","NDC", "NVP2", "NVP4")
+custom_order <- c("PIER","MO1", "NVBR", "NEC","CUL1", "NMC", "NPB", "NPB1", "NWP", "NPB2","NDC", "NVP2", "NVP4")
 
-Salt_gt_input <- Salt_table_result %>%
+Salt_gt <- Salt_table_result %>%
   mutate(site = factor(site, levels = custom_order)) %>%
   arrange(site)
   
 
-
-Salt_gt <- gt(Salt_gt_input) %>%
+gt(Salt_gt) %>%
   tab_header(
     title = "Salinity Ranges",
     subtitle = "Data within EPA ranges") %>% #create a gt table
@@ -225,7 +232,7 @@ Salt_gt <- gt(Salt_gt_input) %>%
       cell_fill(color = "#5992C6"),   # Background color
       cell_text(color = "black") ), # Text color
     locations = cells_body(
-      rows = site %in% c("MO1", "NEC", "NVBR", "NMC"))) %>%
+      rows = site %in% c("MO1", "NEC", "NVBR", "NMC", "PIER","CUL1"))) %>%
   tab_style(
     style = list(
       cell_fill(color = "#C7DBEF"),   # Background color
@@ -233,10 +240,42 @@ Salt_gt <- gt(Salt_gt_input) %>%
     locations = cells_body(
       rows = site %in% c("NDC", "NVP2", "NVP4")))
 
-Salt_gt
+## GT % ----
+#in percent
 
-# save to file (preliminary version)
-gtsave(Salt_gt, filename = "table_outputs/site_salinity_category_table.docx")
+custom_order <- c("PIER","MO1", "NVBR", "NEC","CUL1", "NMC", "NPB", "NPB1", "NWP", "NPB2","NDC", "NVP2", "NVP4")
+
+Salt_percent_gt <- Salt_table_result_row %>%
+  mutate(site = factor(site, levels = custom_order)) %>%
+  arrange(site)
+
+
+gt(Salt_percent_gt) %>%
+  tab_header(
+    title = "Salinity Ranges",
+    subtitle = "Data within EPA ranges") %>% #create a gt table
+  cols_align(
+    align = "center",  
+    columns = everything()) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#8CB7DF"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NPB2", "NPB1", "NPB", "NWP"))) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#5992C6"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("MO1", "NEC", "NVBR", "NMC", "PIER","CUL1"))) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#C7DBEF"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NDC", "NVP2", "NVP4")))
+
 
 ##Oligohaline sites: ---- 
 
@@ -276,7 +315,7 @@ oligo_line_plot
 ##Variable sites: -----
 
 variable_sites<- water_quality10 %>% #create df of sites that were variable in salinity ranges 
-  filter(site %in% c("MO1", "NEC", "NVBR", "NMC"))
+  filter(site %in% c("MO1", "NEC", "NVBR", "NMC", "PIER","CUL1"))
 
 variable_density_plot <- ggplot(data = variable_sites, aes(x = salinity_ppt, y = site, group = site, color = site)) +
   geom_density_ridges(scale = 5, alpha = 0.5) +
