@@ -14,6 +14,11 @@ library(sf)
 
 # 1. read in data ----
 
+
+# Currently not used:
+# read in data directly from google sheets
+# invert_data_drive <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/1rcYilbrxduQswiJpCK6TopZaIWFJxpK8nklt3INtFVM/edit?gid=0#gid=0")
+
 # read in static excel file (will become outdated)
 
 #set to current version of Excel file
@@ -107,7 +112,7 @@ unique_sites_wq
 
 #FIXME: 
 
-# site names not fully standardized
+# site names not fully standardized:
 # measurement depth not standardized
 # Some DO values are incredibly high...
 

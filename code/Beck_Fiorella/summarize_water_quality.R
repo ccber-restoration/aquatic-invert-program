@@ -361,13 +361,8 @@ DO_table_result %>%
     subtitle = "Data within EPA ranges") %>%
   cols_align(
     align = "center",  
-    columns = everything()) %>% #create a gt table
-  tab_style(
-    style = list(
-      cell_fill(color = "#D9654B"),   # Background color
-      cell_text(color = "white") ), # Text color
-    locations = cells_body(
-      rows = site == "CUL1")) # Condition to match specific row
+    columns = everything()) 
+   #tab_style( style = list( cell_fill(color = "#D9654B"), cell_text(color = "white") ),locations = cells_body(rows = site == "CUL1")) # Condition to match specific row
     
 
 #%>%
