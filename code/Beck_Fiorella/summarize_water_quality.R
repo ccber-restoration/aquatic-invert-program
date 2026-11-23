@@ -8,7 +8,9 @@ library(naniar)
 library(dplyr)
 library(ggridges)
 library(gt)
-library(ggpl)
+library(tidyr)
+library(ggplot2)
+
  # general use
 
 
@@ -152,10 +154,10 @@ Pressure <- ggplot(data = water_quality10, aes(x = year, y = barometric_pressure
 
 Pressure
 
-
+ 
 # Deep dive: ----
-# Salinity ----
-
+## Salinity ----
+  
 ## Density Plot ----
 
 #visualize density salinity for all sites 
@@ -330,7 +332,7 @@ variable_density_plot <- ggplot(data = variable_sites, aes(x = salinity_ppt, y =
 variable_density_plot
 
 
-##Fresh to Oligohaline sites: -----
+#### Fresh to Oligohaline sites: ####
 
 Fresh_Oligo_sites<- water_quality10 %>% #create df of sites salinity that range from fresh to oligohaline
   filter(site %in% c("NDC", "NVP2", "NVP4"))
@@ -346,19 +348,6 @@ Fresh_Oligo_plot <- ggplot(data = Fresh_Oligo_sites, aes(x = salinity_ppt, y = s
   
 
 Fresh_Oligo_plot
-
-
-# PH Plots: ----
-
-density_pH <- ggplot(data = water_quality10, aes(x = p_h, y = site, group = site, color = site)) +
-  geom_density_ridges(scale = 5, alpha = 0.5) +
-  theme_ridges() + 
-  coord_cartesian(xlim = c(4, 10)) #zoom in
-
-
-
-density_pH
-
 
 #DO ----
 
@@ -464,7 +453,109 @@ density_good <- ggplot(data = DO_good, aes(x = dissolved_oxygen_mg_l, y = site, 
 
 density_good
 
+# PH Plots: ----
 
+density_pH <- ggplot(data = water_quality10, aes(x = p_h, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges() + 
+  coord_cartesian(xlim = c(4, 10)) #zoom in
+
+## Denisty plot ----
+
+
+density_ph <- ggplot(data = water_quality10, aes(x = p_h, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges() +
+  coord_cartesian(xlim = c(0, 27)) + #zoom in
+  geom_vline(xintercept = 0) + # Acidic 
+  geom_vline(xintercept = 7) + # Neutral  
+  geom_vline(xintercept = 11) + # Alakine
+  theme_ridges() 
+
+density_ph
+
+
+## pH Table ----
+
+breaks_ph <- c(-Inf,7,7.1,Inf) # -inf to 7 acidic, 7 to 7.99 nuetral, 7.99 to inf is alkaline 
+labels_ph <- c("Acidic","Neutral","Alakine") #create labels for tabel breaks 
+
+
+ph_tb <- water_quality10 %>%
+    mutate(p_h = round(p_h, 2),range = factor(cut(p_h, breaks = breaks_ph, labels = labels_ph),levels = labels_ph)) %>%
+  filter(!is.na(p_h))
+
+ph_table_result <- ph_tb %>%
+  group_by(site, range) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
+  select(site, all_of(labels_ph)) 
+
+range_levels_ph <- levels(ph_tb$range)
+ph_table_result<- ph_table_result %>%
+  select(site, all_of(range_levels_ph))
+
+ph_table_result
+
+## GT Table ----
+
+num_do_wq %>%
+  count(site)
+
+ph_table_result %>%
+  gt() %>%
+  tab_header(
+    title = "pH Ranges",
+    subtitle = "Data within EPA ranges") %>%
+  cols_align(
+    align = "center",  
+    columns = everything()) 
+#tab_style( style = list( cell_fill(color = "#D9654B"), cell_text(color = "white") ),locations = cells_body(rows = site == "CUL1")) # Condition to match specific row
+
+# Temperature ----
+
+## Denisty plot ----
+density_temp <- ggplot(data = water_quality10, aes(x = temperature_c, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges()  
+
+density_temp 
+
+## pH Table ----
+
+breaks_ph <- c(-Inf,7,7.1,Inf) # -inf to 7 acidic, 7 to 7.99 nuetral, 7.99 to inf is alkaline 
+labels_ph <- c("Acidic","Neutral","Alakine") #create labels for tabel breaks 
+
+
+ph_tb <- water_quality10 %>%
+  mutate(p_h = round(p_h, 2),range = factor(cut(p_h, breaks = breaks_ph, labels = labels_ph),levels = labels_ph)) %>%
+  filter(!is.na(p_h))
+
+ph_table_result <- ph_tb %>%
+  group_by(site, range) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
+  select(site, all_of(labels_ph)) 
+
+range_levels_ph <- levels(ph_tb$range)
+ph_table_result<- ph_table_result %>%
+  select(site, all_of(range_levels_ph))
+
+ph_table_result
+
+## GT Table ----
+
+num_do_wq %>%
+  count(site)
+
+ph_table_result %>%
+  gt() %>%
+  tab_header(
+    title = "pH Ranges",
+    subtitle = "Data within EPA ranges") %>%
+  cols_align(
+    align = "center",  
+    columns = everything()) 
 
 # Other: Upstream plots: ----
 
