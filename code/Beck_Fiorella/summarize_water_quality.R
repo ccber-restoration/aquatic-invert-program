@@ -383,20 +383,37 @@ DO_table_result
 
 ## GT table: ----
 
+custom_order2 <- c("NPB1","NEC", "NPB","NMC","NDC","NVP4", "PIER", "NWP","MO1","NVBR", "CUL1", "NPB2","NVP2")
+
+DO_gt <- DO_table_result %>%
+  mutate(site = factor(site, levels = custom_order2)) %>%
+  arrange(site)
+
 num_do_wq %>%
   count(site)
 
-DO_table_result %>%
+DO_gt %>%
   gt() %>%
   tab_header(
     title = "Dissolved Oxygen Ranges",
     subtitle = "Data within EPA ranges") %>%
   cols_align(
     align = "center",  
-    columns = everything()) 
-   #tab_style( style = list( cell_fill(color = "#D9654B"), cell_text(color = "white") ),locations = cells_body(rows = site == "CUL1")) # Condition to match specific row
-    
+    columns = everything()) %>%
+  tab_style(
+  style = list(
+    cell_fill(color = "#C7DBEF"),   # Background color
+    cell_text(color = "black") ), # Text color
+  locations = cells_body(
+    rows = site %in% c("NDC", "NWP", "NVP4", "MO1", "NVBR", "PIER", "NMC"))) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#5992C6"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NEC", "NPB", "NPB1")))
 
+# NBP2 and NVP2 both have smaller sample sizes, filter out?
 #%>%
   #fmt_number(columns = avg_value, decimals = 1)
 
