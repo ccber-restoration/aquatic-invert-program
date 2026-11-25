@@ -494,8 +494,8 @@ density_ph
 
 ## pH Table ----
 
-breaks_ph <- c(-Inf,7,7.1,Inf) # -inf to 7 acidic, 7 to 7.99 nuetral, 7.99 to inf is alkaline 
-labels_ph <- c("Acidic","Neutral","Alakine") #create labels for tabel breaks 
+breaks_ph <- c(-Inf,6.5, 7,7.1,8.5,Inf) # -inf to 7 acidic, 7 to 7.99 nuetral, 7.99 to inf is alkaline 
+labels_ph <- c("Below prefered","Acidic","Neutral","Alakine", "Above prefered") #create labels for tabel breaks 
 
 
 ph_tb <- water_quality10 %>%
@@ -516,17 +516,33 @@ ph_table_result
 
 ## GT Table ----
 
-num_do_wq %>%
-  count(site)
+custom_order3 <- c("NVBR","MO1","PIER","NEC","NWP","NMC","NVP4","CUL1","NDC","NVP2","NBP1","NPB","NPB1","NPB2")
+ph_gt <- ph_table_result %>%
+  mutate(site = factor(site, levels = custom_order3)) %>%
+  arrange(site)
 
-ph_table_result %>%
+ph_gt %>%
   gt() %>%
   tab_header(
     title = "pH Ranges",
     subtitle = "Data within EPA ranges") %>%
   cols_align(
     align = "center",  
-    columns = everything()) 
+    columns = everything()) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#5992C6"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NVBR", "MO1", "PIER","NEC","NWP", "NMC","NVP4","CUL1", "NDC", "NVP2"))) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#C7DBEF"),   # Background color
+      cell_text(color = "black") ), # Text color
+    locations = cells_body(
+      rows = site %in% c("NPB2","NPB", "NPB1")))
+  
+  
 #tab_style( style = list( cell_fill(color = "#D9654B"), cell_text(color = "white") ),locations = cells_body(rows = site == "CUL1")) # Condition to match specific row
 
 # Temperature ----
@@ -538,41 +554,6 @@ density_temp <- ggplot(data = water_quality10, aes(x = temperature_c, y = site, 
 
 density_temp 
 
-## pH Table ----
-
-breaks_ph <- c(-Inf,7,7.1,Inf) # -inf to 7 acidic, 7 to 7.99 nuetral, 7.99 to inf is alkaline 
-labels_ph <- c("Acidic","Neutral","Alakine") #create labels for tabel breaks 
-
-
-ph_tb <- water_quality10 %>%
-  mutate(p_h = round(p_h, 2),range = factor(cut(p_h, breaks = breaks_ph, labels = labels_ph),levels = labels_ph)) %>%
-  filter(!is.na(p_h))
-
-ph_table_result <- ph_tb %>%
-  group_by(site, range) %>%
-  summarise(count = n(), .groups = "drop") %>%
-  pivot_wider(names_from = range, values_from = count, values_fill = 0) %>%
-  select(site, all_of(labels_ph)) 
-
-range_levels_ph <- levels(ph_tb$range)
-ph_table_result<- ph_table_result %>%
-  select(site, all_of(range_levels_ph))
-
-ph_table_result
-
-## GT Table ----
-
-num_do_wq %>%
-  count(site)
-
-ph_table_result %>%
-  gt() %>%
-  tab_header(
-    title = "pH Ranges",
-    subtitle = "Data within EPA ranges") %>%
-  cols_align(
-    align = "center",  
-    columns = everything()) 
 
 # Other: Upstream plots: ----
 
