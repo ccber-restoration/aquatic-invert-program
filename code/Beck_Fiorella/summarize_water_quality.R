@@ -332,7 +332,7 @@ variable_density_plot <- ggplot(data = variable_sites, aes(x = salinity_ppt, y =
 variable_density_plot
 
 
-#### Fresh to Oligohaline sites: ####
+#### Fresh to Oligohaline sites: ----
 
 Fresh_Oligo_sites<- water_quality10 %>% #create df of sites salinity that range from fresh to oligohaline
   filter(site %in% c("NDC", "NVP2", "NVP4"))
@@ -383,7 +383,7 @@ DO_table_result
 
 ## GT table: ----
 
-custom_order2 <- c("NPB1","NEC", "NPB","NMC","NDC","NVP4", "PIER", "NWP","MO1","NVBR", "CUL1", "NPB2","NVP2")
+custom_order2 <- c("NVBR","MO1", "NWP", "PIER","NVP4","NDC","NMC","NPB","NEC","NPB1","CUL1", "NPB2","NVP2")
 
 DO_gt <- DO_table_result %>%
   mutate(site = factor(site, levels = custom_order2)) %>%
@@ -402,16 +402,17 @@ DO_gt %>%
     columns = everything()) %>%
   tab_style(
   style = list(
-    cell_fill(color = "#C7DBEF"),   # Background color
+    cell_fill(color = "#5992C6"),   # Background color
     cell_text(color = "black") ), # Text color
   locations = cells_body(
     rows = site %in% c("NDC", "NWP", "NVP4", "MO1", "NVBR", "PIER", "NMC"))) %>%
   tab_style(
     style = list(
-      cell_fill(color = "#5992C6"),   # Background color
+      cell_fill(color = "#C7DBEF"),   # Background color
       cell_text(color = "black") ), # Text color
     locations = cells_body(
       rows = site %in% c("NEC", "NPB", "NPB1")))
+
 
 # NBP2 and NVP2 both have smaller sample sizes, filter out?
 #%>%
@@ -553,6 +554,18 @@ density_temp <- ggplot(data = water_quality10, aes(x = temperature_c, y = site, 
   theme_ridges()  
 
 density_temp 
+
+
+#Pressure----
+
+## Denisty plot ----
+
+density_pressure <- ggplot(data = water_quality10, aes(x =  barometric_pressure_mm_hg, y = site, group = site, color = site)) +
+  geom_density_ridges(scale = 5, alpha = 0.5) +
+  theme_ridges()  
+
+density_pressure 
+
 
 
 # Other: Upstream plots: ----
